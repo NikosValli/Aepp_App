@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".BadgesActivity">
+
+    <TextView
+        android:id="@+id/epathla"
+        android:layout_width="109dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Έπαθλα"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/epathladescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Φέρε σε πέρας τις αποστολές και ξεκλείδωσε τους αγαπημένους σου Ήρωες!"
+        android:textColor="@color/menuColor"
+        android:textSize="22dp"
+
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/epathla" />
+
+    <ImageView
+        android:id="@+id/level1"
+        android:layout_width="125dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/epathladescr"
+        app:srcCompat="@drawable/ironmann" />
+
+    <TextView
+        android:id="@+id/level1descr"
+        android:layout_width="141dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Απάντα σωστά σε όλες τις ερωτήσεις του 1ου κεφαλαίου για να ξεκλειδώσεις τον ironman!"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level1" />
+
+    <ImageView
+        android:id="@+id/thor"
+        android:layout_width="125dp"
+        android:layout_height="112dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="46dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/epathladescr"
+        app:srcCompat="@drawable/thorr" />
+
+    <TextView
+        android:id="@+id/level2desc"
+        android:layout_width="141dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="39dp"
+        android:gravity="center"
+
+        android:text="Απάντα σωστά σε όλες τις ερωτήσεις του 2ου κεφαλαίου για να ξεκλειδώσεις τον Thor!"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thor" />
+
+
+</android.support.constraint.ConstraintLayout>

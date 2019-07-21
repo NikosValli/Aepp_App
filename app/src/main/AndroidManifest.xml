@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nikosval.aepp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".diagwnismakefalaio2"></activity>
+        <activity android:name=".menuaskisewn2" />
+        <activity android:name=".thewriadiotessera" />
+        <activity android:name=".methodologia2" />
+        <activity android:name=".thewriadiotria" />
+        <activity android:name=".thewriadiodio" />
+        <activity android:name=".thewriadioena" />
+        <activity android:name=".menuthewrias2oukefalaiou" />
+        <activity android:name=".menu2okefalaio" />
+        <activity
+            android:name=".LevelupActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".kerdisetonironman" />
+        <activity android:name=".BadgesActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".multiplechoicek1" />
+        <activity android:name=".menuaskisewn1" />
+        <activity android:name=".methodologia1" />
+        <activity android:name=".diagwnismakefalaio1" />
+        <activity
+            android:name=".ReadyfortestActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".thewria1_4" />
+        <activity android:name=".thewria1_3" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".thewria1_2" />
+        <activity android:name=".apothikevmena" />
+        <activity android:name=".menuthewrias1oukefaliou" />
+        <activity android:name=".thewria1oukefalaiou" />
+        <activity android:name=".menu1okefalio" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:id="@+id/ConstrainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        tools:context=".MenuActivity">
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbarofuser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/epipedo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="324dp"
+            android:layout_marginBottom="18dp"
+            android:text="Επίπεδο"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="7dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarofuser" />
+
+
+        <ImageView
+            android:id="@+id/logoo"
+            android:layout_width="272dp"
+            android:layout_height="72dp"
+
+
+            android:layout_marginTop="68dp"
+            android:color="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logooo" />
+
+
+        <TextView
+            android:id="@+id/logotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="148dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:text="@string/logo"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="182dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="504dp"
+            android:text="@string/prwtokefalaio"
+            android:textColor="@color/menuColor"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="68dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="556dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/studyy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoo" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="123dp"
+            android:layout_height="68dp"
+
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/logotext"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logotext"
+            app:srcCompat="@drawable/problembutton" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Αποθηκευμένα κεφάλαια"
+            android:textColor="@color/menuColor"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/search_ennoies"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ListView
+            android:id="@+id/simantikesennoies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="77dp"
+            android:layout_height="27dp"
+
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:text="Έπαθλα"
+            android:textColor="@color/menuColor"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/badges" />
+
+        <ImageButton
+            android:id="@+id/badges"
+            android:layout_width="68dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="548dp"
+            android:layout_marginEnd="68dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/logotext"
+            app:srcCompat="@drawable/trophy" />
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/search_ennoies"
+            android:layout_width="411dp"
+            android:layout_height="50dp"
+
+
+            android:layout_marginTop="36dp"
+            android:background="@color/colorPrimary"
+            app:itemIconTint="@color/colorAccent"
+            app:itemTextColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+            app:menu="@menu/bottom_navigation_bar">
+
+        </android.support.design.widget.BottomNavigationView>
+
+        <TextView
+            android:id="@+id/algorithmoi"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="104dp"
+            android:text="Αλγόριθμοι"
+            android:textColor="@color/menuColor"
+            android:textSize="13dp"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/logotext" />
+
+        <ImageButton
+            android:id="@+id/algortihms"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:background="?android:selectableItemBackground"
+
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/logotext"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logotext"
+            app:srcCompat="@drawable/algortihm" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

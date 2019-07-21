@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".menuthewrias1oukefaliou">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kεφάλαια θεωρίας"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/menubutons"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/prwtokefalio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="1.1 Πρόβλημα-Δομή προβλήματος"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+
+        android:layout_height="wrap_content"
+        android:text="1.2 Στάδια αντιμετώπισης προβλημάτων"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="19dp"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+
+        android:layout_height="wrap_content"
+        android:text="1.3 Κατηγορίες προβλημάτων"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="19dp"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+
+        android:layout_height="wrap_content"
+        android:text="1.4 Πρόβλημα και υπολογιστής"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="19dp"/>
+</LinearLayout>
