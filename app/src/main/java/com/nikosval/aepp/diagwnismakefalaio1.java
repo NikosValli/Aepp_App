@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.ArrayList;
+import java.util.Collections;
 
 import static android.widget.Toast.makeText;
 
@@ -29,6 +31,8 @@ public class diagwnismakefalaio1<count> extends AppCompatActivity {
     private Button choice3;
     private String manswer;
     int mQuestion;
+    ArrayList apotelesmata;
+
     Toast mToastMessage;
 
 
@@ -56,11 +60,15 @@ public class diagwnismakefalaio1<count> extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagwnismakefalaio1);
+
         mTrueButton = findViewById(R.id.true_buttond1);
         mFalseButton = findViewById(R.id.false_buttond1);
         mQuestionTextView = findViewById(R.id.question_text_viewd1);
         mScoreTextView = findViewById(R.id.scored1111);
         mProgressBar = findViewById(R.id.progressBard1);
+        apotelesmata=new ArrayList<String>();
+
+
 
 
 
@@ -77,12 +85,17 @@ public class diagwnismakefalaio1<count> extends AppCompatActivity {
 
 
         mQuestion = mQuestionBank[mIndex].getQuestionID();
+
         mQuestionTextView.setText(mQuestion);
+        apotelesmata.add("Η ερώτηση ήταν: "+mQuestionTextView.getText().toString());
+
 
         mTrueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 checkAnswer(true);
+                apotelesmata.add("Aπάντησες: "+mTrueButton.getText().toString());
+                apotelesmata.add(" ");
                 updateQuestion();
             }
         });
@@ -91,6 +104,8 @@ public class diagwnismakefalaio1<count> extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkAnswer(false);
+                apotelesmata.add("Aπάντησες: "+mFalseButton.getText().toString());
+                apotelesmata.add(" ");
                 updateQuestion();
             }
         });
@@ -110,13 +125,21 @@ public int count=0;
 
 
 
+
         // Present an alert dialog if we reach the end.
         if (mIndex == 0) {
 
             AlertDialog.Builder alert = new AlertDialog.Builder(diagwnismakefalaio1.this);
 
             alert.setTitle("Το διαγώνισμα τελείωσε!");
+            Intent intent=new Intent(diagwnismakefalaio1.this,menuaskisewn1.class);
+            intent.putExtra("score1",mScore);
+            startActivity(intent);
             alert.setCancelable(false);
+            Intent intent1sl = new Intent(diagwnismakefalaio1.this, analitikak1sl.class);
+            intent1sl.putExtra("apotelesmata1sl", apotelesmata);
+            startActivity(intent1sl);
+            finish();
 
             if (mScore<=5) {
                 alert.setMessage("Το σκορ σου είναι : " + mScore + " πόντοι! Συνιστούμε να μελετήσεις καλύτερα αυτή την ενότητα!");
@@ -132,25 +155,15 @@ public int count=0;
                 alert.setMessage("Το σκορ σου είναι : " + mScore + " πόντοι! Πολύ καλά!");
 
             }
-            alert.setPositiveButton("Επέστρεψε στο menu", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                    finish();
 
 
-                }
-
-            });
 
 
             alert.show();
 
 
 
-        Intent intent=new Intent(diagwnismakefalaio1.this,menuaskisewn1.class);
-           intent.putExtra("score1",mScore);
-            startActivity(intent);
+
 
 
 
@@ -166,6 +179,10 @@ public int count=0;
 
     mQuestion = mQuestionBank[mIndex].getQuestionID();
         mQuestionTextView.setText(mQuestion);
+        apotelesmata.add("Η ερώτηση ήταν: "+mQuestionTextView.getText().toString());
+
+
+
 
 
         mProgressBar.incrementProgressBy(PROGRESS_BAR_INCREMENT);
@@ -177,6 +194,7 @@ public int count=0;
     private void checkAnswer(boolean userSelection) {
 
         boolean correctAnswer = mQuestionBank[mIndex].isAnswer();
+        apotelesmata.add("H σωστή απάντηση είναι: "+correctAnswer);
 
         // Can cancel the Toast message if there is one on screen and a new answer
         // has been submitted.

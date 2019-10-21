@@ -1,5 +1,9 @@
 package com.nikosval.aepp;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Random;
+
 public class QuestionLibrary {
 
     private String multipleQuestions[] = {
@@ -10,11 +14,6 @@ public class QuestionLibrary {
             "Ποιο απο τα παρακάτω κριτήρια ΔΕΝ εχει να κανει με το βαθμο δομησης της λύσης του προβλήματος? ",
             "ο Τετραγωνισμός του κύκλου αποτελεί πρόβλημα:",
             "Ποια απο τις παρακάτω λειτουργίες ΔΕΝ ειναι κύρια για τον υπολογιστή?",
-
-
-
-
-
     };
 
     private String manswers[][] = {
@@ -72,4 +71,16 @@ public class QuestionLibrary {
         String answer=correctanswers[a];
         return answer;
     }
+
+    public void suffle(){
+        long seed = System.nanoTime();
+
+        Collections.shuffle(Arrays.asList(multipleQuestions),new Random(seed));
+        Collections.shuffle(Arrays.asList(manswers),new Random(seed));
+        Collections.shuffle(Arrays.asList(correctanswers),new Random(seed));
+
+
+    }
+
+
 }

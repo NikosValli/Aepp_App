@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".menukefalaio4">
+
+    <TextView
+        android:id="@+id/titlosmenu4"
+
+        android:layout_width="271dp"
+        android:layout_height="90dp"
+
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Τμηματικός Προγραμματισμός"
+        android:textColor="@color/menubutons"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/thewria5"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="71dp"
+
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="71dp"
+        android:background="@drawable/button_background"
+        android:scaleType="fitCenter"
+        android:text="@string/thewria"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlosmenu4" />
+
+    <Button
+        android:id="@+id/methodologia5"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="71dp"
+
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="71dp"
+        android:background="@drawable/button_background"
+        android:text="@string/methodologia"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thewria5" />
+
+    <Button
+        android:id="@+id/askhseis4"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="71dp"
+        android:background="@drawable/button_background"
+        android:text="@string/askiseis"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/methodologia5" />
+
+</android.support.constraint.ConstraintLayout>

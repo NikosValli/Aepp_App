@@ -50,4 +50,8 @@ public class menuthewrias2oukefalaiou extends AppCompatActivity {
 
 
     }
+
+    public void onBackPressed() {
+        Intent intentback=new Intent(menuthewrias2oukefalaiou.this,menu2okefalaio.class);
+        startActivity(intentback);}
 }

@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText mcnfPassword;
     Button mButtonRegister;
     TextView mTextViewLogin;
+    CheckBox kathigitis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         mTextUsername=(EditText) findViewById(R.id.username_login);
         mTextPassword=(EditText)findViewById(R.id.password_login);
         mcnfPassword=(EditText)findViewById(R.id.cnf_password_login);
+        kathigitis=(CheckBox)findViewById(R.id.kathigitis);
 
         mButtonRegister=(Button)findViewById(R.id.button_register);
         mTextViewLogin=(TextView) findViewById(R.id.textview_register);
@@ -57,13 +60,30 @@ public class RegisterActivity extends AppCompatActivity {
                         Toast.makeText(RegisterActivity.this, "Yπάρχει άλλος χρήστης με αυτό το όνομα!", Toast.LENGTH_SHORT).show();
 
                     } else {
+                        if (kathigitis.isChecked()){
 
-                        long val = db.adduser(user, pwd, "1");
+
+                        long val = db.adduser(user, pwd, "1","kathigitis");
                         if (val > 0) {
-                            Toast.makeText(RegisterActivity.this, "Επιτυχημένη εγγραφή!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "Επιτυχημένη εγγραφή καθηγητή!", Toast.LENGTH_SHORT).show();
                             Intent movetologin = new Intent(RegisterActivity.this, LoginActivity.class);
                             startActivity(movetologin);
-                        } else {
+                        }
+
+
+                        } else if(kathigitis.isChecked()==false){
+
+                            long val = db.adduser(user, pwd, "1","mathitis");
+                            if (val > 0) {
+                                Toast.makeText(RegisterActivity.this, "Επιτυχημένη εγγραφή μαθητή!", Toast.LENGTH_SHORT).show();
+                                Intent movetologin = new Intent(RegisterActivity.this, LoginActivity.class);
+                                startActivity(movetologin);
+                            }
+
+                        }
+
+
+                        else {
 
                             Toast.makeText(RegisterActivity.this, "Πρόβλημα εγγραφής", Toast.LENGTH_SHORT).show();
 

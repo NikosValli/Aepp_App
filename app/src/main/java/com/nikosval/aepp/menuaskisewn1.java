@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -21,6 +22,8 @@ import org.w3c.dom.Text;
 public class menuaskisewn1 extends AppCompatActivity {
     private Button swstolathos;
     private static boolean RUN_ONCE = true;
+    TextView erwthseispouthaapantisei;
+    private int seekbarvalue;
 
 
 
@@ -42,6 +45,9 @@ public class menuaskisewn1 extends AppCompatActivity {
         Pref user=new Pref(this,usernameoflogin);
         swstolathos = (Button) findViewById(R.id.swstolathos1);
         TextView currentscoresl = (TextView) findViewById(R.id.currentscore);
+        SeekBar seekbar=findViewById(R.id.seekBar1);
+        erwthseispouthaapantisei=(TextView)findViewById(R.id.erwthseispouthaapantisei1);
+
         final TextView highestscore = (TextView) findViewById(R.id.highestscore);
         TextView currentscoresmc = (TextView) findViewById(R.id.currentscoreformc);
         final TextView highestscoremc = (TextView) findViewById(R.id.highestscoreformc);
@@ -187,6 +193,29 @@ public class menuaskisewn1 extends AppCompatActivity {
         prefsEditorgiabadg.commit();
 
 
+        seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+                seekbarvalue = progress;
+
+
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+                erwthseispouthaapantisei.setText("Θέλω να απαντήσω "+seekbarvalue+" ερωτήσεις.");
+
+            }
+        });
+
 
 
 
@@ -202,8 +231,9 @@ public class menuaskisewn1 extends AppCompatActivity {
         pollaplhs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(menuaskisewn1.this, multiplechoicek1.class));
-
+                Intent startIntent = new Intent(getApplicationContext(), multiplechoicek1.class);
+                startIntent.putExtra("pernatoeuros1", seekbarvalue);
+                startActivity(startIntent);
             }
         });
 
@@ -229,7 +259,7 @@ public class menuaskisewn1 extends AppCompatActivity {
 
 
 
-        Cursor a = db.checkiflevelupdated2(usernameoflogin);
+        Cursor a = db.checkiflevelupdated(usernameoflogin);
         a.moveToFirst();
         int value = a.getInt(0);
 

@@ -4,16 +4,21 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class menuaskisewn2 extends AppCompatActivity {
     private Button swstolathos;
     private static boolean RUN_ONCE = true;
+    TextView erwthseispouthaapantisei;
+    private int seekbarvalue;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +30,10 @@ public class menuaskisewn2 extends AppCompatActivity {
         String usernameofuser = prefs11.getString("username", "UNKNOWN");
         Pref user = new Pref(this, usernameoflogin);
         Button gotothetest = findViewById(R.id.gotothetest2);
-        TextView currentscoresl = (TextView) findViewById(R.id.currentscore2);
+        SeekBar seekbar=findViewById(R.id.seekBar);
+        erwthseispouthaapantisei=(TextView)findViewById(R.id.erwthseispouthaapantisei);
+
+        TextView currentscoresl = (TextView) findViewById(R.id.currentscore3);
         final TextView highestscore = (TextView) findViewById(R.id.highestscore2);
         SharedPreferences settings = getSharedPreferences("myprefsbro", 0);
         boolean dialogShown = settings.getBoolean("dialogShown", false);
@@ -57,7 +65,7 @@ public class menuaskisewn2 extends AppCompatActivity {
 
         Intent intent = getIntent();
         int score2 = intent.getIntExtra("scorediagwnisma2", 0);
-        double percentageoftest = ((double) score2 / 17) * 100;
+        double percentageoftest = ((double) score2 / 20) * 100;
         final SharedPreferences mypref2 = getSharedPreferences("mypref2", MODE_PRIVATE);
         int highscore = mypref2.getInt("HighScore2", 0);
         DataBaseHelper db;
@@ -67,11 +75,11 @@ public class menuaskisewn2 extends AppCompatActivity {
         if (percentageoftest > 50) {
 
 
-            currentscoresl.setText("To σκορ σου στις ερωτήσεις Σωστου λαθους ειναι : " + score2 + "/17 (" + percentageoftest + "%)");
+            currentscoresl.setText("To σκορ σου στις ερωτήσεις Σωστου λαθους ειναι : " + score2 + "/20 (" + percentageoftest + "%)");
             currentscoresl.setTextColor(getResources().getColor(R.color.colorigotit, null));
         } else {
 
-            currentscoresl.setText("To σκορ σου στις ερωτήσεις Σωστου λαθους ειναι : " + score2 + "/17  (" + percentageoftest + "%)");
+            currentscoresl.setText("To σκορ σου στις ερωτήσεις Σωστου λαθους ειναι : " + score2 + "/20  (" + percentageoftest + "%)");
             currentscoresl.setTextColor(getResources().getColor(R.color.colorAccent, null));
 
 
@@ -80,15 +88,15 @@ public class menuaskisewn2 extends AppCompatActivity {
 
         if (highscore >= score2) {
 
-            double percentageofhighest = ((double) highscore / 17) * 100; //aitia gia highscore emfanisi
+            double percentageofhighest = ((double) highscore / 20) * 100; //aitia gia highscore emfanisi
 
 
-            highestscore.setText("Το μεγαλύτερο σκορ στο τεστ είναι: " + highscore + "/17  (" + percentageofhighest + "%)");
+            highestscore.setText("Το μεγαλύτερο σκορ στο τεστ είναι: " + highscore + "/20  (" + percentageofhighest + "%)");
 
 
         } else {
 
-            double percentageofslhigest = ((double) highscore / 17) * 100;
+            double percentageofslhigest = ((double) highscore / 20) * 100;
 
             SharedPreferences.Editor editor = mypref2.edit();
             editor.putInt("HighScore2", score2);
@@ -96,16 +104,65 @@ public class menuaskisewn2 extends AppCompatActivity {
             highscore = mypref2.getInt("HighScore2", 0);
 
 
-            highestscore.setText("Το μεγαλύτερο σκορ στο τέστ ειναι: " + highscore + "/17  (" + percentageofslhigest + "%)");
+            highestscore.setText("Το μεγαλύτερο σκορ στο τέστ ειναι: " + highscore + "/20  (" + percentageofslhigest + "%)");
+
+
+        }      if (highscore >= score2) {
+
+            double percentageofhighest = ((double) highscore / 20) * 100; //aitia gia highscore emfanisi
+
+
+            highestscore.setText("Το μεγαλύτερο σκορ στο τεστ είναι: " + highscore + "/20  (" + percentageofhighest + "%)");
+
+
+        } else {
+
+            double percentageofslhigest = ((double) highscore / 20) * 100;
+
+            SharedPreferences.Editor editor = mypref2.edit();
+            editor.putInt("HighScore2", score2);
+            editor.commit();
+            highscore = mypref2.getInt("HighScore2", 0);
+
+
+            highestscore.setText("Το μεγαλύτερο σκορ στο τέστ ειναι: " + highscore + "/20  (" + percentageofslhigest + "%)");
 
 
         }
 
 
+
+
+        seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+                seekbarvalue = progress;
+
+
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+                erwthseispouthaapantisei.setText("Θέλω να απαντήσω "+seekbarvalue+" ερωτήσεις.");
+
+            }
+        });
+
+
         gotothetest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(menuaskisewn2.this, diagwnismakefalaio2.class));
+                Intent startIntent = new Intent(getApplicationContext(), diagwnismakefalaio2.class);
+                startIntent.putExtra("pernatoeuros", seekbarvalue);
+                startActivity(startIntent);
             }
         });
 
@@ -128,7 +185,7 @@ public class menuaskisewn2 extends AppCompatActivity {
         int value = a.getInt(0);
 
         if (value == 0) {
-            if ((highscore) == 17) {
+            if ((highscore) == 20) {
 
 
                 if (RUN_ONCE == true) {

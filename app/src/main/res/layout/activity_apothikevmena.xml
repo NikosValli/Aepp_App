@@ -174,8 +174,264 @@
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button2_3"/>
 
-        app:layout_constraintTop_toBottomOf="@id/button2_3" />
+
+
+    <Button
+        android:id="@+id/button3_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="3.1 Δομές δεδομένων"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button2_4" />
+
+
+    <Button
+        android:id="@+id/button3_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="3.2 Πίνακες"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3_1" />
+
+    <Button
+        android:id="@+id/button3_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="3.3 Στοίβα-Ουρά"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3_2" />
+
+    <Button
+        android:id="@+id/button3_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="3.4 Αναζήτηση "
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3_3" />
+
+
+    <Button
+        android:id="@+id/button3_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="3.5 Ταξινόμηση"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3_4" />
+
+    <Button
+        android:id="@+id/button4_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="4.1 Tμηματικός προγραμματισμός"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button3_5" />
+
+    <Button
+        android:id="@+id/button4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="4.2 ΠΑΡΑΜΕΤΡΟΙ"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button4_1" />
+
+
+    <Button
+        android:id="@+id/button4_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="4.3 ΥΠΟΠΡΟΓΡΑΜΜΑΤΑ ΕΙΔΗ ΚΑΙ ΚΑΝΟΝΕΣ"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button4_2" />
+
+    <Button
+        android:id="@+id/button4_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="4.4 ΚΛΗΣΕΙΣ ΥΠΟΠΡΟΓΡΑΜΜΑΤΩΝ"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button4_3" />
+
+
+    <Button
+        android:id="@+id/button5_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="5.1 H ΕΝΝΟΙΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button4_4" />
+
+    <Button
+        android:id="@+id/button5_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="5.2 ΤΑΞΙΝΟΜΗΣΗΓ ΓΛΩΣΣΩΝ ΜΕ ΒΑΣΗ ΤΟΝ ΤΡΟΠΟ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button5_1" />
+
+
+    <Button
+        android:id="@+id/button5_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="5.3 ΤΑΞΙΝΟΜΗΣΗ ΜΕ ΒΑΣΗ ΤΗ ΧΡΗΣΗ"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button5_2" />
+
+    <Button
+        android:id="@+id/button6_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="5.4 ΕΙΔΗ ΓΛΩΣΣΩΝ ΚΑΙ ΤΕΧΝΙΚΕΣ ΣΧΕΔΙΑΣΗΣ"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button5_3" />
+
+    <Button
+        android:id="@+id/button5_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="276dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="5.5 ΠΡΟΓΡΑΜΜΑΤΙΣΤΙΚΑ ΠΕΡΙΒΑΛΛΟΝΤΑ"
+        android:textSize="19dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/button6_3" />
+
+
 </android.support.constraint.ConstraintLayout>
 
 

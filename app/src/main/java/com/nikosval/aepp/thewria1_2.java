@@ -21,7 +21,7 @@ public class thewria1_2 extends AppCompatActivity {
         SharedPreferences preferencess = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences.Editor editorr = preferencess.edit();
         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox2);
-        Button button2=(Button) findViewById(R.id.button2);
+        Button button2=(Button) findViewById(R.id.methodologia5);
 
         checkBox.setChecked(preferencess.getBoolean("checked1_2",false));
 

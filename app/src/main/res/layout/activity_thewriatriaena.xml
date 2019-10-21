@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/erwthsh2"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="3.Κατω απο ποιες σκοπιές εξετάζει η πληρογορική τα δεδομένα?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh17" />
+
+        <TextView
+            android:id="@+id/titlos_3_1"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="3.1 Δομές Δεδομένων "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/erwthsh16"
+            android:layout_width="397dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="1.Τι είναι δεδομένα σε σχέση με ένα πρόβλημα?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_1" />
+
+        <TextView
+            android:id="@+id/erwthsh16apantisi"
+            android:layout_width="349dp"
+            android:layout_height="105dp"
+
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/back"
+            android:text="Δεδομένα : Αφαιρετική αναπαραάσταση της πραγματικότητας,μια απλοποιημένη όψη της.Ειναι λοιόν ακατέργαστα γεγονότα των οποίων η επιλογή εξαρτάται κάθε φορά απο τον τύπο του προβλήματος."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16" />
+
+
+        <TextView
+            android:id="@+id/erwthsh17"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="2.Τι ειναι αλγόριθμος σε σχέση με τα δεδομένα?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16apantisi" />
+
+        <TextView
+            android:id="@+id/apanthsh17"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="28dp"
+            android:background="@drawable/back"
+            android:text="Αλγόριθμος:Eιναι το μέσο παραγωγής πληροφοριών απο τα δεδομένα."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh17" />
+
+        <TextView
+            android:id="@+id/erwthsh187"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="3.Κατω απο ποιες σκοπιές εξετάζει η πληρογορική τα δεδομένα?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh17" />
+
+
+        <TextView
+            android:id="@+id/apanthsh1876"
+            android:layout_width="wrap_content"
+            android:layout_height="370dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="Υλικού: Aποθήκευση δεδομένων στη κύρια μνήμη και στις περιφεριακές συσκευές με διάφορες αναπαραστάσεις π.χ κώδικας ASCII \n\n Δομών Δεδομένων. \n\n Γλωσσών Προγραμματισμού(Επιτρέπουν τη χρήση διάφορων τύπων μεταβλητών για να περιγράψουν ένα δεδομένο \n\n Ανάλυση δεδομένων Τρόποι καταγραφής και αλληλοσυσχέτισης των δεδομένων ετσι ώστε να αναπαρασταθεί η γνώση για πραγματικά δεδομένα.Π.χ Βάσεις δεδομένων"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh18" />
+
+        <TextView
+            android:id="@+id/erwthsh18"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="3.Κατω απο ποιες σκοπιές εξετάζει η πληρογορική τα δεδομένα?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh17" />
+
+
+        <Button
+            android:id="@+id/button3_1"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginTop="1160dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox3_1"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="1144dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="4.Τι είναι δομή δεδομένων?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="wrap_content"
+            android:layout_height="161dp"
+
+            android:layout_marginTop="18dp"
+            android:background="@drawable/back"
+            android:text="Δομή δεδομένων:Σύνολο αποθηκευμένων δεδομένων που υφιστανται επεξεργασία απο ένα σύνολο λειτουργιών Κάθε δομή δεδομένων αποτελείται απο ενα σύνολο λειτουργειών.Καθε δομή δεδομένων αποτελείται απο ένα σύονλο κομβών."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Ποιες είναι οι βασικές λειτουργίες επι των δομών δεδομένων?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Προσπέλαση:Προσβαση σε ενα κομβο με σκοπο να εξεταστεί η να τροποποιηθεί το περιεχομενό του \n Εισαγωγή:Προσθήκη νεων κομβών σε μια υπαρχουσα δομή \n Διαγραφή:Tο αντίστροφο της εισαγωγής αφαίρεση ενος κόμβου απο τη δομή. \n Αναζήτηση: Προσπέλαση των κόμβων μιας δομής,προκειμένου να εντοπιστούν ένας η περισσοτεροι που έχουν μια συγκεκριμένη ιδιοτητα \n Ταξινόμηση:Oι κόμβοι μιας δομής,διατάσσονται κατ αυξουσα η φθίνουσα σειρά. \n Αντιγραφή:Ολοι η καποιοι κόμβοι μιας δομής αντιγράφονται σε μια άλλη δομη. \n Συγχωνευση:Δυο η περισσοτερες δομές συνενωνονται σε μια ενιαία δομή \n Διαχωρισμός: Aντιστροφη πράξη της συγχωνευσης."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+        <TextView
+            android:id="@+id/textView710"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Ποιες ειναι οι κατηγορίες δομών δεδομένων?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back"
+
+            android:text="Δυναμικές:Τα περιεχόμενα δεν αποθηκεύονται σε συνεχόμενες θέσεις μνήμης αλλα η αποθηκευσή τους στηρίζεται στην τεχνική της δυναμικής παραχώρησης μνήμης.Δεν έχουν σταθερό μέγεθος αλλα αυτό αυξομειώνεται με την εισαγωγή/διαγραφή στοιχείων κατα τη διάρκεια εκτέλεσης ενός προγράμματος. \n Στατικές: To ακριβές μέγεθος της απαιτουμενης κύριας μνήμης καθορίζεται κατα τη στιγμή του προγραμματισμού και παραμένει σταθερό κατα την εκτέλεση του αλγοριθμου.Τα στοιχεία αποθηκεύονται σε συνεχόμενες θέσεις μνήμης"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView710" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

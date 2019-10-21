@@ -52,9 +52,10 @@
         <ImageView
             android:id="@+id/imageView12"
             android:layout_width="wrap_content"
-            android:layout_height="334dp"
+            android:layout_height="299dp"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
+
             app:layout_constraintTop_toBottomOf="@+id/imageView11"
             app:srcCompat="@drawable/aplhep2" />
 
@@ -63,15 +64,17 @@
             android:layout_width="wrap_content"
             android:layout_height="445dp"
             app:layout_constraintStart_toStartOf="parent"
+
             app:layout_constraintTop_toBottomOf="@+id/imageView12"
             app:srcCompat="@drawable/sintheti1" />
 
         <ImageView
             android:id="@+id/imageView14"
             android:layout_width="wrap_content"
-            android:layout_height="503dp"
+            android:layout_height="415dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView13"
+
             app:srcCompat="@drawable/sintheti2" />
 
         <TextView
@@ -87,9 +90,10 @@
         <ImageView
             android:id="@+id/imageView15"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="296dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView14"
+
             app:srcCompat="@drawable/pollaplh13" />
 
         <TextView
@@ -109,6 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
+
             app:layout_constraintTop_toBottomOf="@+id/textView62"
             app:srcCompat="@drawable/osoepanelavee" />
 
@@ -141,6 +146,7 @@
 
             android:layout_height="352dp"
             android:layout_marginTop="37dp"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView63"
             app:srcCompat="@drawable/mexrisotouu" />
@@ -174,6 +180,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView66"

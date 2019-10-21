@@ -14,7 +14,7 @@
         tools:context=".thewria1_3">
 
         <TextView
-            android:id="@+id/titlos_1_3"
+            android:id="@+id/titlos_3_1"
             android:layout_width="385dp"
             android:layout_height="0dp"
             android:layout_marginStart="52dp"
@@ -37,7 +37,7 @@
             android:textColor="@color/menubutons"
             android:textSize="19dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titlos_1_3" />
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_1" />
 
         <TextView
             android:id="@+id/erwthsh16apantisi"
@@ -95,7 +95,7 @@
 
 
         <TextView
-            android:id="@+id/apanthsh18"
+            android:id="@+id/apanthsh1876"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -122,7 +122,7 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/apanthsh18" />
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
 
 
         <CheckBox
@@ -136,7 +136,7 @@
             android:textColor="@color/menubutons"
             android:textSize="19dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/apanthsh18" />
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
 
 
     </android.support.constraint.ConstraintLayout>

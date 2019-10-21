@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/backgroundlogin"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundlogin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".RegisterActivity">
 
     <ImageView
@@ -65,6 +65,16 @@
         android:background="@color/colorPrimaryDark"
         android:text="Εγγραφή" />
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Είστε καθηγητής?"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/kathigitis"
+
+        android:textColor="@color/menubutons"/>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -87,8 +97,6 @@
             android:text="Σύνδεση"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
-
-
 
 
 

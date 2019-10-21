@@ -1,13 +1,10 @@
 package com.nikosval.aepp;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class menu1okefalio extends AppCompatActivity {
     Button thewria;
@@ -15,8 +12,8 @@ public class menu1okefalio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu1okefalio);
-      thewria=(Button)findViewById(R.id.thewria);
-      Button askiseis=(Button)findViewById(R.id.askhseis);
+      thewria=(Button)findViewById(R.id.thewria1);
+      Button askiseis=(Button)findViewById(R.id.askhseis1);
 
 
         thewria.setOnClickListener(new View.OnClickListener() {

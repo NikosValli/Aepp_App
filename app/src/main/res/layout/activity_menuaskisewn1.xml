@@ -85,12 +85,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/currentscore" />
 
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="379dp"
+        android:layout_height="46dp"
+
+        android:max="7"
+        android:maxHeight="6dip"
+        android:minHeight="6dip"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <TextView
+        android:id="@+id/textView107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="432dp"
+        android:text="Ή καθόρισε εσύ στο πόσες ερωτήσεις πολλαπλής επιλογής θέλεις να απαντήσεις!"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/erwthseispouthaapantisei1"
+        android:layout_width="371dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="17dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView107" />
+
     <Button
         android:id="@+id/midenismos"
         android:layout_width="219dp"
         android:layout_height="48dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="36dp"
 
         android:background="@color/menuColor"
         android:text="Μηδενισμός υψηλότερων score"

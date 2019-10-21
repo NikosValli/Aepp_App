@@ -13,6 +13,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -53,30 +54,60 @@ public class MenuActivity extends AppCompatActivity {
     Typeface introfont1;
     private ImageButton kefalaio1;
     ImageButton apothikevmena;
+    ImageButton domesdedomenwn;
+    ImageButton ypoprogrammata;
+    ImageButton kefalaio5;
+
+
+
     TextView epipedo;
     ListView apothikevmenakef;
     ListView search_ennoies;
     ImageButton badges;
     ImageButton logout;
+    ImageButton proteinete;
     ArrayAdapter<String> adapter;
     Toolbar toolbarofuser;
     DataBaseHelper db;
-
+    private ViewPager viewpager;
+    private TabFragmentAdapter adaptertab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         db = new DataBaseHelper(this);
 
+
         SharedPreferences prefs = getSharedPreferences("MyApp", MODE_PRIVATE);
 
         String username = prefs.getString("username", "UNKNOWN");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarofuser);
+        toolbar.setTitleTextColor(android.graphics.Color.rgb(213,38,38 ));
         toolbar.setTitle("Καλώς ήρθες "+ username+" !");
 
+            db.addshowingspiderman(username,0);
+        db.addshowingironman(username,0 );
+        db.addshowingthor(username,0 );
+        db.addshowingca(username,0 );
+        db.addshowingthanos(username,0 );
 
-            db.addhighlevel(username,0,0 );
+
+
+
+        db.addhighlevel(username,0,0 );
             db.addhighlevel2(username,0,0 );
+            db.addhighlevel3(username,0,0 );
+            db.addhighlevel4(username,0,0 );
+            db.addhighlevel5(username,0,0 );
+        db.addhighlevel6(username,0,0 );
+
+        viewpager=findViewById(R.id.pager);
+        adaptertab=new TabFragmentAdapter(getSupportFragmentManager());
+        viewpager.setAdapter(adaptertab);
+
+
+
+
 
 
 
@@ -108,10 +139,16 @@ public class MenuActivity extends AppCompatActivity {
         logotext.setTypeface(introfont1);
         kefalaio1 = (ImageButton) findViewById(R.id.imageButton4);
         apothikevmena = (ImageButton) findViewById(R.id.imageButton2);
+        ypoprogrammata=(ImageButton) findViewById(R.id.kefalaio4);
+        proteinete=(ImageButton)findViewById(R.id.proteinete);
+        kefalaio5=(ImageButton)findViewById(R.id.kefalaio5);
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.search_ennoies);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         badges=(ImageButton)findViewById(R.id.badges);
         ImageButton kefalaio2=(ImageButton) findViewById(R.id.algortihms);
+        domesdedomenwn = (ImageButton) findViewById(R.id.domes);
+        ImageButton kefalaio6=(ImageButton) findViewById(R.id.kefalaio6);
+
 
 
         kefalaio1.setOnClickListener(new View.OnClickListener() {
@@ -129,10 +166,38 @@ public class MenuActivity extends AppCompatActivity {
         });
 
 
+        domesdedomenwn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this, menukefalaio3.class));
+            }
+        });
+
         apothikevmena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MenuActivity.this, apothikevmena.class));
+            }
+        });
+
+        ypoprogrammata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this, menukefalaio4.class));
+            }
+        });
+
+        kefalaio5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this, menukefalaio5.class));
+            }
+        });
+
+        kefalaio6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this, menukefalaio6.class));
             }
         });
 
@@ -141,6 +206,13 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MenuActivity.this, BadgesActivity.class));
+            }
+        });
+
+        proteinete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this, opinions.class));
             }
         });
 
@@ -206,6 +278,26 @@ public class MenuActivity extends AppCompatActivity {
                         editor2.clear();
                         editor2.commit();
                         finish();  //FTIAKSE LOGOUTTTTTTTTT GIA NA DOULEPSEIIIII
+                        SharedPreferences preferences3=getSharedPreferences("mypref3",Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor3 = preferences3.edit();
+                        editor3.clear();
+                        editor3.commit();
+                        finish();
+                        SharedPreferences preferences4=getSharedPreferences("mypref4",Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor4 = preferences4.edit();
+                        editor4.clear();
+                        editor4.commit();
+                        finish();
+                        SharedPreferences preferences5=getSharedPreferences("mypref5",Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor5 = preferences5.edit();
+                        editor5.clear();
+                        editor5.commit();
+                        finish();
+                        SharedPreferences preferences6=getSharedPreferences("mypref6",Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor6 = preferences6.edit();
+                        editor6.clear();
+                        editor6.commit();
+                        finish();
                         startActivity(new Intent(MenuActivity.this, LoginActivity.class));
 
 

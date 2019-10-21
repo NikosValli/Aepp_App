@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".BadgesActivity">
+    tools:context=".BadgesActivity"
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".BadgesActivity">
+
+
+
+
+
+
 
     <TextView
         android:id="@+id/epathla"
@@ -76,13 +90,113 @@
         android:layout_width="141dp"
         android:layout_height="115dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="39dp"
-        android:gravity="center"
+        android:layout_marginEnd="36dp"
 
+        android:gravity="center"
         android:text="Απάντα σωστά σε όλες τις ερωτήσεις του 2ου κεφαλαίου για να ξεκλειδώσεις τον Thor!"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/thor" />
 
+    <ImageView
+        android:id="@+id/spiderman"
+        android:layout_width="125dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
 
-</android.support.constraint.ConstraintLayout>
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level1descr"
+        app:srcCompat="@drawable/spidermann" />
+
+    <TextView
+        android:id="@+id/descr13"
+        android:layout_width="141dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Απάντα σωστά σε όλες τις ερωτήσεις του τρίτου κεφαλαίου για να ξεκλειδώσεις τον spiderman!"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spiderman" />
+
+    <ImageView
+        android:id="@+id/Hulk"
+        android:layout_width="125dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level2desc"
+        app:srcCompat="@drawable/hulk" />
+
+    <TextView
+        android:id="@+id/desc14"
+        android:layout_width="141dp"
+        android:layout_height="115dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Απάντα σωστά σε όλες τις ερωτήσεις του τέταρτου κεφαλαίου για να ξεκλειδώσεις τον Hulk!"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hulk" />
+
+        <ImageView
+            android:id="@+id/captainamerica"
+            android:layout_width="125dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descr13"
+            app:srcCompat="@drawable/captainamericaa" />
+
+        <TextView
+            android:id="@+id/desc15"
+            android:layout_width="148dp"
+            android:layout_height="110dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="52dp"
+            android:gravity="center"
+            android:text="Απάντα σωστά σε όλες τις ερωτήσεις του πέμπτου κεφαλαίου γι ανα ξεκλειδώσεις τον Captain America!"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/captainamerica" />
+
+        <ImageView
+            android:id="@+id/thanos"
+            android:layout_width="125dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc14"
+            app:srcCompat="@drawable/thanoss" />
+
+        <TextView
+            android:id="@+id/desc16"
+            android:layout_width="148dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="52dp"
+            android:gravity="center"
+            android:text="Απάντα σωστά σε όλες τις ερωτήσεις του έκτου κεφαλαίου για να ξεκλειδώσεις τον Thanos!"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thanos" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/titlos_3_1"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="3.4 Αναζήτηση"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/erwthsh16"
+            android:layout_width="397dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="1.Tι γνωρίζετε για τον αλγόριθμο της σειριακής αναζήτησης?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_1" />
+
+        <TextView
+            android:id="@+id/erwthsh16apantisi"
+            android:layout_width="349dp"
+            android:layout_height="150dp"
+
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="Έστω οτι θέλουμε να αναζητήσουμε ενα στοιχείο σε έναν μονοδάστατο πίναμε με μοναδικα στοιχεια ο οποιος δεν ειναι ταξινομημένος.Η αναζήτηση μπορει να υλοποιηθει με τον παρακατω αλγόριθμο οπου n=μεγεθος μονοδιαστατου πινακα.table=ονομα πινακα,key=στοιχειο που αναζητουμε."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16" />
+
+
+        <TextView
+            android:id="@+id/erwthsh17"
+            android:layout_width="386dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="ΑΛΓΟΡΙΘΜΟΣ ΣΕΙΡΙΑΚΗΣ ΑΝΑΖΗΤΗΣΗΣ"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16apantisi" />
+
+        <TextView
+            android:id="@+id/apanthsh17"
+            android:layout_width="wrap_content"
+            android:layout_height="357dp"
+
+            android:background="@drawable/back"
+            android:text="Αλγόριθμος Sequential_Search \n Δεδομένα // n, table, key // \n done ← ψευδής \n position ← 0 \n i ← 1 \n Όσο (done=ψευδής) και (i $lt;=n) επανάλαβε  \n         Αν table[i]=key τότε      \n          done ← αληθής    \n            position ← i   \n        αλλιώς    \n            i ← i+1    \n       Τέλος_αν \n Τέλος_επανάληψης\n  Αποτελέσματα //done, position // \nΤέλος Sequential_Search  "
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh17" />
+
+
+        <TextView
+            android:id="@+id/apanthsh189"
+            android:layout_width="wrap_content"
+            android:layout_height="535dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="1)Η αναζήτηση σταματά μολις εντοπίσει κάποιο στοιχείο που είναι ίσο με την αναζητούμενη τιμή \n\n 2) ο Πινακας table δεν είναι ταξινομημένος. \n\n 3) ο αλγοριθμος της σειριακής αναζήτησης εφαρμόζεται μόνο σε μη τακινομημένους πίνακες με μοναδικά στοιχεια n\n 4) ο αλγοριθμος της σειριακής αναζήτησης εφαρμόζεται σπάνια σε μικρούς πίνακες (20 θεσεων το πολυ) \n\n 5) Ειναι απλός αλλα αργός.Η πιο γρήγορη αναζήτηση που εφαρμόζεται ομως μόνο σε ταξινομημένους πίνακες ειναι η δυαδική αναζήτηση. \n\n 6) H μεταβλητη done χρησιμοποιειται για να σταματα η αναζητηση μόλις βρεθεί το στοιχειο που αναζητούμε."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh18" />
+
+        <TextView
+            android:id="@+id/erwthsh18"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Παρατηρήσεις πανω στην αναζήτηση"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh17" />
+
+
+        <Button
+            android:id="@+id/button3_4"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="51dp"
+
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox3_4"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="24dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <TextView
+            android:id="@+id/textView710"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Και τι γίνεται εαν ο πίνακας ειναι ταξινομημένος?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh189" />
+
+        <TextView
+            android:id="@+id/apanthsh1876"
+            android:layout_width="wrap_content"
+            android:layout_height="345dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back"
+            android:text="Αν ο πίνακας table είναι ταξινομημένος τότε ο αλγόριθμος σειριακής αναζήτησης μπορεί να προσαρμοστεί εύκολα, έτσι ώστε αν ελέγχοντας τα στοιχεία του πίνακα φτάσει σε στοιχείο που ξεπερνά την τιμή που αναζητά τότε να μη συνεχίζει ελέγχοντας και τα υπόλοιπα. \n Για πίνακα με αύξουσα ταξινόμηση μπορεί να προστεθεί ο εξής έλεγχος στο εσωτερικό του βρόχου: \n\n  ...  αλλιώς_αν table[i]>key τότε \n     i ¬ n+1 "
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView710" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

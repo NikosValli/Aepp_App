@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/titlos_3_143"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="4.3 ΕΙΔΗ ΚΑΙ ΚΑΝΟΝΕΣ ΥΠΟΠΡΟΓΡΑΜΜΑΤΩΝ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/erwthsh176"
+            android:layout_width="397dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="1.Ποια είναι τα είδη των υποπρογραμμάτων?Ποιες είναι οι κύριες διαφορές τους?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_143" />
+
+        <TextView
+            android:id="@+id/erwthsh176apantisi"
+            android:layout_width="349dp"
+            android:layout_height="270dp"
+
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/back"
+            android:text="Υπαρχούν δύο είδη υποπρογραμμάτων,οι διαδικασίες και οι συναρτήσεις: \n\n Διαδικασία:Τυπος υποπρογράμματος που μπορεί να εκτελέσει ολες τις λειτουργίες ενός προγράμματος δηλαδή να διαβάζει δεδομένα,να πραγματοποιεί υπολόγισμους,να τυπώνει μεταβλητές και μηνύματα κλπ \n\n Συνάρτηση:τυπος υποπρογράμματος δέχεται μια ομάδα τιμών,τις επεξεργάζεται,υπολογίζει και επιστρέφει μια μόνο τιμή με το όνομα της (παρομοια με μαθηματικες συναρτήσεις)."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh176" />
+
+
+        <TextView
+            android:id="@+id/erwthsh717"
+            android:layout_width="386dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:text="2.ΚΑΝΟΝΕΣ ΔΗΜΙΟΥΡΓΙΑΣ ΥΠΟΠΡΟΓΡΑΜΜΑΤΩΝ "
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh176apantisi" />
+
+        <TextView
+            android:id="@+id/apanthsh177"
+            android:layout_width="wrap_content"
+            android:layout_height="447dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back"
+            android:text="1.Aναλύουμ το πρόβλημα σε υποπροβλήματα και αναπτύσοουμε το αντίστοιχο υποπρόγραμμα για καθε ενα απο αυτα.Τελός αναπτύσοουμε το κύριο πρόγραμμα. \n 2.Μελετάμε τα υποπρογράμματα ώστε να καταλήξουμε στην επιλογή διαδικασίας η συναρτησης για την επιλυση τους.Δηλαδη παντα σκεφτόμαστε τι πρεπει να 'παρει' το υποπρογραμμα απο αυτόν που το καλεί και τι επιστρέφει .Αν επιστ΄ρεφει μια τιμή τότε διαλέγουμε συνάρτηση αλλίως διαδικασία. \n 3. Καθε υποπρογραμμα πρεπει να μην ειναι πολύ μεγάλο. \n 4.Πρεπει να ισχύουν οι ιδιότητες των παραμέτρων. \n Κατα την επιλογή συνάρτησης πρεέι να ορίζεται ο ΤΥΠΟΣ της,δηλαδη ο τύπος της τιμής που επσιτρέφει."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh717" />
+
+
+        <Button
+            android:id="@+id/button4_3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginTop="1056dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox4_3"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="52dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh177" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
