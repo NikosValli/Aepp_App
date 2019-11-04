@@ -48,6 +48,9 @@ public class apothikevmena extends AppCompatActivity {
         Button button54 = (Button) findViewById(R.id.button6_3);
         Button button55 = (Button) findViewById(R.id.button5_5);
 
+        Button button61 = (Button) findViewById(R.id.button6_1);
+        Button button62 = (Button) findViewById(R.id.button6_2);
+        Button button63 = (Button) findViewById(R.id.button6_33);
 
         introfont1 = Typeface.createFromAsset(this.getAssets(), "fonts/NotoSans-MediumItalic.ttf");
         TextView apothikevmenatext = (TextView) findViewById(R.id.textView32);
@@ -183,6 +186,24 @@ public class apothikevmena extends AppCompatActivity {
 
         SharedPreferences.Editor editor55 = sharedPreferences55.edit();
 
+        SharedPreferences sharedPreferences61 = PreferenceManager
+
+                .getDefaultSharedPreferences(this);
+
+        SharedPreferences.Editor editor61 = sharedPreferences61.edit();
+
+        SharedPreferences sharedPreferences62 = PreferenceManager
+
+                .getDefaultSharedPreferences(this);
+
+        SharedPreferences.Editor editor62 = sharedPreferences62.edit();
+
+        SharedPreferences sharedPreferences63= PreferenceManager
+
+                .getDefaultSharedPreferences(this);
+
+        SharedPreferences.Editor editor63= sharedPreferences63.edit();
+
         boolean checkBoxValue = sharedPreferences.getBoolean("checked", false);
         boolean checkBoxValue2 = sharedPreferencess.getBoolean("checked1_2", false);
         boolean checboxValue3 = sharedPreferences13.getBoolean("checked1_3", false);
@@ -205,6 +226,10 @@ public class apothikevmena extends AppCompatActivity {
         boolean checboxValue20 = sharedPreferences42.getBoolean("checked5_3", false);
         boolean checboxValue21 = sharedPreferences43.getBoolean("checked5_4", false);
         boolean checboxValue22 = sharedPreferences44.getBoolean("checked5_5", false);
+        boolean checboxValue23 = sharedPreferences61.getBoolean("checked6_1", false);
+        boolean checboxValue24 = sharedPreferences62.getBoolean("checked6_2", false);
+        boolean checboxValue25 = sharedPreferences63.getBoolean("checked6_3", false);
+
 
         if (checkBoxValue) {
             //For Displaying Button
@@ -469,6 +494,42 @@ public class apothikevmena extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(apothikevmena.this, theoria55.class));
+                }
+            });
+        }
+
+        if (checboxValue23) {
+            //For Displaying Button
+            button61.setVisibility(View.VISIBLE);
+
+            button61.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(apothikevmena.this, thewriaeksi1.class));
+                }
+            });
+        }
+
+        if (checboxValue24) {
+            //For Displaying Button
+            button62.setVisibility(View.VISIBLE);
+
+            button62.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(apothikevmena.this, thewriaeksi2.class));
+                }
+            });
+        }
+
+        if (checboxValue25) {
+            //For Displaying Button
+            button63.setVisibility(View.VISIBLE);
+
+            button63.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(apothikevmena.this, thewriaeksi3.class));
                 }
             });
         }

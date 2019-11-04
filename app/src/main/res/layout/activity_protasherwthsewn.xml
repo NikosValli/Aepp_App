@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView977" />
 
     <EditText
-        android:id="@+id/erwthsh"
+        android:id="@+id/erwthshkathigiti"
         android:layout_width="285dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
@@ -84,7 +84,7 @@
         android:textSize="18dp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/erwthsh" />
+        app:layout_constraintTop_toBottomOf="@+id/erwthshkathigiti" />
 
     <EditText
         android:id="@+id/apanthsh1"
@@ -168,30 +168,17 @@
 
     <Button
         android:id="@+id/submit_erwthsh"
-        android:layout_width="162dp"
-        android:layout_height="56dp"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="136dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorigotit"
         android:text="Yποβολή νέας ερώτησης"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swsthapanthsh"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/epeksergasia_erw"
-        android:layout_width="154dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
-
-        android:background="@color/colorigotit"
-        android:text="Επεξεργασία υπάρχουσας ερώτησης"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.64" />
 
 
 </android.support.constraint.ConstraintLayout>

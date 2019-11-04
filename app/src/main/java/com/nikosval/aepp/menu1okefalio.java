@@ -13,6 +13,7 @@ public class menu1okefalio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu1okefalio);
       thewria=(Button)findViewById(R.id.thewria1);
+      Button methodologia=(Button)findViewById(R.id.methodologia1);
       Button askiseis=(Button)findViewById(R.id.askhseis1);
 
 
@@ -23,6 +24,13 @@ public class menu1okefalio extends AppCompatActivity {
             }
         });
 
+
+        methodologia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(menu1okefalio.this, methodologiadontexist.class));
+            }
+        });
 
         askiseis.setOnClickListener(new View.OnClickListener() {
             @Override

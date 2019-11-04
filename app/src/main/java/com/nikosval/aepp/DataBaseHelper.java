@@ -2,11 +2,13 @@ package com.nikosval.aepp;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.media.Rating;
+import android.os.strictmode.SqliteObjectLeakedViolation;
 import android.widget.RatingBar;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -206,7 +208,32 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         return res;
     }
 
+    public Cursor show_my_erwthseis(String username){
 
+        SQLiteDatabase db=this.getReadableDatabase();
+        String query="SELECT * FROM "+TABLE_NAME15+" WHERE username='" +username+"'";
+        Cursor cursor=db.rawQuery(query,null);
+
+        return cursor;
+    }
+
+
+
+    public Integer deleteerwthsh(String erwthsh)
+    {
+        SQLiteDatabase db=this.getWritableDatabase();
+        return db.delete(TABLE_NAME15,"erwthsh=?",new String[] {erwthsh});
+
+
+    }
+
+    public Integer deleteerwthshfromdiagwnisma(String erwthsh)
+    {
+        SQLiteDatabase db=this.getWritableDatabase();
+        return db.delete(TABLE_NAME15,"erwthsh=?",new String[] {erwthsh});
+
+
+    }
 
     public boolean update_erwthsh(String username,String erwthsh,String epilogh1,String epilogh2,String epilogh3,String swsth_apanthsh)
     {

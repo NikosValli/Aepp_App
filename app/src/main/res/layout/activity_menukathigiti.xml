@@ -84,9 +84,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:gravity="center"
         android:text="Πιστεύουμε στην συνεχή ενημέρωση της εφαρμογής οπότε προτείνετε μας ιδεές για αναβάθμιση !"
         android:textColor="@color/colorAccent"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+    <Button
+        android:id="@+id/epeksergasiaerwthsewn"
+        android:layout_width="197dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Επεξεργαστείτε τις ερωτήσεις που έχετε υποβάλλει"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotoprotaseis" />
 </android.support.constraint.ConstraintLayout>

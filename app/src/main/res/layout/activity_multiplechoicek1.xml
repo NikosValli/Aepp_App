@@ -45,7 +45,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/erwthsh"
+        android:id="@+id/erwthshkathigiti"
         android:layout_width="wrap_content"
         android:layout_height="98dp"
         android:padding="8dp"

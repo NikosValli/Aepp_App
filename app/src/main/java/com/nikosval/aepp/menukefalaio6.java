@@ -15,6 +15,7 @@ public class menukefalaio6 extends AppCompatActivity {
 
         Button thewria=(Button)findViewById(R.id.thewria6);
         Button askhseis=(Button)findViewById(R.id.askhseis6);
+        Button methodologia=(Button)findViewById(R.id.methodologia6);
 
 
 
@@ -22,6 +23,16 @@ public class menukefalaio6 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(menukefalaio6.this, menuthewrias6kefalaio.class));
+            }
+
+
+        });
+
+
+        methodologia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(menukefalaio6.this, methodologiadontexist.class));
             }
 
 

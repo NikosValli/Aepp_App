@@ -48,6 +48,7 @@ public class diagwnismakefalaio3 extends AppCompatActivity {
 
         mQuestionLibrary.suffle();
 
+
         updateQuestion();
 
 

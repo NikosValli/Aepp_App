@@ -34,7 +34,7 @@ public class menukefalaio5 extends AppCompatActivity {
         methodologia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(menukefalaio5.this, methodologiakefalaio4.class));
+                startActivity(new Intent(menukefalaio5.this, methodologiadontexist.class));
             }
         });
         askiseis.setOnClickListener(new View.OnClickListener() {

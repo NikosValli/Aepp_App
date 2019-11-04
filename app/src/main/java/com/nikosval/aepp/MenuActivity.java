@@ -43,9 +43,17 @@ import android.widget.SearchView;
 import android.widget.TextView;
 
 import android.support.v7.widget.Toolbar;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.io.Serializable;
+import java.lang.reflect.Array;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -66,6 +74,9 @@ public class MenuActivity extends AppCompatActivity {
     ImageButton badges;
     ImageButton logout;
     ImageButton proteinete;
+    ImageButton erwthseiskathigitwn;
+    ArrayList erwthsispouthaperasoun;
+
     ArrayAdapter<String> adapter;
     Toolbar toolbarofuser;
     DataBaseHelper db;
@@ -77,6 +88,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         db = new DataBaseHelper(this);
 
+        erwthsispouthaperasoun=new ArrayList<>();
 
         SharedPreferences prefs = getSharedPreferences("MyApp", MODE_PRIVATE);
 
@@ -146,6 +158,7 @@ public class MenuActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         badges=(ImageButton)findViewById(R.id.badges);
         ImageButton kefalaio2=(ImageButton) findViewById(R.id.algortihms);
+        erwthseiskathigitwn=(ImageButton)findViewById(R.id.erwthseiskathigitwn);
         domesdedomenwn = (ImageButton) findViewById(R.id.domes);
         ImageButton kefalaio6=(ImageButton) findViewById(R.id.kefalaio6);
 
@@ -209,12 +222,34 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+
+
+
+        SharedPreferences sharedPreferences=getSharedPreferences("oi erwthseis",MODE_PRIVATE);
+        Gson gson=new Gson();
+        String json=sharedPreferences.getString("oi erwthseiss",null);
+        Type type=new TypeToken<ArrayList<String>>() {}.getType();
+         erwthsispouthaperasoun=gson.fromJson(json,type);
+
         proteinete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MenuActivity.this, opinions.class));
+
+
             }
         });
+
+
+
+        erwthseiskathigitwn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this, menugiaerwthseiskath.class));
+
+            }
+        });
+
 
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.mytransition);
         logoimage.startAnimation(myanim);
@@ -317,7 +352,6 @@ public class MenuActivity extends AppCompatActivity {
 
 
     }
-
 
 
 

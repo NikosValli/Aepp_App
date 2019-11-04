@@ -3,8 +3,6 @@ package com.nikosval.aepp;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,7 +36,7 @@ public class diagwnismakefalaio2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagwnismakefalaio2);
         mScoreView2 = (TextView) findViewById(R.id.scorenumber);
-        mQuestionView2 = (TextView) findViewById(R.id.erwthsh);
+        mQuestionView2 = (TextView) findViewById(R.id.erwthshkathigiti);
         choice1 = (Button) findViewById(R.id.choice1);
         choice2 = (Button) findViewById(R.id.choice2);
          Intent startIntent= getIntent();
