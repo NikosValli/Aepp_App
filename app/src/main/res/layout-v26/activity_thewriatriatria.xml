@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/titlos_3_1"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="3.3 ΣΤΟΙΒΑ-ΟΥΡΑ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/erwthsh16"
+            android:layout_width="397dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="32dp"
+            android:text="1.Τι είναι στοίβα ? Ποιες είναι οι λειτουργίες της? Πως υλοποιουνται?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_1" />
+
+        <TextView
+            android:id="@+id/erwthsh16apantisi"
+            android:layout_width="349dp"
+            android:layout_height="629dp"
+
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/back"
+            android:text="Η στοιβα αποτελέι μια στατική δομή δεδομένων και θα μπορούσαμε να την προσομοιώσουμε με μια στοίβα πιατων:Tα εισερχόμενα στοιχεία μπαινουν απο την κορυφή (top) και εξέρχονται επίσης απο τη κορυφή.Η λειτουργία αυτή ονομάζεται και LIFO(Last In First Out) η τελεταιο μεσα πρωτο εξω. \n Οι δυο κύριες λειτουγίες της στοίβας είναι: \n ωθηση(push) στη κορυφή της στοίβας. \n απώθηση απο την στοιβα. \n\n Πρεπει να λαμβάνεται ειδική μέριμνα κατα τις παρακάτω λειτουργίες : \n\n Κατα την ώθηση δε πρεπει να είναι η στοίβα γέματη.Αν είναι γεμάτη τότε η ώθηση δε γίνεται.Το φαινόμενο ονομάζεται υπερχείληση (overflow) \n\n Κατα την απώθηση προσοχή χρειάζεται οταν διαγράφεται το τελευταίο στοιχείο της στοίβας δηλαδή η στοίβα να μην είναι αδεια.Το φαινόμενο ονομάζεται υποχείληση (underflow). \n\n Η στοιβα υλοπειται με τη βοηθεια ενος πινακα και μιας μεταβλητης-δεικτη με το ονομα top ο οποιος δείχνει την θέση του τελευταίου στοιχειου που έχει εισαχθεί στη στοίβα. \n\n ωθηση(push)top $lt;--top+1 \n απωθηση(pop)απο τη στοίβα top $lt; --top-1"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16" />
+
+
+        <TextView
+            android:id="@+id/erwthsh17"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Παράδειγμα στόιβας"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16apantisi" />
+
+
+        <TextView
+            android:id="@+id/apanthsh1876"
+            android:layout_width="wrap_content"
+            android:layout_height="706dp"
+
+            android:layout_marginTop="56dp"
+            android:background="@drawable/back"
+            android:text="Η ουρά αποτελεί επίσης στατική δομή δεδομένων και θα μπορούσαμε να την προσομοιώσουμε με μια ουρά αναμονής π.χ στο ταμείο μιας τράπεζας.Τα νεα μέλη της ουράς μπαινουν στο τέλος της ουράς(rear) και εξέρχονται απο το μπροστινό μέρος της ουρας (front).Η λειτουργία αυτή ονομάζεται FIFO(First in first out) η πρωτο μέσα,πρώτο έξω. \n\n Οι δυο κύριες λειτουργίες μιας ουράς είναι : \n\n εισαγωγή(enqueue) στο πίσω άκρο της ουράς. \n εξαγωγή(dequeue) απο το εμπρός άκρο της ουράς. \n\n Πρέπει να ελεγχονται κατα την εισαγωγή εξαγωγή περιπτώσεις υπερχείλησης/υποχείλησης. \n\n Η ουρά υλοποιειται με τη βοήθεια ενός πίνακα και δυο μεταβλητών δεικτών rear και front που δείχνουν την θέση του τελευταίου και του πρώτου στοιχείου της ουράς. \n\n εισαγωγη:rear$lt;-- rear +1 και ο front παραμενει αμεταβλητος \n Εξαγωγή:front$lt;-- front+1 και ο rear παραμενει αμετάβλητος."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/erwthsh100" />
+
+        <TextView
+            android:id="@+id/erwthsh100"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:text="Tι είναι η ουρά? Ποιες οι λειτουργίες της? Πως υλοποιούνται?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+
+        <Button
+            android:id="@+id/button3_3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginTop="380dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox3_3"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="336dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <TextView
+            android:id="@+id/textView710"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:text="Παράδειγμα Ουράς"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="368dp"
+            android:layout_height="168dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16apantisi"
+            app:srcCompat="@drawable/stack" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="394dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="87dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876"
+            app:srcCompat="@drawable/queue" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/titlos_3_143"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="4.2 Παράμετροι"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/erwthsh176"
+            android:layout_width="397dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="1.Με ποιον τρόπο γίνεται η ενεργοποιήση των υποπρογραμμάτων ?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_143" />
+
+        <TextView
+            android:id="@+id/erwthsh176apantisi"
+            android:layout_width="349dp"
+            android:layout_height="158dp"
+
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/back"
+            android:text="Σύμφωνα με όσα προαναφερθηκαν στα πλαισια του τμηματικού προγραμματισμού ευνοείται η ανάπτυξη υποπρογραμμάτων (ανεξαρτήτων και αυτόνομων τμημάτωνπρογραμμάτων) τα οποία ενεργοποιουνται απο το κύριο πρόγραμμα η απο άλλα υποπρογράμματα.Η ενεργοποίηση αυτη πραγματοποιείται με την κλήση τους."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh176" />
+
+
+        <TextView
+            android:id="@+id/erwthsh717"
+            android:layout_width="386dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:text="2.Tι είναι οι πάραμετροι ?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh176apantisi" />
+
+        <TextView
+            android:id="@+id/apanthsh177"
+            android:layout_width="wrap_content"
+            android:layout_height="246dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="Για την επικοινωνία των υποπρογραμμάτων χρησιμοποιούνται οι παράμετροι,δηλαδη μια η περισσότερες μεταβλητές που επιτρέπουν το πέρασαμτιμών απο ένα τμήμα προγραμματος σε αλλο.Θ αμπορουσαμε να θεωρησουμε τις παραμετρους ως μια ειδική κατηγορία μεταβλητών.Οι παράμετροι είναι μεταβλητές ενω καθε μεταβλητή δεν είναι παντα παράμετρος."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh717" />
+
+
+        <TextView
+            android:id="@+id/apanthsh1876"
+            android:layout_width="wrap_content"
+            android:layout_height="148dp"
+
+            android:background="@drawable/back"
+            android:text="Οι παράμετροι με την χρήση των οποιων καλουμε ενα υποπρογραμμα καλούνται και πραγματικές η απλα παράμετροι,ενώ οι παραμετροι με τις οποίες ορίζεται ενα υποπρόγραμμα ονομάζεται τυπικές η ορίσματα."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh18" />
+
+        <TextView
+            android:id="@+id/erwthsh18"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="3.Ποια είναι τα είδη των παραμέτρων?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh177" />
+
+
+        <Button
+            android:id="@+id/button4_2"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginTop="1232dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView7180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/back"
+            android:text="1. Ο αριθμός των πραγματικών και των τυπικών παραμέτρων σε ένα υποπρογραμμα πρέπει να είναι ίδιος. \n 2. Καθε τυπική παράμετρος ενος υποπρογρμάμματος αντιστοιχεί σε μια πραγματική που βρίσκεται στην αντίστοιχη θέση \n 3. Καθε τυπικη παράμετρος ενος υποπρογράμματος αντιστοιχεί σε μια πραγματική η οποία πρέπει να είναι του ίδιου τυπου. "
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <TextView
+            android:id="@+id/textView7881"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ιδιότητες Παραμέτρων"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <CheckBox
+            android:id="@+id/checkBox4_2"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="388dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

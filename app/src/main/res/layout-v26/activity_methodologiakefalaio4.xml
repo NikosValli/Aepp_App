@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".methodologiakefalaio4">
+
+
+    <ImageView
+        android:id="@+id/logoo4"
+        android:layout_width="272dp"
+        android:layout_height="72dp"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="45dp"
+        android:color="@color/colorPrimary"
+        android:gravity="center"
+        app:srcCompat="@drawable/logooo"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/logotext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+
+        android:layout_marginTop="98dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:text="@string/logo"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/SlideViewPager4"
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+
+        <LinearLayout
+            android:id="@+id/dotsLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+    </android.support.v4.view.ViewPager>
+
+
+    <Button
+        android:id="@+id/previous4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/next4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@android:color/transparent"
+        android:text="ΕΠΟΜΕΝΟ" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".menuthewrias1oukefaliou">
+
+    <TextView
+        android:id="@+id/titlosthewrias2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kεφάλαια θεωρίας"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/menubutons"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/tessera1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="4.1 ΤΜΗΜΑΤΙΚΟΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/tessera2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="4.2 ΠΑΡΑΜΕΤΡΟΙ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/tesseratria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="4.3 ΥΠΟΠΡΟΓΡΑΜΜΑΤΑ-ΕΙΔΗ ΚΑΙ ΚΑΝΟΝΕΣ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/tessera4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="4.4 ΚλΗΣΕΙΣ ΥΠΟΠΡΟΓΡΑΜΜΑΤΩΝ"
+        android:textSize="19dp" />
+</LinearLayout>

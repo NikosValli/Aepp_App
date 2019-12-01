@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewriaefta5">
+
+        <TextView
+            android:id="@+id/textView132"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="Σε ορισμένες γλώσσες προγραμματισμού, ο αριθμητικός τελεστής «+» προσαρμόζεται ή συμπεριφέρεται διαφορετικά, σύμφωνα
+με τον τύπο των δεδομένων που καλείται να «προσθέσει». Αν του δοθούν δύο αριθμοί, το 20 και το
+40, τότε θα τους προσθέσει και θα βγάλει ως αποτέλεσμα το 60. Αν όμως του δοθούν δύο συμβολοσειρές, όπως το «Γεια » και το «σας», τότε ο αριθμητικός τελεστής «+» θα προσαρμοστεί στα νέα
+δεδομένα, θα αλλάξει δηλαδή μορφή και αντί για την κλασική πρόσθεση θα εκτελέσει μία άλλη πράξη,
+που έχει νόημα στον χώρο των συμβολοσειρών, και είναι αυτή της συνένωσης. Έτσι, η πρόσθεση των
+συμβολοσειρών «Γεια » και «σας» θα έχει ως αποτέλεσμα τη συμβολοσειρά «Γεια σας».
+Όπως παρατηρείτε, δε χρησιμοποιούμε διαφορετικό τελεστή όταν τα δεδομένα μας είναι συμβολοσειρές και όχι αριθμοί. Απλώς αλλάζει η συμπεριφορά του τελεστή. Παρόμοια, αν στον τελεστή «+»
+δοθεί η συμβολοσειρά «Καλώς ήρθες » και ο αριθμός 2020, τότε θα μετατρέψει τον αριθμό 2020
+στη συμβολοσειρά «2020» και θα πραγματοποιήσει στη συνέχεια την συνένωση των συμβολοσειρών «Καλώς ήρθες » και «2020». Το αποτέλεσμα της «πρόσθεσης» αυτής θα είναι η συμβολοσειρά
+«Καλώς ήρθες 2020». Το παραπάνω παράδειγμα αποτελεί ένα απλό παράδειγμα πολυμορφισμού, δηλαδή αλλαγής συμπεριφοράς.
+Αν υποστηρίζονταν από τη γλώσσα προγραμματισμού, θα μπορούσαμε να ορίσουμε και μία νέα συνάρτηση με το όνομα «Πρόσθεση» και συμπεριφορά ανάλογη με τα δεδομένα εισόδου, όπως παρουσιάζονται στον Πίνακα"
+            android:textColor="@color/menuColor"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="7.5   Πολυμορφισμός "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+
+            android:layout_marginTop="20dp"
+            android:text="1. Τι ορίζουμε ως πολυμορφισμό ?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/back"
+            android:text=" Πολυμορφισμός (polymorphism) είναι μια ιδιότητα του αντικειμενοστραφούς προγραμματισμού με την οποία μια λειτουργία μπορεί να υλοποιείται με πολλούς διαφορετικούς τρόπους. "
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="431dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/back"
+            android:text="Μια μορφή πολυμορφισμού έχουμε όταν, αντί για το αυτόματο σύστημα κεντρικού κλειδώματος, χρησιμοποιήσουμε τα κλειδιά για να κλειδώσουμε το αυτοκίνητό μας. Και στις δύο περιπτώσεις το αποτέλεσμα είναι το ίδιο. Με βάση όμως το εργαλείο που ενεργοποιούμε κάθε φορά αλλάζει και ο τρόπος
+υλοποίησης της λειτουργίας.
+Μια άλλη, ευρέως διαδεδομένη μορφή πολυμορφισμού βιώνετε στις οικογένειές σας και γενικότερα
+σε καταστάσεις που εμπλέκουν στοιχεία ιεραρχίας και κληρονομικότητας. Για παράδειγμα, του χρόνου
+θα μάθετε οδήγηση από τον πατέρα σας ή τον θείο σας. Στο τέλος όμως θα οδηγείτε το ίδιο όχημα με
+ένα διαφορετικό τρόπο από εκείνους! Μάθαμε από τους γονείς μας να κάνουμε κάτι, το οποίο προσαρμόζουμε στη δική μας προσωπικότητα, στη δική μας προσέγγιση. Κάτι αντίστοιχο συμβαίνει με τις
+συνταγές μαγειρικής που μεταφέρονται από γενιά σε γενιά. Το ίδιο φαγητό, με τα ίδια υλικά, έχει άλλη
+γεύση όταν το μαγειρεύει η γιαγιά σας και άλλη γεύση όταν το μαγειρεύει η μητέρα σας. Αυτό είναι
+πολυμορφισμός! Ίδια συνάρτηση (μαγείρεμα), ίδιες παράμετροι (υλικά), αλλά διαφορετικοί αλγόριθμοι
+(στυλ μαγειρέματος)."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80a" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Παράδειγμα: «Πολυμορφισμός αριθμητικού τελεστή» "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox7_5"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+        <Button
+            android:id="@+id/button7_5"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="272dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView80a"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Ποια είναι ορισμένα παραδείγματα πολυμορφισμού στη πραγματική ζωή?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="459dp"
+            android:layout_height="272dp"
+            android:layout_marginTop="72dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView132"
+            app:srcCompat="@drawable/polumorfismos" />
+
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Παράδειγμα Πολυμορφισμού"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

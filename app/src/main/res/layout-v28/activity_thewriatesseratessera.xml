@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/titlos_3_143"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="4.4 Κλήση Υποπρογραμμάτων και παρατηρήσεις"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/erwthsh176"
+            android:layout_width="397dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="1.Με ποιον τρόπο καλούμε μια συνάρτηση?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_143" />
+
+        <TextView
+            android:id="@+id/erwthsh176apantisi"
+            android:layout_width="0dp"
+            android:layout_height="384dp"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back"
+            android:text="Κάθε συνάρτηση εκτελείται, όπως ακριβώς εκτελούνται οι ενσωματωμένες συναρτήσεις της γλώσσας. Απλώς αναφέρεται το όνομα της σε μια έκφραση ή σε μία εντολή και επιστρέφεται η τιμή της.Ο μηχανισμός που επιτυγχάνεται αυτό, είναι ο εξής: Το κύριο πρόγραμμα πριν την κλήση της συνάρτησης γνωρίζει την τιμή της μεταβλητής R. Κατά την κλήση μεταβιβάζεται αυτή η τιμή στην αντίστοιχη μεταβλητή R της συνάρτησης.Το όνομα της διαδικασίας είναι οποιοδήποτε έγκυρο όνομα της ΓΛΩΣΣΑΣ. Η λίστα παραμέτρων είναι μια λίστα μεταβλητών, των οποίων οι τιμές μεταβιβάζονται προς τη διαδικασία κατά την κλήση ή/και επιστρέφονται στο κύριο πρόγραμμα μετά το τέλος της διαδικασίας. Στο σώμα της διαδικασίας μπορούν να υπάρχουν οποιεσδήποτε εντολές της γλώσσας.
+Κάθε διαδικασία εκτελείται όταν καλείται από το κύριο πρόγραμμα ή άλλη διαδικασία. Η κλήση σε διαδικασία πραγματοποιείται με την εντολή ΚΑΛΕΣΕ, που ακολουθείται από το όνομα της διαδικασίας συνοδευόμενο μέσα σε παρενθέσεις με τη λίστα παραμέτρων."
+            android:textColor="@color/menuColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh176" />
+
+
+        <TextView
+            android:id="@+id/erwthsh717"
+            android:layout_width="386dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="2.Παρατηρήσεις πάνω στα υποπρογράμματα "
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh176apantisi" />
+
+        <TextView
+            android:id="@+id/apanthsh177"
+            android:layout_width="wrap_content"
+            android:layout_height="890dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="1.Η τελευταια εντολή σε μία συναρτηση πρέπει να είναι εντολή εκχώρησης της τιμής που θα επσιτραφεί στο όνομα της συνάρτησης. \n 2.Η κλήση της συναρτησης πραγματοποιείται με το ονομα της με τη χρήση παραμέτρων εισόδου και ενντολή εκχώρησης σε μεταβλητή του κύριου προγράμματος ιδίου τύπου με την συνάρτηση. \n 3.Η κλήση μιας διαδικασίας πραγματοποιειται με την εντολή ΚΑΛΕΣΕ ακολουθούμενη απο το όνομα της διαδικασίας και τις παραμέτρους εισόδου-εξόδου.Μια παράμετρος μπορει να είναι εισόδου και εξόδου. \n 4.Η χρήση παραμέτρων ΔΕΝ είναι απαραίτητη σε μια διαδικασία. \n 5 Καθε μεταβλητη εχει νόημα και μπορεί να χρησιμοποιείται μονο εντλος του τμήματος προγράμματος που είναι δηλωμένες.Κατα συνέπεια υπάρχει περίπτωση να εμφανίζονται μεταβλητές με το ίδιο όνομα σε διαφορετικά υποπρογράμματα.Αυτες οι μεταβλητές ονομαζονται ΤΟΠΙΚΕΣ. \n 6.Οταν εχουμε παραμετρους πίνακες δηλώνονται μονο με το ονομα τους και οι διαστάσεις τους δηλώνονται στη συνέχεια στο τμήμα δηλώσεων του υποπρογράμματος. \n 7 Δεν χρησιμοποιούμε συνήθως τις εντολές ΓΡΑΨΕ και ΔΙΑΒΑΣΕ εντός μίας συνάρτησης.\n 8.Μια συνάρτηση μετατρέπεται σε διαδικασία ενω μία διαδικασία ΔΕΝ μετατρέπεται σε συνάρτηση"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh717" />
+
+
+        <Button
+            android:id="@+id/button4_4"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh177" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox4_4"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="52dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh177" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

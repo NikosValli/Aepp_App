@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".menuthewrias5kefalaio">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kεφάλαια θεωρίας"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/menubutons"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/pente1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="5.1 Η ΕΝΝΟΙΑ ΤΟΥ ΠΡΟΓΡΑΜΜΑΤΟΣ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/pente2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="5.2 ΤΑΞΙΝΟΜΗΣΗ ΓΛΩΣΣΩΝ ΜΕ ΒΑΣΗ ΤΟΝ ΤΡΟΠΟ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/pente3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="5.3 ΤΑΞΙΝΟΜΗΣΗ ΓΛΩΣΣΩΝ ΜΕ ΒΑΣΗ ΤΗ ΧΡΗΣΗ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/pente4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="5.4 ΕΙΔΗ ΓΛΩΣΣΩΝ ΚΑΙ ΤΕΧΝΙΚΕΣ ΣΧΕΔΙΑΣΗΣ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/pente5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="5.5 ΠΡΟΓΡΑΜΜΑΤΙΣΤΙΚΑ ΠΕΡΙΒΑΛΛΟΝΤΑ"
+        android:textSize="19dp" /> />
+</LinearLayout>

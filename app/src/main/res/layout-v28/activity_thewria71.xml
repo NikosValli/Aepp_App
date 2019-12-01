@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria71">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="7.1 Αντικειμενοστραφής Προγραμματισμός: ένας φυσικός τρόπος επίλυσης προβλημάτων "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:text="1.Tι ορίζουμε ως αντικειμενοστραφή προγραμματισμό?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="632dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/back"
+            android:text=" Αντικειμενοστραφής προγραμματισμός (object-oriented programming) ή αντικειμενοστραφής σχεδίαση είναι μια μεθοδολογία ανάπτυξης εφαρμογών η οποία στηρίζεται σε αυτόνομες προγραμματιστικές οντότητες με δική τους ταυτότητα και συμπεριφορά. Οι οντότητες αυτές
+καλούνται αντικείμενα (objects), αντιστοιχούν σε φυσικές οντότητες ή έννοιες του φυσικού μας
+κόσμου, και δομούνται με βάση δεδομένα (ιδιότητες) που προσδιορίζουν την υπόστασή τους και
+ενέργειες (κανόνες συμπεριφοράς) που εφαρμόζονται πάνω στα δεδομένα. Σε μια εφαρμογή,
+ένα αντικείμενο είναι ο ομαδοποιημένος συνδυασμός δεδομένων και κώδικα, τα οποία έχουμε
+τη δυνατότητα να χειριστούμε ενιαία. Tα δεδομένα αποτελούν τα χαρακτηριστικά ενός αντικειμένου και αναφέρονται ως ιδιότητες (properties) ενώ οι ενέργειες καθορίζουν τη συμπεριφορά
+του. Οι ενέργειες στον αντικειμενοστραφή προγραμματισμό αναφέρονται και ως μέθοδοι
+(methods).
+"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:text="Που στηρίζεται η αντικειμενοστραφής θεωρία επίλυσης προβλημάτων?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="403dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/back"
+            android:text="Σύμφωνα με την αντικειμενοστραφή θεωρία ανάπτυξης εφαρμογών, η προσέγγιση κάθε προβλήματος πρέπει να γίνεται με φυσική ερμηνεία και να μη στηρίζεται σε πολύπλοκα τεχνικά ζητήματα. Αυτή η
+αντίληψη, ότι δηλαδή η επίλυση ενός προβλήματος επιτυγχάνεται με τη σύνθεση ικανοτήτων (ο τρόπος
+υλοποίησης των οποίων μας είναι άγνωστος) που διαθέτουν διαφορετικές ανεξάρτητες οντότητες, οι
+οποίες αλληλεπιδρούν για τον σκοπό αυτό, βρίσκεται στην καρδιά της αντικειμενοστραφούς προσέγγισης.
+Οι θεμελιώδεις αρχές του αντικειμενοστραφούς προγραμματισμού πηγάζουν από τον καθημερινό μας
+φυσικό κόσμο, καθώς είναι πολύ κοντά στον τρόπο που σκεφτόμαστε για να επιλύσουμε προβλήματα
+της καθημερινότητάς μας. Στηρίζονται στο γεγονός ότι για να μπορέσει κάποιος να κατανοήσει άγνωστες σε αυτόν έννοιες, θα πρέπει να καθοδηγηθεί μέσω της προσομοίωσης των άγνωστων αυτών
+εννοιών αντιστοιχίζοντας αυτές σε πρακτικές γνώσεις και εικόνες από το περιβάλλον του, τις οποίες
+γνωρίζει και μπορεί πολύ εύκολα να χειριστεί."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="ΠΑΡΑΔΕΙΓΜΑ ΕΠΙΛΥΣΗΣ ΠΡΟΒΛΗΜΑΤΟΣ ΜΕ ΑΝΤΙΚΕΙΜΕΝΟΣΤΡΑΦΗ ΤΡΟΠΟ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/back"
+            android:text="Ας προσπαθήσουμε να περιγράψουμε λίγο πιο τυπικά τη διαδικασία αποστολής λουλουδιών, την οποία θα θεωρήσουμε ως διαδικασία επίλυσης ενός προβλήματος: Η μητέρα σας, η οποία ήταν αδύνατο να πάει αυτοπροσώπως τα λουλούδια στην Άννα, έπρεπε να επισκεφθεί το ανθοπωλείο της γειτονιάς,
+να δώσει τα προσωπικά της στοιχεία (όνομα, επώνυμο, διεύθυνση, τηλέφωνο, email), να περιγράψει
+στον κ. Γιώργο τον ανθοπώλη το είδος της ανθοδέσμης που ήθελε να στείλει, να δώσει τη διεύθυνση
+και τα στοιχεία επικοινωνίας της Άννας στη Ρώμη και τέλος! Ήταν σίγουρη ότι η ανθοδέσμη με τις
+ευχές της θα έφταναν έγκαιρα στη φίλη της.
+Αυτό, βέβαια, έκρυβε ένα ολόκληρο σχέδιο ενεργειών για τον κ. Γιώργο, ο οποίος έπρεπε να στείλει
+ένα μήνυμα στο δίκτυο ανθοπωλών που συμμετείχε για να εντοπίσει συνεργαζόμενο ανθοπωλείο στη
+Ρώμη και να αποστείλει τα στοιχεία της παραγγελίας της μαμάς, ο τοπικός ανθοπώλης κ. Τζιοβάνι να
+αποδεχτεί τη συνεργασία, να αναθέσει στον ανθοδέτη του κ. Αντόνιο να φτιάξει την ανθοδέσμη και
+στη συνέχεια να καλέσει τον ταχυμεταφορέα κ. Πέπε να παραδώσει την ανθοδέσμη στην κα Άννα.
+Το εντυπωσιακό είναι ότι κανείς από τους εμπλεκόμενους στο παραπάνω εγχείρημα δε γνώριζε τις
+λεπτομέρειες του πώς υλοποιείται η κάθε επιμέρους εργασία, γνώριζε όμως από ποιον θα ζητούσε
+να την εκτελέσει και ποιες πληροφορίες θα του έδινε αναφορικά με το αναμενόμενο αποτέλεσμα. Ενδεχομένως, ο ειδικός να έφερε μαζί του και άλλους σαν κι αυτόν. Στο τέλος, όλες οι ομάδες ειδικών
+συνεργάστηκαν, άμεσα ή έμμεσα, για να υλοποιήσουν το σχέδιο της μαμάς."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox7_1"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="17dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <Button
+            android:id="@+id/button7_1"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

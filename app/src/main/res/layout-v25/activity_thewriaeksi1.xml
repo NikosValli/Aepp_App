@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewriaeksi1">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="6.1 TΥΠΟΙ ΔΕΔΟΜΕΝΩΝ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:text="ΣΤΑΘΕΡΕΣ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="H ΓΛΩΣΣΑ υποστηρίζει τους βασικούς τυπούς δεδομένων δηλαδή ακέραιους,πραγματικούς,χαρακτήρες (κείμενο-αλφαριθμητικό) και λογικούς (Αληθής,Ψευδής).Οσον αφορά τις Σταθερές,H ΓΛΩΣΣΑ υποστηρίζει την αντίστοιχιση σταθερών τύπων με ονόματα.Βέβαια,τέτοιες σταθερές πρέπει να δηλωθούν στην αρχή του προγράμματος \n\n Π.χ ΠΙ=3.14  "
+            android:textSize="19dp"
+            android:background="@drawable/back"
+            android:textColor="@color/menuColor"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:text="ΜΕΤΑΒΛΗΤΕΣ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="336dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/back"
+
+            android:text="H ΓΛΩΣΣΑ υποστηρίζει τη χρήση μεταβλητών των τεσσάρων τύπων που αναφέρθηκαν.Βέβαια,επισημαίνεται ότι στη ΓΛΩΣΣΑ όλες οι μεταβλητές πρέπει να δηλώνονται υποχρεωτικά στην αρχή του προγράμματος στο τμήμα δηλώσεων.Αυτή είναι μια βασική διαφορά απο την ψευδογλώσσα.Ασφαλώς στη ΓΛΩΣΣΑ δε χρησιμοποιούνται τα επιπλέον (προσθετα) στοιχεία της ψευδογλώσσας δηλαδή οι λέξεις αλγόριθμος,δεδομένα,αποτελέσματα. \n\n Π.χ οι δηλώσεις μεταβλητών στη ΓΛΩΣΣΑ γίνονται ως εξής: \n\n MΕΤΑΒΛΗΤΕΣ \n ΠΡΑΓΜΑΤΙΚΕΣ:μεσος_ορος \n ΑΚΕΡΑΙΕΣ:τιμή \n ΧΑΡΑΚΤΗΡΕΣ:όνομα \n ΛΟΓΙΚΕΣ:βρέθηκε \n Σημειώνεται ότι στη ΓΛΩΣΣΑ οι λέξεις ΣΤΑΘΕΡΕΣ,ΜΕΤΑΒΛΗΤΕΣ,ΠΡΑΓΜΑΤΙΚΕΣ,ΑΚΕΡΑΙΕΣ,ΧΑΡΑΚΤΗΡΕΣ ΛΟΓΙΚΕΣ είναι δεσμευμένες."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:text="ΑΡΙΘΜΗΤΙΚΟΙ ΤΕΛΕΣΤΕΣ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="Η ΓΛΩΣΣΑ υποστηρίζει τους αριθμητικούς τελεστές +,-,*,/,^(ύψωση σε δύναμη),DIV(ακέραια διαίρεση),MOD(υπόλοιπο ακέραιας διαίρεσης)."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ΣΥΝΑΡΤΗΣΕΙΣ "
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/back"
+            android:text="Η ΓΛΩΣΣΑ υποστηρίζει πολλές μαθηματικές συναρτήσεις: \n Α_Τ(Χ):απόλυτη τιμή του Χ \n T_Ρ(Χ):τετραγωνική ρίζα με Χ>0 \n HM(X):Ημίτονο \n A_M(X): Ακέραιο μέρος Χ ,\n ΕΦ(Χ):Εφαπτομένη Χ,\n E(X):Δύναμη του e εις την Χ \n ΛΟΓ(Χ):Λογάριθμος του Χ"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+
+        <TextView
+            android:id="@+id/textView844"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="6dp"
+            android:text="ΑΡΙΘΜΗΤΙΚΕΣ ΕΚΦΡΑΣΕΙΣ "
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+
+        <TextView
+            android:id="@+id/textView855"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/back"
+            android:text="Η ΓΛΩΣΣΑ υποστηρίζει πολλές μαθηματικές συναρτήσεις: \n Α_Τ(Χ):απόλυτη τιμή του Χ \n T_Ρ(Χ):τετραγωνική ρίζα με Χ>0 \n HM(X):Ημίτονο \n A_M(X): Ακέραιο μέρος Χ ,\n ΕΦ(Χ):Εφαπτομένη Χ,\n E(X):Δύναμη του e εις την Χ \n ΛΟΓ(Χ):Λογάριθμος του Χ"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox6_1"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+        <Button
+            android:id="@+id/button6_3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:textColor="@color/menuColor"
+
+            android:text="Στη ΓΛΩΣΣΑ οι αριθμητικές εκφράσεις δε διαφέρουν από αυτές της ψευδογλώσσας.Σε μια τέτοια έκφραση μπορεί να υπάρχουν αριθμητικές σταθερές,μεταβλητές,συναρτήσεις,τελεστές και παρενθέσεις."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView844" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

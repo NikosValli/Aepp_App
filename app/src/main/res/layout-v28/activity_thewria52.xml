@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".thewria52">
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="5.2 Tαξινόμηση γλωσσών με βάση τον τρόπο προγραμματισμού"
+        android:textColor="@color/menubutons"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:text="1.Tι γνωρίζετε για τις διαδικασιακές η αλγοριθμικές γλώσσες?"
+        android:textColor="@color/menubutons"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Η μεγάλη πλειοψηφία των γλωσσών ανήκει στην κατηγορία των διαδικασιακών (procedural) γλωσσών. Είναι γνωστές επίσης και ως αλγοριθμικές γλώσσες, γιατί είναι σχεδιασμένες για να επιτρέπουν την υλοποίηση αλγορίθμων.Πρόκειται για τις πιο παλαίες και κλασσικές γλώσσες.Ξεκινάμε τον προγραμματισμό απο τις λειτουργίες που έχουμε να υλοποιήσουμε.Αφου τις αναλύσουμε,για καθε διαδικασία φτιάχνεται ενας αλγόριθμος"
+        android:textSize="19dp"
+        android:background="@drawable/back"
+        android:textColor="@color/menuColor"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:text="Τι γνωρίζετε για τις αντικειμενοστραφείς γλώσσες?"
+        android:textColor="@color/menubutons"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="86dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/back"
+
+        android:text="Γλώσσες αντικειμενοστραφείς (C++,JAVA κλπ).Εδω ξεκινάμε τον προγραμματισμό από τα δεδομένα που έχουμε στο συγκεκριμένο πρόβλημα.Αφού αναλυθούν τα δεδομένα μετα την καταλληή μορφοποιηση δομούνται ως αντικείμενα."
+        android:textColor="@color/menuColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Τι γνωρίζετε για τις συναρτησιακές γλώσσες?"
+        android:textColor="@color/menubutons"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/back"
+        android:text="Γλωσσες συναρτησιακες (Lisp).Η Lisp,που ανήκει στο χώρο της τεχνητής νοημοσύνης,βασίζεται στη δομή δεδομένων της λίστας.Όλες οι λειτουργίες στη γλώσσα αυτή γίνονται μέσω συναρτήσεων μεταξύ λιστών."
+        android:textColor="@color/menuColor"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Τι γνωρίζετε για τις μη διαδικασιακές γλώσσες?"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+    <TextView
+        android:id="@+id/textView85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/back"
+        android:text="ΓΛωσσες μη διαδικασιακές η λογικές.Συνήθως αυτές είναι γλώσσες παρα πολυ υψηλού επιπέδου.Πολλές απο αυτές ανήκουν στο χώρο της τεχνητής νοημοσύνης.Οι φιλοσοφία τους είναι αντίθετη με τον διαδικασιακό (αλγοριθμικό) προγραμματισμό.Προσπαθούν να προσομοιώσουν την ανθρώπινη λογική στους υπολογιστές."
+        android:textColor="@color/menuColor"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+    <TextView
+        android:id="@+id/textView86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Τι γνωρίζετε για τις γλώσσες ερωταπαντήσεων?"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/back"
+        android:text="Πολλές απο αυτές ανήκουν στο χώρο των βάσεων δεδομένων.Ο χρήστης μπορεί να υποβάλλει ερωτήματα στον υπολογιστή και να παίρνει τις αναγκαιές πληροφορίες με την επιθυμητη μορφή."
+        android:textColor="@color/menuColor"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Τι γνωρίζεται για τις γλώσσες οπτικού και οδηγούμενου απο το γεγονός προγραμματισμού?"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/back"
+        android:text="Γλώσσες οπτικού προγραμματισμού η γλώσσες οδηγούμενου απο το γεγονός προγραμματισμού (Visual Basic Visual C).Οι κλασσικες διαδικασιακες γλώσσες δεν εκμεταλλευονται τα νεα γραφικά περιβάλλοντα επικοινωνίας μεταξύ ανθρώπου υπολογιστή (π.χ windows).Οι οπτικές γλώσσες διαθέτουν ένα μεγάλο πλούτο απο λειτουργίες εισόδου/εξόδου (δεδομενων/πληροφοριων) και μας επιτρέπουν να δημιουργήσουμε όλο το περιβάλλον ενός προγραμματος με ευχρηστό και γραφικό τροπο.Σε ενα τετοιο περιβάλλον γράφουμε μικρά κομμάτια εντολών για κάθε γεγονός.Π.χ ένα γεγονός μπορεί να είναι το πάτημα ενός κουμπιού."
+        android:textColor="@color/menuColor"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Τι γνωρίζετε για τις παράλληλες γλώσσες?"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:background="@drawable/back"
+        android:textColor="@color/menuColor"
+        android:layout_marginTop="10dp"
+        android:text="Οι παραλληλες γλώσσες εκμεταλλευονται αρχιτεκτονικά με περισσοτερους απο έναν επεξεργαστές που λειτουργούν παραλληλα .Η απόδοση (ταχύτητα) στα συστήματα αυτά έτσι αυξάνει κατακόρυφα."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+    <CheckBox
+        android:id="@+id/checkBox5_2"
+        android:layout_width="199dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="29dp"
+        android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+    <Button
+        android:id="@+id/button5_2"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="146dp"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="50dp"
+        android:background="@color/colorigotit"
+        android:text="Το κατάλαβα !"
+        android:textColor="@color/menubutons"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

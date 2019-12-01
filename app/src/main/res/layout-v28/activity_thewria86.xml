@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria81">
+
+        <TextView
+            android:id="@+id/textView132"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="Η βαθμολογία στις γραπτές δοκιμασίες τετραμήνου στο Λύκειο δίνεται με ακέραιους αριθμούς
+στην κλίμακα από 0 έως και 20. Να αναπτύξετε πρόγραμμα σε ΓΛΩΣΣΑ που να διαβάζει τη
+βαθμολογία σε μια γραπτή δοκιμασία και στη συνέχεια να εμφανίζει μήνυμα «Επιτυχής εξέταση»,
+αν η βαθμολογία είναι τουλάχιστον 10, και μήνυμα «Ανεπιτυχής εξέταση» αν η βαθμολογία είναι
+μικρότερη από 10. Σε περίπτωση που δοθεί τιμή εκτός του διαστήματος 0-20 να εμφανίζεται
+μήνυμα λάθους «Μη έγκυρη βαθμολογία».
+Με βάση τις παραπάνω προδιαγραφές, προσπαθήστε να δημιουργήσετε κατάλληλα σενάρια για
+να πραγματοποιήσετε έλεγχο ακραίων τιμών."
+            android:textColor="@color/menuColor"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="8.6  Μέθοδος ελέγχου «Μαύρο Κουτί»"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+
+            android:layout_marginTop="20dp"
+            android:text="1.Tι ορίζουμε ως σενάριο ελέγχου?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/back"
+            android:text=" Ένα σενάριο ελέγχου (test case) περιγράφει τα δεδομένα εισόδου ολόκληρου του προγράμματος ή τμήματος του προγράμματος (διαδικασία, συνάρτηση) και τα αναμενόμενα αποτελέσματα. Τα σενάρια ελέγχου εκτελούνται, είτε σε πραγματικό περιβάλλον προγραμματισμού είτε εικονικά με δημιουργία πίνακα τιμών των μεταβλητών. Σε περίπτωση αποκλίσεων μεταξύ των αναμενόμενων και των πραγματικών αποτελεσμάτων, υπάρχει λάθος το οποίο πρέπει να εντοπιστεί και να διορθωθεί."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="399dp"
+            android:layout_height="182dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="Μια δημοφιλής τεχνική ελέγχου είναι ο έλεγχος μαύρου κουτιού (black-box testing).
+Ονομάζεται έτσι επειδή τα δεδομένα εισόδου στα σενάρια ελέγχου προκύπτουν από τις προδιαγραφές του προγράμματος, αγνοώντας εντελώς τον κώδικα. Δηλαδή το πρόγραμμα μοιάζει σαν
+να βρίσκεται μέσα σε ένα μαύρο κουτί που κρύβει το περιεχόμενό του"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80a" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Παράδειγμα-Εκφώνηση"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox8_6"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="33dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView141" />
+
+        <Button
+            android:id="@+id/button8_6"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="272dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView80a"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="2.Ποια είναι η μέθοδος μάυρο κουτι?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Απάντηση"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+        <TextView
+            android:id="@+id/textView137"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/back"
+            android:text="Βήμα 1ο
+: Δημιουργία ισοδύναμων διαστημάτων
+Από την εκφώνηση είναι προφανές ότι υπάρχουν δύο διαστήματα για την είσοδο:
+• 0 &lt;= βαθμός &lt; 10
+• 10 &lt;= βαθμός &lt;= 20
+Επίσης υπάρχουν δύο διαστήματα μη έγκυρων τιμών εισόδου:
+• βαθμός &lt; 0
+• βαθμός > 20
+-------------------------&gt;
+Μη έγκυρη βαθμολογία
+0 &lt;----------------------&gt;
+Ανεπιτυχής εξέταση
+10 &lt;----------------&gt; 20
+Επιτυχής εξέταση
+&lt;--------------------------
+Μη έγκυρη
+βαθμολογία
+Διάγραμμα [5.1]. Διαστήματα δεδομένων εισόδου
+Βήμα 2ο
+: Καθορισμός ακραίων τιμών διαστημάτων
+Τα διαστήματα των δεδομένων εισόδου απεικονίζονται στο Διάγραμμα 5.1, όπου φαίνεται ότι λείπουν
+κάποια άκρα. Για να τα υπολογίσουμε αρκεί να προσθέσουμε ή να αφαιρέσουμε 1 από το άκρο του
+προηγούμενου ή επόμενου διαστήματος αντίστοιχα, αφού σύμφωνα με την εκφώνηση η είσοδος είναι
+ένας ακέραιος αριθμός. Με αυτό τον τρόπο καταλήγουμε στο Διάγραμμα 5.2.
+----------------------&gt; -1
+Μη έγκυρη βαθμολογία
+0 &lt;-------------------&gt; 9
+Ανεπιτυχής εξέταση
+10 &lt;---------------> 20
+Επιτυχής εξέταση
+21 &lt;--------------------
+Μη έγκυρη
+βαθμολογία
+Διάγραμμα [5.2]. Ακραίες τιμές διαστημάτων εισόδου
+Βήμα 3ο
+: Δημιουργία σεναρίων ελέγχου
+Το τελευταία βήμα είναι να δημιουργήσουμε ένα σενάριο ελέγχου για κάθε ακραία τιμή. Κάθε σενάριο
+πρέπει κατ’ ελάχιστο να περιλαμβάνει την τιμή εισόδου, το αναμενόμενο αποτέλεσμα (σύμφωνα με
+την εκφώνηση του προβλήματος) και περιγραφή της περίπτωσης που ελέγχεται. Έτσι καταλήγουμε στα
+σενάρια ελέγχου του Πίνακα"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+        <TextView
+            android:id="@+id/textView138"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Σενάρια ελέγχου"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView137" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView137"
+            app:srcCompat="@drawable/senariaelegxou" />
+
+        <TextView
+            android:id="@+id/textView141"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Βλέπουμε λοιπόν, ότι ακόμα και ένα πολύ απλό πρόγραμμα με μία μόνο είσοδο, η οποία δεν υφίσταται
+καμία επεξεργασία, απαιτεί έξι σενάρια ελέγχου. Είναι γεγονός ότι ο έλεγχος ενός προγράμματος είναι διαδικασία που απαιτεί χρόνο, τόσο για τον σχεδιασμό όσο και για την υλοποίηση και εκτέλεση των
+σεναρίων ελέγχου, ενώ αν προκύψουν λάθη θα απαιτηθεί επιπλέον χρόνος για τον εντοπισμό και τη
+διόρθωση τους. Γι’ αυτό και η φάση του ελέγχου και της εκσφαλμάτωσης αποτελούν σημαντικό ποσοστό του συνολικού χρόνου ανάπτυξης ενός προγράμματος. Σε μεγάλες εταιρείες λογισμικού, μάλιστα,
+υπάρχουν εξειδικευμένες ομάδες προγραμματιστών που ασχολούνται αποκλειστικά με τον έλεγχο και
+την εκσφαλμάτωση των προγραμμάτων."
+            android:textColor="@color/menubutons"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

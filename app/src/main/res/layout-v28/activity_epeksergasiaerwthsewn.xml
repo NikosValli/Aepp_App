@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".epeksergasiaerwthsewn">
+
+    <TextView
+        android:id="@+id/textView988"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Προτείνετε ερωτήσεις !"
+        android:textColor="@color/menuColor"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view33"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView988" />
+
+    <TextView
+        android:id="@+id/textView977"
+        android:layout_width="wrap_content"
+        android:layout_height="157dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Πιστεύουμε στη διαρκή αναβάθμιση των διαγωνισμάτων.Προτείνετε νέες ερωτήσεις και οι admin αφού τις αξιολογήσουν  θα τις προσθέσουν στα διαγωνίσματα της εφαρμογής !"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view33" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="29dp"
+        android:text="Ερώτηση"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView977" />
+
+    <EditText
+        android:id="@+id/erwthshkathigiti"
+        android:layout_width="285dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:hint="υποβάλλετε την ερώτηση.."
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:text="Aπάντηση 1"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erwthshkathigiti" />
+
+    <EditText
+        android:id="@+id/apanthsh1"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:hint="υποβάλλετε την πρώτη επιλογή.."
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:text="Aπάντηση 2"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apanthsh1" />
+
+
+    <EditText
+        android:id="@+id/apanthsh2"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:hint="υποβάλλετε την δεύτερη επιλογή.."
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:text="Aπάντηση 3"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apanthsh2" />
+
+    <EditText
+        android:id="@+id/apanthsh3"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="υποβάλλετε την τρίτη επιλογή.."
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView103" />
+
+    <TextView
+        android:id="@+id/textView104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Σωστή Απάντηση"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apanthsh3" />
+
+    <EditText
+        android:id="@+id/swsthapanthsh"
+        android:layout_width="338dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:hint="υποβάλλετε την Σωστή απάντηση.."
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView104" />
+
+    <Button
+        android:id="@+id/diagrafi_erw"
+        android:layout_width="162dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/menuColor"
+        android:text="Διαγραφή ερώτησης"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swsthapanthsh"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <Button
+        android:id="@+id/epeksergasia_erw"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+
+        android:background="@color/colorigotit"
+        android:text="Επεξεργασία υπάρχουσας ερώτησης"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

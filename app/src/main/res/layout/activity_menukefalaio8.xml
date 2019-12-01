@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".menukefalaio8">
+
+    <TextView
+        android:id="@+id/titlosmenu8"
+
+        android:layout_width="271dp"
+        android:layout_height="90dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="59dp"
+        android:gravity="center"
+        android:text="Eκσφαλμάτωση"
+        android:textColor="@color/menubutons"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/thewria8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/thewria8"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="64dp"
+
+        android:layout_marginTop="46dp"
+        android:background="@drawable/button_background"
+        android:scaleType="fitCenter"
+        android:text="@string/thewria"
+        android:textAllCaps="false"
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlosmenu8" />
+
+    <Button
+        android:id="@+id/methodologia8"
+        android:layout_width="286dp"
+        android:layout_height="34dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:text="@string/methodologia"
+        android:textAllCaps="false"
+        android:textColor="@color/menubutons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thewria8" />
+
+    <Button
+        android:id="@+id/askhseis8"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="64dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:text="@string/askiseis"
+        android:textAllCaps="false"
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/methodologia8" />
+
+</android.support.constraint.ConstraintLayout>

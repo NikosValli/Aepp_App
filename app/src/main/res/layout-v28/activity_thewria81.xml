@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria81">
+
+        <TextView
+            android:id="@+id/textView132"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+           android:text="1 ΠΡΟΓΡΑΜΜΑ Άθροισμα_θετικών_αριθμών
+2 ΜΕΤΑΒΛΗΤΕΣ
+3 ΑΚΕΡΑΙΕΣ: Σ,Χ,Ι
+4 ΑΡΧΗ (Δεν υπήρχε πριν)
+5 Σ &lt;- 0
+6 ΓΙΑ Ι ΑΠΟ 1 ΜΕΧΡΙ 10 (Σωστή σύνταξη εντολής)
+7 ΓΡΑΨΕ 'Δώσε έναν ακέραιο αριθμό'
+8 ΔΙΑΒΑΣΕ Χ
+9 ΑΝ Χ &gt; 0 ΤΟΤΕ (Σωστή σύνταξη εντολής)
+10 Σ &lt;- Σ + Χ
+11 ΤΕΛΟΣ_ΑΝ
+12 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ (Δεν υπήρχε πριν)
+13 ΓΡΑΨΕ 'Σ=', Σ
+14 ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ"
+            android:textColor="@color/menuColor"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="8.1 Κατηγορίες λαθών"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+
+            android:layout_marginTop="20dp"
+            android:text="1. Ποιες είναι οι βασικές κατηγορίες λαθών στον προγραμματισμό?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/back"
+            android:text="Λογικά:Tα οποια εμφανίζονται μόνο στην εκτέλεση είναι πολυ σοβαρα και δύσκομα στην διορθωση και οφείλονται στην κάθος υλοποίηση του αλγορίθμου.Εντοπίζονται και διορθωνονται απο τον άνθρωπο. \n\n Συντακτικά:Tα οποια εμφανιζονται μονο στη μεταγλώτιση ειναι πιο εύκολα στη δίορθωση και οφείλονται σε συντακτικά λάθη παραλείψεις δηλώσεων κοκ.Εντοπίζονται απο τον μεταγλωτιστή η τον διερμηνευτή και διορθωνονται απο τον ανθρωπο."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="399dp"
+            android:layout_height="433dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="1 ΠΡΟΓΡΑΜΜΑ Άθροισμα_θετικών_αριθμών
+2 ΜΕΤΑΒΛΗΤΕΣ
+3 ΑΚΕΡΑΙΕΣ: Σ,Χ,Ι
+4 Σ &lt;- 0
+5 ΓΙΑ Ι ΑΠΟ 1 ΕΩΣ 10
+6 ΓΡΑΨΕ 'Δώσε έναν ακέραιο αριθμό'
+7 ΔΙΑΒΑΣΕ Χ
+8 ΑΝ Χ &gt; 0
+9 Σ &lt;- Σ + Χ
+10 ΤΕΛΟΣ_ΑΝ
+11 ΓΡΑΨΕ 'Σ=', Σ
+12 ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80a" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text=" Το πρόγραμμα με διορθωμένα τα συντακτικά λάθη."
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox8_1"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="24dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView139" />
+
+        <Button
+            android:id="@+id/button8_1"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="272dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView80a"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Παράδειγμα προγράμματος με συντακτικά λάθη"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Παράδειγμα Προγράμματος με λογικά λάθη"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+        <TextView
+            android:id="@+id/textView137"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/back"
+            android:text="1 ΠΡΟΓΡΑΜΜΑ Αγορά_τετραδίων \n
+2 ΜΕΤΑΒΛΗΤΕΣ \n
+3 ΠΡΑΓΜΑΤΙΚΕΣ: τιμή, πλήθος, διαθέσιμο_ποσό, οφειλόμενο \n
+4 ΑΡΧΗ \n
+5 ΓΡΑΨΕ 'Δώσε την τιμή του τετραδίου:' \n
+6 ΔΙΑΒΑΣΕ τιμή \n
+7 ΓΡΑΨΕ 'Δώσε το πλήθος των τετραδίων' \n
+8 ΔΙΑΒΑΣΕ πλήθος \n
+9 ΓΡΑΨΕ 'Δώσε το διαθέσιμο ποσό' \n
+10 ΔΙΑΒΑΣΕ διαθέσιμο_ποσό \n
+11 οφειλόμενο_ποσό &lt;- τιμή + πλήθος \n
+12 ΑΝ οφειλόμενο_ποσό &lt;= διαθέσιμο_ποσό ΤΟΤΕ \n
+13 ΓΡΑΨΕ 'Η αγορά είναι εφικτή' \n
+14 ΑΛΛΙΩΣ \n
+15 ΓΡΑΨΕ 'Η αγορά δεν είναι εφικτή' \n
+16 ΤΕΛΟΣ_ΑΝ \n
+17 ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+        <TextView
+            android:id="@+id/textView138"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Σχόλια πάνω στο πρόγραμμα"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView137" />
+
+        <TextView
+            android:id="@+id/textView139"
+            android:layout_width="wrap_content"
+            android:layout_height="264dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/back"
+            android:text="α) Σύμφωνα με την εκφώνηση, τα δύο τετράδια κοστίζουν 1,2x2=2,4€. Ο μαθητής διαθέτει 3€, δηλαδή ποσό μεγαλύτερο από το οφειλόμενο. Άρα η αγορά είναι εφικτή.
+β) Σύμφωνα με το πρόγραμμα, το οφειλόμενο ποσό υπολογίζεται ως εξής: 1,2+2=3,2€. Ο μαθητής
+διαθέτει 3€, δηλαδή ποσό μικρότερο από το οφειλόμενο. Άρα η αγορά δεν είναι εφικτή.
+Συμπεράσματα - προτάσεις διορθώσεων:
+Το λογικό λάθος δε σχετίζεται με τη συνθήκη ή τις εντολές που εκτελούνται, όταν η συνθήκη είναι
+αληθής ή ψευδής. Το λογικό λάθος υπάρχει στην εντολή
+«οφειλόμενο_ποσό &lt;- τιμή + πλήθος»
+που πρέπει να αντικατασταθεί με την εντολή
+«οφειλόμενο_ποσό &lt;- τιμή * πλήθος»"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView138" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

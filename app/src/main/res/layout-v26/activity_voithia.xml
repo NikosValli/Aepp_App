@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".voithia">
+
+
+    <TextView
+        android:id="@+id/textView116"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Λίγα λόγια για την εφαρμογή"
+        android:textColor="@color/menuColor"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView117"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="30dp"
+        android:text="Για τους μαθητές:"
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+    <TextView
+        android:id="@+id/textView118"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back"
+        android:text="-Στα κεφάλαια Θεωρία θα βρείτε την θεωρία του μαθήματος σε μορφή ερωτοαπαντήσεων.Mπορείτε να αποθηκέυσετε όποιο κεφάλαιο θέλετε. \n -Στα κεφάλαια μεθοδολογία θα δείτε ορισμένα λυμένα παραδείγματα κυρίως για να αφομοιώσετε τη σύνταξη των βασικών εντολών. \n -Στα κεφάλαια ασκήσεις θα βρείτε ερωτήσεις προς απάντηση για το κάθε κεφάλαιο. \n -Στο ευρετήριο μπορείτε γρήγορα να ψάξετε για βασικές έννοιες του μαθήματος.\n - Τα έπαθλα ξεκλειδώνονται εαν απαντήσετε σωστά σε όλες τις ερωτήσεις του κάθε κεφαλαιού. \n -Στην ενότητα προτείνετε μας ιδέες μπορείτε να μας στείλετε τα σχόλια σας για την εφαρμογή."
+        android:textColor="@color/menuColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="22dp"
+        android:text="Για τους καθηγητές:"
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView118" />
+
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back"
+        android:text="-Στην ενότητα Προτείνετε νεες ερωτήσεις μπορείτε να προτείνετε ερωτήσεις για να εισαχθούν στο διαγώνισμα \n -Στην ενότητα επεξεργαστείτε τις ερωτήσεις που έχετε υποβάλλει παρατίθεται η λίστα με τις ερωτήσεις σας.Πατόντας πάνω σε κάποια ερώτηση Μπορείτε να την επεξεργαστείτε η να την διαγράψετε"
+        android:textColor="@color/menuColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="19dp"
+        android:text="Ποιοι είμαστε"
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back"
+        android:text="Η εφαρμογή δημιουργήθηκε στα πλάισια προπτυχιακής διατριβής.Προσπαθήσαμε να εμπεριέχει όλα τα απαραίτητα συστατικά ώστε να την καθιστούν ένα πολύτιμο συνεργατικό μέσο για την μελέτη του μαθητή.Επίσης δίνουμε τη δυνατότητα στους καθηγητές να προσθέσουν περιεχόμενο με σκοπό την δυναμική ενημέρωση του περιεχομένου απο τους κατάλληλους ανθρώπους."
+        android:textColor="@color/menuColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView121" />
+</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

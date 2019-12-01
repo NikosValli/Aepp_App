@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".opinions">
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="wrap_content"
+        android:layout_height="157dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Παρακάτω μπορείτε να μας παραθέσετε τις απόψεις σας σχετικά με την εφαρμογή καθώς και νεές ιδέες για το τι θα μπορούσαμε να προσθέσουμε στο μέλλον!"
+        android:textColor="@color/colorAccent"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <RatingBar
+        android:id="@+id/vathmologia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="64dp"
+
+        android:numStars="5"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apopsi" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="H γνώμη σας μετράει!"
+        android:textColor="@color/menuColor"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/apopsi"
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:background="@drawable/backgroundforopininions"
+        android:hint="Πείτε μας την άποψη σας."
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+    <Button
+        android:id="@+id/submit_apopsi"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorigotit"
+        android:text="Aποστολή"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vathmologia" />
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

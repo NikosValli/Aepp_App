@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:text="2.2 ΤΡΟΠΟΙ ΠΕΡΙΓΡΑΦΗΣ ΑΛΓΟΡΙΘΜΟΥ-ΒΑΣΙΚΑ ΣΤΟΙΧΕΙΑ ΑΛΓΟΡΙΘΜΩΝ "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="344dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="1. Με ποιους τρόπους μπορούμε να περιγράψουμε εναν αλγόριθμο?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="346dp"
+            android:layout_height="258dp"
+
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back"
+            android:text="Ένας αλγόριθμος μπορει να αναπαρασταθεί με:Eλευθερο κείμενο:αδόμητος τρόπος και συχνά παραβιάζεται το κριτηριο της αποτελεσματικότητας.Φυσική γλώσσα κατα βήματα:συχνά παραβιάζεται το κριτήριο της καθοριστικότητας. Διαγραμμαροής.είναι ενα σύνολο γεωμέτρικών σχημάτων που το καθένα περιγράφει μια συγκεκριμένη λειτουργία και ενώνονται με βέλη τα οποια δείχνουν την σειρά εκτέλσεης των λειτουργιών. Κωδικοποιηση.προγραμμα γραμμενο σε ψευδογλωσσα είτε σε καποια γλώσσα προγραμματισμού."
+
+
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Tι είναι οι μεταβλητές?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1892dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/checkBox25"
+            app:layout_constraintTop_toBottomOf="@+id/krithriaalgorithgmou" />
+
+        <CheckBox
+            android:id="@+id/checkBox25"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1876dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/krithriaalgorithgmou" />
+
+        <TextView
+            android:id="@+id/krithriaalgorithgmou"
+            android:layout_width="match_parent"
+            android:layout_height="247dp"
+            android:layout_marginTop="31dp"
+
+            android:background="@drawable/back"
+            android:text="Μια μεταβλητή είναι ένα γλωσσικό αντικείμενο, που
+χρησιμοποιείται για να παραστήσει ένα στοιχείο δεδομένου. Στη μεταβλητή εκχωρείται μια
+τιμή, η οποία μπορεί να αλλάζει κατά τη διάρκεια εκτέλεσης του αλγορίθμου. Ανάλογα με
+το είδος της τιμής που μπορούν να λάβουν, οι μεταβλητές διακρίνονται σε αριθμητικές,
+αλφαριθμητικές και λογικές. \n \n Παραδειγματα: Αριθμητικές μεταβλητές: \n Ακεραιες¨12,45,35 \n Πραγματικές: 4.56,3.9 \n Αλφαριθμητικές: τιμές όπως 'νικος' 'αφ43' \n λογικές:αποθηκεύονται οι τιμές ΑΛΗΘΗΣ και ΨΕΥΔΗΣ. "
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/kanonesonomasias"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:text="KΑΝΟΝΕΣ ΟΝΟΜΑΣΙΑΣ ΜΕΤΑΒΛΗΤΩΝ"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/krithriaalgorithgmou" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="231dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/back"
+
+
+            android:text="Περιλαμβάνουν πεζά η κεφαλαια αριθμους και το χαρακτήρα κατω παυλα(_) και μονο αυτα \n το ονομα πρεπει να ξεκινα μπονο απο χαρακτήρα και οχι απο οτιδήποτε αλλο χωρις κενα \n Δενε πιτρεπεται να χρησιμοποιηθει ως ονομα μεταβλητης καποια απο τις λε΄ξεις της γλώσσας προγραμματισμου.αυτες οι λέξεις ονομάζονται δεσμευμενες. \n \n Αποδεκτα ονόματα μεταβλητών:τιμη1,μεσος_ορος,Α10 \n Μη αποδεκτά ονόματα μεταβλητών:12a,μεση τιμη"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kanonesonomasias" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Τι είναι οι τελεστές?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+
+
+            android:text="Πρόκειται για τα γνωστά σύμβολα των πράξεων. οι κατηγοριές είναι : αριθμητικοί,συγκριτικοι και λογικοί. "
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView40"
+            app:srcCompat="@drawable/telestes" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="209dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/back"
+            android:text="Όταν μια τιμή προκύπτει από υπολογισμό, τότε αναφερόμαστε σε εκφράσεις (expressions). Για τη σύνταξη μιας αριθμητικής έκφρασης χρησιμοποιούνται αριθμητικές σταθερές, μεταβλητές, συναρτήσεις, αριθμητικοί τελεστές και παρενθέσεις. Οι αριθμητικές εκφράσεις υλοποιούν απλές ή σύνθετες μαθηματικές πράξεις.Οι πράξεις που παρουσιάζονται σε μια έκφραση, εκτελούνται σύμφωνα με την επόμενη ιεραρχία 1.Ύψωση σε δύναμη 2.Πολλαπλασιασμός και διαίρεση 3.Πρόσθεση και αφαίρεση"
+
+
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:text="Τι είναι οι εκφράσεις?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ποια είναι η εντολή εκχώρησης? Τι λειτουργία εκτελεί?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/back"
+            android:text="Η εντολή εκχώρησης χρησιμοποιείται για την απόδοση τιμών στις μεταβλητές κατά τη διάρκεια εκτέλεσης του προγράμματος.Υπολογίζεται η τιμή της έκφρασης στη δεξιά πλευρά και εκχωρείται η τιμή αυτή στη μεταβλητή, που αναφέρεται στην αριστερή πλευρά."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="215dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44"
+            app:srcCompat="@drawable/ekxwrhsh" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ποιες είναι οι εντολές εισόδου εξόδου και ποια η λειτουργικότητα τους?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:text="Εντολή εισόδου:Mε την εντολη εισοδου ο Η/Υ περιμένει μεχρι ο χρήστης να δώσει τιμές για τις μεταβλητες απο το πληκτρολογιο. Η εντολη έχει ως εξής: \n Διάβασε μεταβλητη1,μεταβλητη2,μεταβλητη3,..... \n \n Εντολή εξόδου:Με τηνν εντολή εξόδου ο Η/Υ εμφανίζει τις τιμές των μεταβλητών η καποιου κειμένου Η εντολή ε\ίναι η εξής: \n Εμφάνισε μεταβλητη1,μεταβλητη2... \n Εμφάνισε 'ΚΕΙΜΕΝΟ',μεταβλητη"
+            android:textColor="@color/menuColor"
+
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Τι είναι η δομή ακολουθίας?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/back"
+            android:text="Οταν για την εκτελεση ενος αλγοριθμου απαιτειται σειριακη εκτελεση εντολών χρησιμοποιουμε την δομη ακολουθίας.Με αυτη επιλύουμε απλα προβληματα και περιέχει τις εντολες είσοδου-εξοδου-εκχώρησης."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

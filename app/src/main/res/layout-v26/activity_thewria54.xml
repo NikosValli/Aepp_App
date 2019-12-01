@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria54">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="5.4 Είδη γλωσσών και τεχνικές σχεδίασης "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:text="1.Ποια είναι τα βασικα συστατικά των γλωσσών?Τι γνωρίζετε για το καθένα απο αυτά?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+android:text="Οι γλώσσες προγραμματισμού είναι τεχνητές γλώσσες.Ολες ομως προσδιορίζονται από: \n To αλφάβητο.Σύνολο στοιχείων τής γλώσσας (ολα τα αποδεκτα σύμβολα) \n\n Το λεξιλόγιο δηλ. το σύνολο των αποδεκτων λέξεων της γλώσσας.Συνήθως σε μια γλώσσα προγραμματισμού,το λεξιλόγιο αποτελείται απο 20-100 λέξεις μόνο (αποδεκτές λέξεις-εντολές.Προφανώς οι φυσικές γλώσσες είναι πολύ πιο πλούσιες σε λεξιλογιο. \n\n Τη γραμματική που αποτελείται απο το τυπικό μέρος (κανόνες που ορίζουν αποδεκτές μορφές των λέξεων) και στο συντακτικό(κανόνες σύνδεσης διάταξης λέξεων έτσι ώστε να προκύπτουν σωστές συντακτικά προτάσεις-εντολες.Π.χ(for i:=1 to 10 do) \n\n Τη σημασιολογία δηλ κανόνες που ορίζουν το νόημα των λέξεων και κατά συνέπεια των προτάσεων-εντολών."
+            android:textSize="19dp"
+            android:background="@drawable/back"
+            android:textColor="@color/menuColor"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:text="Ποια η διαφορά φυσικών και τεχνητών γλωσσών?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/back"
+
+            android:text="Η διαφορά μεταξυ τεχνητών και φυσικών γλωσσών ειναι οτι οι μέν πρώτες αλλάζουν,μεταβάλλονται ενώ οι δεύτερς δεν μεταβάλλονται ριζικά όπως οι φυσικές αλλα μόνο σε επίπεδο διαλέκτου(ίδιες εντολές με διαφορετικη γραφή) και επεκτασης (διαφορετικές εντολές που επεκτείνουν τις δυνατότητες των γλωσσων)."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:text="Ποιες ειναι οι βασικές τεχνικές σχεδίασης προγραμμάτων?Τι γνωρίζετε για την καθεμια απο αυτές?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/back"
+android:text="Iεραρχική σχεδίαση προγράμματος.Προκύπτει συνήθως μετα τη φάση της ανάλυσης απο επάνω προς τα κάτων -top/down \n\n Τμηματικός προγραμματισμός.Υλοποιεί την ιεραρχική σχεδίαση σε μία γλώσσα προγραμματισμού(Pascal).Κάθε υποπρόγραμμα αποτελεί ανεξάρτητη ενότητα (υποαλγόριθμο). \n\n Δομημένος προγραμματισμός:Βασιζεται στη χρήση των δομών ακολουθίας,επιλογής,επανάληψης και το συνδυασμό τους.Καθε πρόγραμμα εχει μια μόνο εξοδο και μια μόνο είσοδο.Αποθαρρυνει την ανεξέλεγτη χρήση της εντολής GOTO."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ποια είναι τα πλεονεκτήματα του δομημένου προγραμματισμου?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/back"
+android:text="1.Aπλούστερα προγραμματα \n 2. Άμεση μεταφορά αλγορίθμων σε προγράμματα \n 3.Εύκολη ανάλυση προβλήματος \n 4.Περιορισμός λαθών \n 5.Eυκολή ανάγνωση και κατανόηση προγράμματος \n 6.Ευκολη διόρθωση και συντήρηση προγράμματος."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox5_4"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="50dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+        <Button
+            android:id="@+id/button6_3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria83">
+
+        <TextView
+            android:id="@+id/textView132"
+            android:layout_width="wrap_content"
+            android:layout_height="673dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="Απάντηση:
+Δοκιμαστική εκτέλεση
+Αν δοθεί η τιμή -9 από το πληκτρολόγιο, θα εμφανιστεί το μήνυμα «Καταχωρήθηκε ο βαθμός
+της εικοσάβαθμης κλίμακας -9» και θα τερματιστεί η εκτέλεση του προγράμματος.
+Έλεγχος ορθότητας αποτελέσματος
+Με βάση την εκφώνηση η τιμή -9 δεν είναι αποδεκτή και το μήνυμα που εμφανίστηκε είναι
+λανθασμένο.
+Τα λάθος εντοπίζεται στη συνθήκη.
+Με τη συνθήκη επανάληψης «Βαθμός&lt;0 ΚΑΙ Βαθμός&gt;20»
+ο βρόχος επανάληψης δε θα εκτελεστεί για καμία τιμή της μεταβλητής «Βαθμός», επειδή
+πολύ απλά κανείς αριθμός μικρότερος του μηδενός δεν είναι μεγαλύτερος του είκοσι.
+Προτεινόμενη διόρθωση
+Η συνθήκη «Βαθμός&lt;0 ΚΑΙ  Βαθμός&gt;20» πρέπει να αντικατασταθεί με τη συνθήκη
+«Βαθμός&lt;0 Ή Βαθμός&gt;20»"
+            android:textColor="@color/menuColor"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="8.3 Εκσφαλμάτωση λογικών λαθών στις δομές επανάληψης"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+
+            android:layout_marginTop="20dp"
+            android:text="1.Τι προβλήματα συναντάμε στις δομές επανάληψης?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="239dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/back"
+            android:text=" Σε μια δομή επανάληψης μπορεί να εμφανιστούν λογικά λάθη που σχετίζονται με:
+        • τη συνθήκη επανάληψης ή τερματισμού,
+        • την αρχικοποίηση της συνθήκης,
+        • την ενημέρωση της συνθήκης εντός του βρόχου επανάληψης,
+        • τις εντολές που περιλαμβάνονται εντός του βρόχου."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="399dp"
+            android:layout_height="267dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="1 ΠΡΟΓΡΑΜΜΑ Ανάγνωση_βαθμολογίας \n
+2 ΜΕΤΑΒΛΗΤΕΣ \n
+3 ΑΚΕΡΑΙΕΣ: Βαθμός \n
+4 ΑΡΧΗ \n
+5 ΓΡΑΨΕ 'Δώσε βαθμό στην εικοσάβαθμη κλίμακα' \n
+6 ΔΙΑΒΑΣΕ Βαθμός \n
+7 ΟΣΟ Βαθμός &lt; 0 ΚΑΙ Βαθμός &gt; 20 ΕΠΑΝΑΛΑΒΕ \n
+8 ΓΡΑΨΕ 'Μη αποδεκτή τιμή' \n
+9 ΓΡΑΨΕ 'Δώσε βαθμό στην εικοσάβαθμη κλίμακα' \n
+10 ΔΙΑΒΑΣΕ Βαθμός \n
+11 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ \n
+12 ΓΡΑΨΕ 'Καταχωρήθηκε ο βαθμός της εικοσάβαθμης κλίμακας ', Βαθμός \n
+13 ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80a" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Aπάντηση"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox8_3"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="29dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+        <Button
+            android:id="@+id/button8_3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="272dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView80a"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Παράδειγμα προγράμματος με λογικό λάθος σε δομή επανάληψης"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

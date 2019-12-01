@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria84">
+
+        <TextView
+            android:id="@+id/textView132"
+            android:layout_width="wrap_content"
+            android:layout_height="509dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="Στη δεύτερη επανάληψη το μήνυμα που εμφανίζεται αναφέρεται σε λανθασμένο μήνα. Για να
+διορθωθεί αυτό πρέπει η εντολή «ΓΡΑΨΕ ″Ο ″, Ι, ″ος μήνας ΑΥΞΗΣΗ″» να γίνει
+«ΓΡΑΨΕ ″Ο ″, Ι+1, ″ος μήνας ΑΥΞΗΣΗ″».
+• Στην τρίτη και την πέμπτη επανάληψη εμφανίζεται η ύπαρξη αύξησης, ενώ τα
+έσοδα των δύο μηνών είναι ίσα. Για να διορθωθεί αυτό πρέπει η συνθήκη
+«ΕΣΟΔΑ[Ι] &lt;= ΕΣΟΔΑ[Ι + 1]» να γίνει «ΕΣΟΔΑ[Ι] &lt; ΕΣΟΔΑ[Ι + 1]» .
+• Στην έκτη επανάληψη το πρόγραμμα προσπαθεί να προσπελάσει την τιμή του στοιχείου ΕΣΟΔΑ[7], το οποίο είναι εκτός των ορίων του πίνακα. Για να διορθωθεί αυτό
+πρέπει η εντολή «ΓΙΑ Ι ΑΠΟ 1 ΜΕΧΡΙ 6» στην επανάληψη ελέγχου να γίνει
+«ΓΙΑ Ι ΑΠΟ 1 ΜΕΧΡΙ 5»"
+            android:textColor="@color/menuColor"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="8.4 Εκσφαλμάτωση λογικών λαθών σε πίνακες"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+
+            android:layout_marginTop="20dp"
+            android:text="1.Tι πρόβληματα ενδέχεται να συναντήσουμε σε προγράμματα με πίνακες?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="239dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/back"
+            android:text=" Κατά την εκσφαλμάτωση προγραμμάτων που χρησιμοποιούν πίνακες χρειάζεται να δίνετε ιδιαίτερη προσοχή:
+• στο μέγεθος των πινάκων κατά τη δήλωσή τους,
+• στους δείκτες των πινάκων κατά την προσπέλασή τους,
+• στη μη υπέρβαση των ορίων του πίνακα. "
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="399dp"
+            android:layout_height="267dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="1 ΠΡΟΓΡΑΜΜΑ ΕΣΟΔΑ_ΚΑΤΑΣΤΗΜΑΤΟΣ \n
+2 ΜΕΤΑΒΛΗΤΕΣ \n
+3 ΠΡΑΓΜΑΤΙΚΕΣ: ΕΣΟΔΑ[6] \n
+4 ΑΚΕΡΑΙΕΣ: Ι \n
+5 ΑΡΧΗ \n
+6 ! Επανάληψη ανάγνωσης εσόδων \n
+7 ΓΙΑ Ι ΑΠΟ 1 ΜΕΧΡΙ 6 \n
+8 ΓΡΑΨΕ 'Δώσε τα έσοδα του ', Ι, 'ου μήνα' \n
+9 ΔΙΑΒΑΣΕ ΕΣΟΔΑ[Ι] \n
+10 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ \n
+11 ! Επανάληψη ελέγχου αυξητικής τάσης \n
+12 ΓΙΑ Ι ΑΠΟ 1 ΜΕΧΡΙ 6 \n
+13 ΑΝ ΕΣΟΔΑ[Ι] &lt;= ΕΣΟΔΑ[Ι + 1] ΤΟΤΕ \n
+14 ΓΡΑΨΕ 'Ο ', Ι, 'ος μήνας ΑΥΞΗΣΗ' \n
+15 ΤΕΛΟΣ_ΑΝ \n
+16 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ \n
+17 ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80a" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Aπάντηση"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox8_4"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="46dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+        <Button
+            android:id="@+id/button8_4"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="272dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView80a"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Παράδειγμα προγράμματος με λογικό λάθος σε πίνακα."
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView140"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Δοκιμαστική εκτέλεση"
+            android:textColor="@color/menubutons"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="406dp"
+            android:layout_height="255dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView140"
+            app:srcCompat="@drawable/pinakastimwn" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

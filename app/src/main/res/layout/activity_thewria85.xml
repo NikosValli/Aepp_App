@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria81">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="8.5 Εκσφαλμάτωση λογικών λαθών στα υποπρογράμματα"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+
+            android:layout_marginTop="20dp"
+            android:text="1.Τι πρέπει να προσέξουμε σε προγράμματα με υποπρογράμματα?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="223dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/back"
+            android:text=" Κατά την εκσφαλμάτωση προγραμμάτων που χρησιμοποιούν υποπρογράμματα χρειάζεται να δίνεται προσοχή στον εντοπισμό λογικών λαθών που σχετίζονται με:
+• την κλήση του υποπρογράμματος και το πέρασμα των παραμέτρων
+• τα λοιπά λογικά λάθη που εμφανίζονται και στα προγράμματα."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="399dp"
+            android:layout_height="530dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="1 ΠΡΟΓΡΑΜΜΑ ΕΛΕΓΧΟΣ_ΖΗΜΙΑΣ \n
+2 ΜΕΤΑΒΛΗΤΕΣ \n
+3 ΑΚΕΡΑΙΕΣ: Ι, Πλήθος, Μήνες_με_ζημία \n
+4 ΠΡΑΓΜΑΤΙΚΕΣ: ΕΣΟΔΑ[6], ΕΞΟΔΑ[6] \n
+5 ΑΡΧΗ \n
+6 ΓΙΑ Ι ΑΠΟ 1 ΜΕΧΡΙ 6 \n
+7 ΓΡΑΨΕ 'Δώσε τα έσοδα του ', Ι, 'ου μήνα:' \n
+8 ΔΙΑΒΑΣΕ ΕΣΟΔΑ[Ι] \n
+9 ΓΡΑΨΕ 'Δώσε τα έξοδα του ', Ι, 'ου μήνα:' \n
+10 ΔΙΑΒΑΣΕ ΕΞΟΔΑ[Ι] \n
+11 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ \n
+12 Μήνες_με_ζημία &lt;- Υπολογισμός(ΕΣΟΔΑ, ΕΞΟΔΑ) \n
+13 ΓΡΑΨΕ 'Μήνες που είχαν ζημία:', Μήνες_με_ζημία \n
+14 ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ \n
+15 \n
+16 ΣΥΝΑΡΤΗΣΗ Υπολογισμός(Πίνακας1, Πίνακας2): ΑΚΕΡΑΙΑ \n
+17 ΜΕΤΑΒΛΗΤΕΣ \n
+18 ΠΡΑΓΜΑΤΙΚΕΣ: Πίνακας1[6], Πίνακας2[6] \n
+19 ΑΚΕΡΑΙΕΣ: Ι, Πλήθος \n
+20 ΑΡΧΗ \n
+21 Πλήθος &lt;- 0 \n
+22 ΓΙΑ Ι ΑΠΟ 1 ΜΕΧΡΙ 6 \n
+23 ΑΝ Πίνακας2[Ι] &lt; Πίνακας1[Ι] ΤΟΤΕ \n
+24 Πλήθος &lt;- Πλήθος + 1 \n
+25 ΤΕΛΟΣ_ΑΝ \n
+26 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ \n
+27 Υπολογισμός &lt;- Πλήθος \n
+28 ΤΕΛΟΣ_ΣΥΝΑΡΤΗΣΗΣ"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80a" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Δοκιμαστική εκτέλεση"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox8_5"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="16dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView137" />
+
+        <Button
+            android:id="@+id/button8_5"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="272dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView80a"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text=" Παράδειγμα προγράμματος που χρησιμοποιεί υποπρόγραμμα και έχει λογικό λάθος "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Aπάντηση"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+
+        <TextView
+            android:id="@+id/textView137"
+            android:layout_width="374dp"
+            android:layout_height="426dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/back"
+            android:text="Η μεταβλητή «Μήνες_με_ζημία» μετά την ολοκλήρωση της εκτέλεσης της συνάρτησης θα λάβει την
+τιμή 3. Με βάση την εκφώνηση, μόνο ένας μήνας είχε ζημία.
+ii) Υπάρχει λογικό λάθος κατά την κλήση της συνάρτησης. Η συνάρτηση υπολογίζει πόσα στοιχεία
+του Πίνακα2 είναι μικρότερα από την τιμή του αντίστοιχου στοιχείου του Πίνακα1. Εμείς θέλουμε να
+βρούμε πόσα στοιχεία του πίνακα «ΕΣΟΔΑ» είναι μικρότερα από την τιμή του αντίστοιχου στοιχείου
+του πίνακα «ΕΞΟΔΑ». Άρα, ο Πίνακας «ΕΣΟΔΑ» πρέπει να αντιστοιχιστεί στον Πίνακα2 και ο πίνακας
+«ΕΞΟΔΑ» πρέπει να αντιστοιχιστεί στον Πίνακα1.
+Συμπεραίνουμε λοιπόν πως η εντολή της γραμμής 12 πρέπει να αντικατασταθεί με την εντολή:
+ «Μήνες_με_ζημία &lt;- Υπολογισμός(ΕΞΟΔΑ, ΕΣΟΔΑ)»
+Εναλλακτικά, η δήλωση της συνάρτησης στην γραμμή 16 θα μπορούσε να γίνει:
+«ΣΥΝΑΡΤΗΣΗ Υπολογισμός(Πίνακας2, Πίνακας1): ΑΚΕΡΑΙΑ»
+Μια άλλη λύση θα ήταν η εντολή της γραμμής 23 να γίνει:
+«ΑΝ Πίνακας1[Ι] &lt; Πίνακας2[Ι] ΤΟΤΕ»"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82"
+            app:srcCompat="@drawable/pinakastimwnypop" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

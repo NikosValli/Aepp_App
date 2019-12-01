@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/domesepanalipsis"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="2.4 ΔΟΜΕΣ ΕΠΑΝΑΛΗΨΗΣ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/button2_4"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox2_4"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="32dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            android:text="Η δομη επανάληψης ΟΣΟ...ΕΠΑΝΕΛΑΒΕ"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/domesepanalipsis" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="336dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView51"
+            app:srcCompat="@drawable/osoepanelave" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:text="Παρατηρησεις στην δομη οσο... \n Οι εντολες μεσα στην οσο εκτελεουνται οσο ισχυει η συνθηκη.Για τον λογο αυτο η συνθηκη ονομαζεται συνθηκη συνεχειας. \n Ο ελεγχος της συνθηκης γινεται στην αρχη. \n  εντολη 1 χρησιμοποιειται για να δωσει αρχικη τιμη στην μεταβλητη της συνθηκης αλλιως δεν θα μπορουσαν να εκτελεστουν οι εντολες μεσα στην οσο. \n Η εντολη ν χρησιμοποιειται για να αλλαξει την τιμη της μεταβλητης της συνθηκης αλλιως ο βροχος θα επαναλαμβανοταν απειρες φορες.(ατερμων βροχος) \n Για να βρουμε το πληθος των επαναληψεων μετραμε ποσες φορες εκτελουνται οι εντολες και οχι ποσες φορες ελεγχεται η συνθηκη."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/mexrisotou"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:text="H δομη επαναληψης αρχη επαναληψης...μεχρις_οτου"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="291dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mexrisotou"
+            app:srcCompat="@drawable/arxhepanalipsis" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:text="Παρατηρουμε οτι σε αυτη τη δομη ο ελεγχος της συνθηκης πραγματοιπιειται στο τελος του βροχου. \n Οι εντολες μεσα στην αρχη_επαναληωης εκτελουνται τουλαχιστον μια φορα \n οι εντολες επαναλαμβανονται οσο η συνθηκη ειναι ψευδη΄ς \n Aυτη η δομη χρησιμοποιετιαι και οταν δεν ξερουμε το πληθος των επαναληψεων \n Η δομη οσο...επανελαβε μετατρεπεται παντα στην μεχρις_οτου \n Οι συνθηκες μεταξυ της οσο... και της μεχρις_οτου ειναι αντιθετες ενω το τμημα εντολων παραμενι ιδιο \n το ποσες φορες εκτελουνται οι εντολες ειναι το ιδιο με το ποσες φορες ελεγχεται η συνθηκη"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:text="Η δομη για..."
+
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            android:background="@drawable/back"
+            android:layout_marginTop="11dp"
+            android:text="Η συγκεκριμενη δομη επαναληψης εχει ως εξης: \n Για μεταβλητη απο Α μεχρι Τ με_βημα Β \n εντολές \n Τέλος_Επαναληψης \n Παρατηρησεις στην δομη επαναληψης για... \n  το τμημα εντολων που βρισκεται εντος της για ονομαζεται βρόχος. \n ο βροχος μπορει να εχει και αρνητικο βημα \n η τιμη του βήματος δεν ειναι απαραιτητο να ειναι μονο ακεραιος αριθμος αλλα μορει να λαβει και δεκαδικη τιμη \n οταν το βημα ειναι 1 μπορει να παραληφθει απο την εντολη για . \n Οταν το βημα ειναι 0 οι εντολες εκτελουνται απειρες φορες. \n Οταν σε μια για η τιμη1=τιμη2 τοτε οι εντολες εκτελουνται μια φορα.Οταν τιμη1 μεγαλύτερη της τιμη2 και θετικο βημα τοτε οι εντολες δεν εκτελουνται ποτε.Οταν τιμη1 μικρότερη της τιμη2 και βημα αρνητικο οι εντολες δεν εκτελουνται ποτε. \n οταν το πληθος επαναληψεων ειναι γνωστο τοτε η καταλληλοτερη εντολη ειναι η για..."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

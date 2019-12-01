@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiplechoicetest"
+    android:layout_width="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".multiplechoicek1">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="40dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score:"
+            android:textSize="19dp"
+            android:padding="8dp"
+            android:textColor="@color/menubutons"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/scoretext" />
+
+        <TextView
+            android:id="@+id/scorenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0/7"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/erwthshkathigiti"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:padding="8dp"
+        android:text="Σε ποια κατηγορία προβλήματος ανήκει η δευτεροβάθμια εξίσωση σύμφωνα με την δυνατότητα επίλυσης;"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp" />
+
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/menubutons"
+        android:background="@color/colorAccent"
+        android:text="Επιλύσιμα"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:id="@+id/choice1"
+        android:textSize="19dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/menubutons"
+        android:background="@color/colorAccent"
+        android:text="Aνοικτά"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:id="@+id/choice2"
+        android:textSize="19dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/menubutons"
+        android:background="@color/colorAccent"
+        android:text="Άλυτα"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:id="@+id/choice3"
+        android:textSize="19dp"/>
+
+
+    <ImageView
+        android:id="@+id/logoofunipi"
+        android:layout_width="248dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="257dp"
+        android:color="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:srcCompat="@drawable/logooo" />
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        android:text="@string/logo"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

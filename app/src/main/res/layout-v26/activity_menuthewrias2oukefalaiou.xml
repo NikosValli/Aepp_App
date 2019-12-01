@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".menuthewrias1oukefaliou">
+
+    <TextView
+        android:id="@+id/titlosthewrias2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kεφάλαια θεωρίας"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/menubutons"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/dioena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="2.1 Αλγόριθμοι-κριτήρια αλγορίθμων"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/diodio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="2.2 Τρόποι περιγραφής αλγορίθμων"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/diotria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="2.3 ΛΟΓΙΚΕΣ ΕΚΦΡΑΣΕΙΣ-ΔΟΜΕΣ ΕΠΙΛΟΓΗΣ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/diotessera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="2.4 ΔΟΜΕΣ ΕΠΑΝΑΛΗΨΗΣ"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/diopente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="2.5 ΔΙΑΙΡΕΙ ΚΑΙ ΒΑΣΙΛΕΥΕ"
+        android:textSize="19dp" />
+</LinearLayout>

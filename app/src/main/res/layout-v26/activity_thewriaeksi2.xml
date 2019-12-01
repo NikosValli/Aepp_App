@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewriaeksi1">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="6.2 ΕΝΤΟΛΕΣ ΣΤΗ ΓΛΩΣΣΑ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:text="Εντολή εκχώρησης"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/back"
+            android:text="Στην ΓΛΩΣΣΑ η εντολή εκχώρησης ή απόδοσης τιμής δε διαφέρει απο αυτή της ψευδογλώσσας (δηλ. χρησιμοποιείται πάλι το συμβολο της εκχώρησης).Βέβαια σε καμία περίπτωση η εντολή αυτή δε πρέπει να εκλαμβάνεται ως εξίσωση."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:text="Εντολές Εισόδου-Εξόδου"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/back"
+
+            android:text="Στη ΓΛΩΣΣΑ οι εντολές εισόδου εξόδου ελάχιστα διαφέρουν από αυτές της ψευδογλώσσας.Για την εισαγωγή δεδομένων χρησιμοποιείται η εντολή ΔΙΑΒΑΣΕ, ενώ για την εμφάνιση των αποτελεσμάτων η εντολή ΓΡΑΨΕ (αντί ΕΜΦΑΝΙΣΕ της ψευδογλωσσας).Π.χ \n ΔΙΑΒΑΣΕ ονομα,ηλικια \n ΓΡΑΨΕ ονομα,'εισαι',ηλικια,'ετών'."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:text="ΔΟΜΗ ΠΡΟΓΡΑΜΜΑΤΟΣ "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="Στη ΓΛΩΣΣΑ κάθε προγραμμα εχει τη παρακατω δομή \n\n ΠΡΟΓΡΑΜΜΑ όνομα_προγράμματος \n\n ΣΤΑΘΕΡΕΣ \n\n .......................\n\n .................. \n\n METAΒΛΗΤΕΣ \n\n ........... \n\n .................\n\n ΑΡΧΗ \n\n ................. \n\n ......................... \n\n TEΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ \n\n Οι λέξεις που ειναι με κεφαλαια είναι δεσμευμένες λέξεις.Στο τμήμα των σταθερών μπορούμε να δηλώσουμε αν θέλουμε σταθερές τιμές με ονόματα.Στο τμήμα των μεταβλητων μπορούμε να δηλώσουμε τις μεταβλητές του προγραμματός μαζί με τους αντίστοιχους τύπους.Στο τμήμα μεταξύ ρων λέξεων ΑΡΧΗ και ΤΕΛΟΣ γράφουμε τις εντολές του προγράμματος."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Εντολές επιλογής "
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/back"
+android:text="Στη ΓΛΩΣΣΑ υποστηρίζονται οι εντολές επιλογής ΑΝ όπως ακριβώς και στην ψευδογλώσσα.Οι εντολές αυτές έχουν αναλυθεί διεξοδικά."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+
+        <TextView
+            android:id="@+id/textView844"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="6dp"
+            android:text="Eντολές Επανάληψης"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox6_2"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+        <Button
+            android:id="@+id/button6_2"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:textColor="@color/menuColor"
+            android:text="Στη ΓΛΩΣΣΑ υποστηρίζονται οι εντολές επανάληψης ΟΣΟ...ΕΠΑΝΑΛΑΒΕ,ΑΡΧΗ_ΕΠΑΝΑΛΗΨΗΣ...ΜΕΧΡΙΣ_ΟΤΟΥ,και ΓΙΑ...ΑΠΟ...ΜΕΧΡΙ όπως ακριβώς και στην ψευδογλώσσα.Οι εντολές αυτές έχουν αναλυθεί διεξοδικά. \n Παρατηρήσεις: \n 1.Όταν έχουμε επανάληψη μέσα σε επανάληψη τότε το τμήμα αυτό ονομάζεται Εμφωλευένος Βρόχος. \n\n 2.Iδιότητες Εμφωλευμένων Βρόχων: \n a. Ο πρώτος βρόχος αρχίζει πρώτος και τελειώνει τελευταίος. \n b. Κάθε βρόχος αρχίζει απο την αρχή. \n c. Δεν μπορούμε να έχουμε στους βρόχους τον ίδιο μετρητή. \n\n 3.H τιμή με την οποία σταματά ένας βρόχος ονομάζεται τιμή φρουρός."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView844" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

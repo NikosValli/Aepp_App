@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlogin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="198dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/logooo" />
+
+    <TextView
+
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:text="@string/logo"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/username_login"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:drawableLeft="@drawable/resize_username"
+        android:hint="Όνομα χρήστη" />
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/design_default_color_primary_dark"
+
+
+        android:drawableLeft="@drawable/rsz_1ps"
+        android:hint="Κωδικός" />
+
+    <EditText
+        android:id="@+id/cnf_password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/design_default_color_primary_dark"
+
+
+        android:drawableLeft="@drawable/rsz_1ps"
+        android:hint="Επιβεβαίωση κωδικού" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ποιο είναι το αγαπημένο σας φαγητό?"
+        android:textColor="@color/menubutons"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/mistikierwthsh"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/design_default_color_primary_dark"
+
+        android:hint="Μυστική Απάντηση" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Εγγραφή" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Είστε καθηγητής?"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/kathigitis"
+
+        android:textColor="@color/menubutons"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="Έιστε εγγεγραμένος ήδη?"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textview_register"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+
+            android:text="Σύνδεση"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

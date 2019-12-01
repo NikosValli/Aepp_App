@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewriaefta2">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="7.2  Χτίζοντας Αντικειμενοστραφή Προγράμματα "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+
+            android:layout_marginTop="20dp"
+            android:text="1. Ποιες είναι οι ενέργειες που πρέπει να γίνουν για να λύσουμε το πρόβλημα μεσω αντικειμενοστραφόυς τεχνικής ?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="0dp"
+            android:layout_height="455dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/back"
+            android:text="το μόνο που έχουμε να κάνουμε είναι να αναλύσουμε το πρόβλημα το οποίο θέλουμε να επιλύσουμε,
+δηλαδή να αναγνωρίσουμε και να καταγράψουμε τα βασικά συστατικά στοιχεία της διαδικασίας επίλυσής του που είναι:
+1. τα αντικείμενα που συμμετέχουν με βάση τον ρόλο τους στο συγκεκριμένο σενάριο,
+2. οι ιδιότητες κάθε αντικειμένου, δηλ. τα σχετικά με το συγκεκριμένο πρόβλημα χαρακτηριστικά
+του, και
+3. οι υπηρεσίες που προσφέρει ή οι ενέργειες που υλοποιεί κάθε αντικείμενο (μέθοδοι) προς
+αξιοποίηση από άλλες, ώστε να αναπτυχθούν οι απαραίτητες συνεργασίες μεταξύ των αντικειμένων για την επίλυση του προβλήματος."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Ας εφαρμόσουμε την ανάλυση στο πρόβλημα αποστολής λουλουδίων"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="178dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/back"
+            android:text="Διαβάζοντας προσεκτικά το σενάριο του προβλήματος «Αποστολή λουλουδιών» που παρουσιάστηκε
+εντοπίζουμε τη συμμετοχή των εξής αντικειμένων. Δίπλα σε κάθε αντικείμενο σημειώνουμε το ρόλο
+του στο συγκεκριμένο σενάριο. Θα μας χρειαστεί!
+• Μαμά (Πελάτης),
+• Γιώργος (Ανθοπώλης),
+• Τζιοβάνι (Ανθοπώλης),
+• Αντόνιο (Ανθοδέτης),
+• Πέπε (Ταχυμεταφορέας),
+• Άννα (Πελάτης)"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80a" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Ιδιότητες"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back"
+            android:text="Διαβάζοντας ξανά το σενάριό μας προσπαθούμε να εντοπίσουμε τα σχετικά με το πρόβλημα χαρακτηριστικά κάθε αντικειμένου , δηλαδή τις ιδιότητές του. Τόσο για τη μαμά όσο και για την Άννα απαιτούνται προσωπικά στοιχεία (Όνομα, Επώνυμο) και στοιχεία επικοινωνίας (Διεύθυνση, Τηλέφωνο,
+Εmail).
+• Μαμά (Πελάτης): Όνομα, Επώνυμο, Διεύθυνση, Τηλέφωνο, Email
+• Άννα (Πελάτης): Όνομα, Επώνυμο, Διεύθυνση, Τηλέφωνο, Email
+Παρατηρούμε ότι στην ιστορία μας δεν αναφέρονται συγκεκριμένα χαρακτηριστικά για τους ανθοπώλες, εν τούτοις, για την ανάπτυξη μιας αντικειμενοστραφούς εφαρμογής είναι απαραίτητο να γνωρίζουμε τις ιδιότητες όλων των αντικειμένων.
+Αν θεωρήσουμε λοιπόν ότι για έναν ανθοπώλη είναι απαραίτητο να γνωρίζουμε εταιρικά στοιχεία,
+στοιχεία επικοινωνίας, στοιχεία πληρωμής και στοιχεία που αφορούν το δίκτυο συνεργασίας στο
+οποίο ανήκουν τότε μπορούμε να καταγράψουμε τις εξής ιδιότητες για τους ανθοπώλες της ιστορίας
+μας:
+• Γιώργος (Ανθοπώλης): Επωνυμία εταιρείας, Όνομα Ιδιοκτήτη, Επώνυμο Ιδιοκτήτη, Διεύθυνση, ΑΦΜ, Τηλέφωνο, Email, Τραπεζικός Λογαριασμός, Κωδικός Δικτύου Συνεργασίας
+• Τζιοβάνι (Ανθοπώλης): Επωνυμία εταιρείας, Όνομα Ιδιοκτήτη, Επώνυμο Ιδιοκτήτη, Διεύθυνση,
+ΑΦΜ, Τηλέφωνο, Email, Τραπεζικός Λογαριασμός, Κωδικός Δικτύου Συνεργασίας
+Αντίστοιχα θα θεωρήσουμε ότι για τους ανθοδέτες και τους ταχυμεταφορείς πρέπει να γνωρίζουμε
+τα εξής:
+• Αντόνιο (Ανθοδέτης): Επωνυμία εταιρείας, Όνομα Ιδιοκτήτη, Επώνυμο Ιδιοκτήτη, Διεύθυνση,
+ΑΦΜ, Τηλέφωνο, Email, Ειδικότητα, Ωριαία αμοιβή
+• Πέπε (Ταχυμεταφορέας): Επωνυμία εταιρείας, Όνομα Ιδιοκτήτη, Επώνυμο Ιδιοκτήτη, Διεύθυνση, ΑΦΜ, Τηλέφωνο, Email, Τύπος"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView822"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Ενέργειες/Υπηρεσίες και Είδος Συνεργασίας"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <TextView
+            android:id="@+id/textView833"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/back"
+            android:text="Αναφέρθηκε ότι στην αντικειμενοστραφή προσέγγιση η επίλυση των προβλημάτων επιτυγχάνεται με
+τις συνεργασίες που αναπτύσσονται μεταξύ των αντικειμένων. Ας ξαναδούμε την ιστορία μας εστιάζοντας στις ενέργειες ή τις υπηρεσίες (μεθόδους) που παρέχει κάθε αντικείμενο και στο είδος της
+συνεργασίας που πρέπει να αναπτυχθεί μεταξύ των αντικειμένων για την παράδοση της ανθοδέσμης
+στην Άννα.
+Ενέργειες/Υπηρεσίες
+• Μαμά (Πελάτης): ΚάνειΠαραγγελία()
+• Γιώργος (Ανθοπώλης): ΔέχεταιΠαραγγελία(), ΖητάΣυνεργασία()
+• Τζιοβάνι (Ανθοπώλης): ΑποδέχεταιΣυνεργασία(), ΑναθέτειΑνθοδεσία(), ΑναθέτειΠαράδοση()
+• Αντόνιο (Ανθοδέτης): ΕτοιμάζειΑνθοδέσμη()
+• Πέπε (Ταχυμεταφορέας): ΠαραδίδειΑνθοδέσμη()
+• Άννα (Πελάτης): ΠαραλαμβάνειΑνθοδέσμη()
+
+Είδος Συνεργασίας
+• Παραγγελία: Μαμά (Πελάτης) - Γιώργος (Ανθοπώλης)
+•	 Συνεργασία: Γιώργος (Ανθοπώλης) - Τζιοβάνι (Ανθοπώλης)
+• Ανάθεση ανθοδεσίας: Τζιοβάνι (Ανθοπώλης) - Αντόνιο (Ανθοδέτης)
+• Ανάθεση παράδοσης: Τζιοβάνι (Ανθοπώλης) - Πέπε (Ταχυμεταφορέας)
+• Παράδοση: Πέπε (Ταχυμεταφορέας) - Άννα (Πελάτης)
+"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView822" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox7_2"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+        <Button
+            android:id="@+id/button7_2"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="248dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+        <TextView
+            android:id="@+id/textView80a"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Αντικείμενα"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="508dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView130"
+            app:srcCompat="@drawable/diagrammatiki42" />
+
+        <TextView
+            android:id="@+id/textView130"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Διαγραμματική Αναπαράσταση Προβλήματος"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView833" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

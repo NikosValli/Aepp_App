@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".menuthewrias7kefalaio">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kεφάλαια θεωρίας"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/menubutons"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/efta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="7.1 Αντικειμενοστραφής Προγραμματισμός: ένας φυσικός τρόπος επίλυσης προβλημάτων"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/efta2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="7.2 Χτίζοντας Αντικειμενοστραφή Προγράμματα"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/efta3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="7.3  Ομαδοποίηση Αντικειμένων σε Κλάσεις: Αφαιρετικότητα και Ενθυλάκωση"
+        android:textSize="19dp" />
+
+
+    <Button
+        android:id="@+id/efta4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="7.4 Κλάσεις - Πρόγονοι,Κλάσεις - Απόγονοι"
+        android:textSize="19dp" />
+
+
+    <Button
+        android:id="@+id/efta5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="7.5Πολυμορφισμός"
+        android:textSize="19dp" />
+</LinearLayout>

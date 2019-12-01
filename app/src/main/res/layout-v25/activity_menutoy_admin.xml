@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MenutoyAdmin">
+
+
+    <ImageView
+        android:id="@+id/logoo"
+        android:layout_width="272dp"
+        android:layout_height="62dp"
+
+
+        android:layout_marginTop="16dp"
+        android:color="@color/colorPrimary"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logooo" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="13dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotext" />
+
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:text="@string/logo"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoo" />
+
+    <Button
+        android:id="@+id/showopinions"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:background="@color/colorigotit"
+        android:text=" Δείξε κριτικές"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/showerwthseis"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:background="@color/colorigotit"
+        android:text="Δείξε προτάσεις ερωτήσεων"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="307dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:text="Μενού Διαχειριστή"
+        android:textColor="@color/colorAccent"
+        android:textSize="26dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Χρέος του διαχειριστή είναι να διατηρεί την εφαρμογή λειτουργική και αναβαθμισμένη."
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+</android.support.constraint.ConstraintLayout>

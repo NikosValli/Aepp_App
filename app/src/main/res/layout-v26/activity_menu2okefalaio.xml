@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".menu1okefalio">
+
+    <TextView
+        android:id="@+id/introduction2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="36dp"
+        android:text="Αλγόριθμοι"
+        android:textColor="@color/menubutons"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/methodologia2"
+        android:layout_width="231dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background"
+        android:text="@string/methodologia"
+        android:textAllCaps="false"
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thewria2" />
+
+    <Button
+        android:id="@+id/askhseis2"
+        android:layout_width="231dp"
+        android:layout_height="44dp"
+
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+
+        android:background="@drawable/button_background"
+        android:text="@string/askiseis"
+        android:textAllCaps="false"
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/methodologia2" />
+
+    <Button
+        android:id="@+id/thewria2"
+        android:layout_width="231dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_background"
+        android:text="@string/thewria"
+        android:textAllCaps="false"
+
+        android:textColor="@color/menubutons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduction2" />
+
+</android.support.constraint.ConstraintLayout>

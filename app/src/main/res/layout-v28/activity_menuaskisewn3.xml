@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".menuaskisewn2">
+
+    <Button
+        android:id="@+id/gotothetest3"
+        android:layout_width="254dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="132dp"
+        android:background="@color/menuColor"
+        android:text="Μετάβαση στο τεστ"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:text="@string/logo"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentscore3"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="32dp"
+        android:text="To σκορ σου στο τεστ είναι:"
+        android:textColor="@color/colorAccent"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotothetest3" />
+
+    <TextView
+        android:id="@+id/highestscore3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:text="Το μεγαλύτερο σκόρ που έχεις πετύχει είναι:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentscore3" />
+
+    <Button
+        android:id="@+id/midenismos"
+        android:layout_width="219dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="58dp"
+        android:background="@color/menuColor"
+        android:text="Μηδενισμός υψηλότερων score"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logooo" />
+
+
+    <TextView
+        android:id="@+id/textView107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Ή καθόρισε εσύ στο πόσες ερωτήσεις θέλεις να απαντήσεις!"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <TextView
+        android:id="@+id/erwthseispouthaapantisei3"
+        android:layout_width="371dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="17dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView107" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="396dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="50dp"
+        android:max="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erwthseispouthaapantisei3" />
+</android.support.constraint.ConstraintLayout>
+

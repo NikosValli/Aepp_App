@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".menuthewrias8kefalaio">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kεφάλαια θεωρίας"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/menubutons"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/oxtw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text="8.1 Κατηγορίες Λαθών"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/oxtw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="8.2 Εκσφαλμάτωση λογικών λαθών στις δομές επιλογής"
+        android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/oxtw3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="8.3  Εκσφαλμάτωση λογικών λαθών στις δομές επανάληψης"
+        android:textSize="19dp" />
+
+
+    <Button
+        android:id="@+id/oxtw4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="8.4Εκσφαλμάτωση λογικών λαθών σε πίνακες"
+        android:textSize="19dp" />
+
+
+
+
+    <Button
+        android:id="@+id/oxtw5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="8.5 Εκσφαλμάτωση λογικών λαθών στα υποπρογράμματα"
+        android:textSize="19dp" />
+
+
+    <Button
+        android:id="@+id/oxtw6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="8.6  Μέθοδος ελέγχου «Μαύρο Κουτί»"
+        android:textSize="19dp" />
+</LinearLayout>

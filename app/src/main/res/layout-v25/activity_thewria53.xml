@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria53">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="5.3 Tαξινόμηση γλωσσών με βάση την χρήση "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:text="1.Tι γνωρίζετε για τις γλώσσες γενικής χρήσης? "
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="149dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/back"
+            android:text="Γλώσσες γενικής χρήσης.Ειναι αρκετά καλές και αποτελεσματικές για μια ευρεια γκάμα εφαρμογών.Βεβαια εδω μπορούμε να νεταξουμε θεωρητικά τοσο τις γλώσσες επιστημονικής κατευθυνσης (Fortran) οσο και τις γλώσσες εμπορικής κατευθυνσης (Cobol)."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:text="Τι γνωρίζετε για τις γλώσσες προγραμματισμού συστημάτων?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="106dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/back"
+
+            android:text="Πολλές συσκευές η τεχνολογικά συτήματα εκτελούν προγράμματα όπως περίπου ο υπολογιστής.Επομένως χρειάζονται κάποια γλώσσα προγραμματισμού που να διαθέτει και δυνατότητες χαμηλού επιπέδου για να εκμεταλλεύεται το συγκεκριμένο υλικό. "
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Τι γνωρίζετε για τις γλωσσες Τεχνητής νοημοσυνης και ειδικής χρήσης?"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/back"
+android:text="Γλώσσες τεχνητης νοημοσύνης(Prolog,Lisp).Oι γλώσσες τεχνητής νοημοσύνης προσπαθούν κατα κάποιο τεχνητό τρόπο να προσομοιώσουν την ανθρώπινη νοημοσύνη.Χρησιμοποιούνται σε παιχνίδια,εμπειρα συστήματα κλπ.Οι ειδικές χρήσεις γλώσσες ειναι γλώσσες που χρησιμοποιουνται για πολυ εξειδικευμενες εφαρμογές."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Υπάρχει καλύτερη γλώσσα προγραμματισμού?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/back"
+android:text="Eίναι προφανές οτι δεν υπάρχει μια τέλεια γλώσσα προγραμματισμούΓια όλες τις εφαρμογές.Πρέπει να επιλέγεται η πιο καταλληλη ανα περιπτωση."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Απο τι εξαρτάται η επιλογή της γλώσσας προγραμματισμού για την ανάπτυξη μιας εφαρμογής?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/back"
+android:text="To είδος της εφαρμογής \n\n Το υπολογιστικό περιβάλλον στο οποιο θα εκτελεστεί. \n\n Τα προγραμματιστικά περιβάλλοντα που διαθέτουμε \n\n Τις γνώσεις του προγραμματιστή."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ποια είναι τα πλεονεκτήματα των γλώσσων υψηλού επιπέδου?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/back"
+android:text="1.Φυσικότερος τρόπος εκφρασης προβλημάτων \n\n 2.Ανεξαρτησία απο το υλικό του υπολογιστή.Ένα πρόγραμμα που γράφεται σε έναν υπολογιστή μπορεί να εκτελεστεί απο οποιονδήποτε άλλο Η/Υ με λίγες η καθόλου αλλαγές.(Μεταφερσιμότητα). \n\n 3.Eυκολία εκμάθησης και εκπαίδευσης \n\n 4.Ευκολία στην διόρθωση και στην συντήρηση των προγραμματων. \n\n 5.Λιγότερο κόστος σε χρόνο και χρήμα."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+        <CheckBox
+            android:id="@+id/checkBox5_3"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="8dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+        <Button
+            android:id="@+id/button5_3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

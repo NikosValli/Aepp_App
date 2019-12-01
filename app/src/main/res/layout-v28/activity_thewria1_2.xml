@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".thewria1_2">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="385dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="8dp"
+        android:text="1.2 Στάδια αντιμετώπισης προβλημάτων"
+        android:textColor="@color/menubutons"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="402dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Ποια ειναι τα στάδια αντιμετώπισης προβλημάτων ? "
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="349dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back"
+        android:paddingTop="10dp"
+        android:text="@string/stadiaantimetwpishs"
+        android:textColor="@color/menuColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="345dp"
+        android:layout_height="280dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/stadiaantimetwpishs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+         />
+
+
+    <Button
+        android:id="@+id/methodologia5"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="146dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorigotit"
+
+        android:text="Το κατάλαβα !"
+        android:textColor="@color/menubutons"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="201dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</android.support.constraint.ConstraintLayout>

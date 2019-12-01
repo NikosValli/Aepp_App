@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/titlos_3_1"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="4.1 Tμηματικός Προγραμματισμός"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/erwthsh176"
+            android:layout_width="397dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="1.Τι ειναι ο τμηματικός προγραμματισμός?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_1" />
+
+        <TextView
+            android:id="@+id/erwthsh176apantisi"
+            android:layout_width="349dp"
+            android:layout_height="117dp"
+
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="Τμηματικός προγραμματισμός ονομάζεται η τεχνική σχεδιάσης και ανάπτυξης προγραμμάτων ως ένα σύνλο απο απλούστερα τμήματα προγραμμάτων. Η σωστή διαίρεση ειναι μια πολύπλοκη διαδικασία που προσφέρει όμως πολλά πλεονεκτήματα."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh176" />
+
+
+        <TextView
+            android:id="@+id/erwthsh717"
+            android:layout_width="386dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:text="2.Tι είναι υποπρόγραμμα?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh176apantisi" />
+
+        <TextView
+            android:id="@+id/apanthsh177"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+            android:text="Τα ανεξάρτητα και αυτόνομα τμήματα προγραμμάτων καλούνται υποπρογράμματα."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh717" />
+
+
+        <TextView
+            android:id="@+id/apanthsh1876"
+            android:layout_width="wrap_content"
+            android:layout_height="218dp"
+
+            android:background="@drawable/back"
+            android:text="Τα υποπρογράμματα πρέπει να διακρίνονται απο 3 βασικές ιδιίοτητες: \n Καθε υποπρόγραμμα έχει μια είσοδο και μία εξοδο.Το υποπρόγραμμα δεχεται κάποιες τιμές παραμέτρους πραγματοποιεί κάποιες ενέεργειες υπολογισμούς και επιστρέφει μία η περισσότερες τιμές κατα τον τερματισμό του."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh18" />
+
+        <TextView
+            android:id="@+id/erwthsh18"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="3.Ποιες είναι οι βασικές ιδιότητες των υποπρογραμμάτων?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh177" />
+
+
+        <Button
+            android:id="@+id/button4_1"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginTop="1968dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox4_1"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="1288dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <TextView
+            android:id="@+id/textView7180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/back"
+            android:text="Διευκολυνει την αναπτυξη του αλγορίθμου και του αντιστοιχου προγραμματος.Επιτρέπει την εξέταση και την επίλυση απλών προβλημάτων και οχι την αντιμετώπιση του συνολικόυ προβλήματος.Με την σταδιακη επίλυση των προβλημάτων και την δημιουργία των αντίστοιχβν υποπρογραμμάτων τελικά επιλύεται το συνολικό πρόβλημα. \n\n Διευκολύνει την κατανόηση και δίορθση του προγράμματος.Ο χωρισμός του προγράμματος σε μικρότερα αυτοτελή τμήματα επιτρέπει τη γρήγορη διορθωση ενός συγκεκριμενου τμήματος του χωρίς οι αλλαγές αυτές να επηρεάσουν όλο το υπόλοιπο προγραμμα.Επίσης δευκολύνει οποιονδήποτε χρειαστεί να διαβάσει και να κατανοήσει τον τρόπο που λειτουργεί το πρόγραμμα. \n\n Aπαιτεί λιγότερο χρόνο και προσπάθεια στη συγγραφή του προγράμματος.Πολυ συχνα χρειάζεται η ίδια λειτουργεία σε διαφορετικά σημεία ενός προγράμματος.Απο τη στιγμη που ένα υποπρόγραμμα έχει γραφεί,μπορεί το ίδο να καλείται απο πολλα σημεία του προγράμματος.Ετσι μειώνονται το μέγεθος του προγράμματος ,ο χρόνος που απαιτείται για τη συγγραφή του και οι πιθανότητες λάθους,ενώ ταυτόχρονα το πρόγραμμα γίνεται πιο ευλήπτο και κατανοητό \n\n Επεκτείνει τις δυνατότητες των γλώσσων προγραμματισμού.Ενα υποπρόγραμμα που εχει γραφεί μπορεί να χρησιμοποιηθεί πολύ ευκολα και σε άλλα προγραμματα.Απο τη στιγμή που εχει δημιουργηθεί,η χρήση του δεν διαφερει απο την χρήση των ενσωματωμένων συναρτήσεωνπου παρέχει η γλώσσα προγραμματισμού,οπώς για τον υπολογισμό του ημιτόνου η του συνημιτόνου η την εντολή με την οποια εκτελει μια συγκεκριμενη διαδικασία (π.χ ΓΡΑΨΕ).Αν λοιπον χρειαζεται συχνα καποια λειτουργία που δεν υποστηριζεται απευθειας απο την γλωσσα,όπως για παραδείγμα η εύρεση του μικρότερου δυο αριθμών,τότε μπορεί να γραφει το αντίστοιχο υποπρογραμμα."
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+        <TextView
+            android:id="@+id/textView7881"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Πλεονεκτήματα Τμηματικού Προγραμματισμού"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh1876" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".thewria1_4">
+
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="366dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+
+        android:text="1.4 ΠΡΟΒΛΗΜΑ ΚΑΙ ΥΠΟΛΟΓΙΣΤΗΣ"
+        android:textColor="@color/menubutons"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/erwthsh19"
+        android:layout_width="387dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="45dp"
+        android:text="Γιατι αναθέτουμε την επίλυση των προβλημάτων στους υπολογιστές;"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/erwthsh19apantisi"
+        android:layout_width="349dp"
+        android:layout_height="185dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back"
+        android:text="@string/apanthsh19"
+        android:textColor="@color/menuColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erwthsh19" />
+
+
+    <TextView
+        android:id="@+id/erwthsh20"
+        android:layout_width="387dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
+        android:text="Ποιές ειναι οι κύριες λειτουργίες ενός υπολογιστή ;"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erwthsh19apantisi" />
+
+    <TextView
+        android:id="@+id/erwthsh20apantisi"
+        android:layout_width="367dp"
+        android:layout_height="185dp"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back"
+        android:text="@string/apanthsh20"
+        android:textColor="@color/menuColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erwthsh20" />
+
+    <Button
+        android:id="@+id/buttonteleiwsethewria"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="146dp"
+        android:layout_height="63dp"
+
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorigotit"
+        android:text="Το κατάλαβα !"
+        android:textColor="@color/menubutons"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erwthsh20apantisi" />
+
+    <CheckBox
+        android:id="@+id/checbox1_4"
+        android:layout_width="199dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="48dp"
+        android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+        android:textColor="@color/menubutons"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erwthsh20apantisi" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

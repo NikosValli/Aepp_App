@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".thewria1_3">
+
+        <TextView
+            android:id="@+id/titlos_3_1"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="16dp"
+            android:text="1.5 Ανάλυση Προβλημάτων"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/erwthsh16"
+            android:layout_width="397dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="Τι περιλαμμάνει η ανάλυση ενός προβλήματος στο πλέον σύγχρονο τεχνολογικό περιβάλλον? "
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlos_3_1" />
+
+        <TextView
+            android:id="@+id/erwthsh16apantisi"
+            android:layout_width="349dp"
+            android:layout_height="270dp"
+
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/back"
+            android:text="Η ανάλυση ενός προβλήματος σε ένα σύγχρονο υπολογιστικό περιβάλλον περιλαμβάνει:
+την καταγραφή της υπάρχουσας πληροφορίας για το πρόβλημα,
+την αναγνώριση των ιδιαιτεροτήτων του προβλήματος,
+την αποτύπωση των συνθηκών και προϋποθέσεων υλοποίησής του
+και στη συνέχεια:
+την πρόταση επίλυσης με χρήση κάποιας μεθόδου, και
+την τελική επίλυση με χρήση υπολογιστικών συστημάτων"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16" />
+
+
+        <TextView
+            android:id="@+id/erwthsh17"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="38dp"
+            android:text="Σε ποια θέματα πρέπει να δίνει απάντηση η ανάλυση ενός προβλήματος?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh16apantisi" />
+
+        <TextView
+            android:id="@+id/apanthsh17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="28dp"
+            android:background="@drawable/back"
+            android:text="-Ποια είναι τα δεδομένα και το μέγεθος του προβλήματος,
+-Ποιες είναι οι συνθήκες που πρέπει να πληρούνται για την επίλυση
+του προβλήματος,
+-Ποια είναι η πλέον αποδοτική μέθοδος επίλυσής τους (σχεδίαση αλγορίθμου),
+-Πώς θα καταγραφεί η λύση σε ένα πρόβλημα (π.χ. σε ψευδογλώσσα),
+και
+-Ποιος είναι ο τρόπος υλοποίησης στο συγκεκριμένο υπολογιστικό
+σύστημα (π.χ. επιλογή γλώσσας προγραμματισμού).
+"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/erwthsh17" />
+
+
+        <Button
+            android:id="@+id/button1_5"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox1_5"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="3dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apanthsh17" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

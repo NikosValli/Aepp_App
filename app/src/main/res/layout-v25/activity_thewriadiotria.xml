@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="385dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:text="2.3 ΛΟΓΙΚΕΣ ΕΚΦΡΑΣΕΙΣ-ΔΟΜΕΣ ΕΠΙΛΟΓΗΣ"
+            android:textColor="@color/menubutons"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="344dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="1.Τι ειναι λογικη εκφραση η συνθήκη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="346dp"
+            android:layout_height="241dp"
+
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back"
+            android:text="Λογική εκφραση η συνθήκη:είναι μια εκφραση που αποτελειται απο σταθερες,μεταβλητες,συγκριτικους,αριθμιτικους και λογικους τελεστες.Μια απλη λογική εκφραση πρεπει οπωςσδηποτε να περιεχει και συγκριτικους τελεστες.Η τιμη μιας λογικης εκφρασηςειναι παντα η λογικη τιμή αληθης η ηλογικη τιμη ψευδης. \n Συνθετη λογικη εκφραση:Οταν δυο η περισσοτερες λογικες εκφρασεις ενωνονται με εναν η περισσοτερους λογικους τελεστές τοτε σχηματιζεται μια συνθετη λογικη εκφραση."
+
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="2.Τι ειναι οι λογικόι τελεστές ?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="146dp"
+            android:layout_height="63dp"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2360dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorigotit"
+            android:text="Το κατάλαβα !"
+            android:textColor="@color/menubutons"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/checkBox25"
+            app:layout_constraintTop_toBottomOf="@+id/krithriaalgorithgmou" />
+
+        <CheckBox
+            android:id="@+id/checkBox25"
+            android:layout_width="199dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="2336dp"
+            android:text="θέλεις να αποθηκευσεις αυτο το κεφάλαιο για επανάληψη?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/krithriaalgorithgmou" />
+
+        <TextView
+            android:id="@+id/krithriaalgorithgmou"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_marginTop="31dp"
+
+            android:background="@drawable/back"
+            android:text="Λογικοι τελεστές:Οταν μια συνθηκη η λογικη εκφραση περιεχει δυο και παραπανω απλες συνθηκες τοτε χρησιμοποιουνται οι λογικοι τελεστες και παραγονται συνθετες λογικες εκφρασεις."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/kanonesonomasias"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="260dp"
+            android:text="Iεραρχιες πράξεων"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/krithriaalgorithgmou" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/back"
+            android:text="Ιεραρχια λογικων τελεστων:OXI,KAI,H \n Ιεραρχια τελεστών:Αριθμητικοι,Συγκριτικοι,Λογικοι \n Λογικη συεζευξη:KAI Λογικη διαζευξη:H Λογική αρνηση: OXI"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kanonesonomasias" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Τι ειναι η δομή απλης επιλογης?"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back"
+
+
+            android:text="Πολλες φορες για να λυθει ενα προβλημα πρεπει να ελεγχθει αν ισχυει καποια συνθηκη.Σε αυτη τη περιπτωση χρησιμοποιουμε την δομη απλης επιλογης. "
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView40"
+            app:srcCompat="@drawable/aplhepilogh" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:text="Συνθετη δομή επιλογης"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="122dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/back"
+            android:text="Η δομη σύνθετης επιλογής χρησιμοποιειται στην περιπτωση που επιθυμουμε να εκτελεσουμε εναλλακτικα δυο ομαδες εντολών.Κριτηριο για το ποια ομαδα εντολων θα εκτελεστει αποτελει καποια συνθηκη.Στην περιπτωση που η συνθηκη ισχυει θα εκτελεστει η πρωτη οαμδα εντολων διαφορετικα θα εκτελεστει η δευτερη."
+
+
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/krithriaalgorithgmou"
+            app:srcCompat="@drawable/alithispeudis" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="90dp"
+            android:text="Δομη πολλαπλης επιλογής"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/textViewsin"
+            android:layout_width="wrap_content"
+            android:layout_height="122dp"
+            android:layout_marginTop="49dp"
+            android:background="@drawable/back"
+            android:text="Καποια προβλήματα απαιτουν την επιλογη μεταξυ περισσοτερων απο δυο περιπτωσεις.Σε αυτη τη περιπτωση χρησιμοποιουμε τις δομες πολλαπλης επιλογής"
+            android:textColor="@color/menuColor"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="324dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView42"
+            app:srcCompat="@drawable/sinthetiepilogh" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewsin"
+            app:srcCompat="@drawable/pollaplh" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="3dp"
+            android:text="Εμφωλευμενες δομές επιλογής"
+            android:textColor="@color/menubutons"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/back"
+            android:text="Στην υλοποιηση ενος αλγοριθμοθ μπορουμε να χρησιμοποιησουμε καποιες απο τις παραπανω δομες ως τμηματα εντολων σε αλλες.Δηλαδη στις εμφωλευμενες δομες επιλογης μια η και περισσοτερες δομες επιλογης βρισκονται μεσα σε αλλες δομες επιλογης."
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
