@@ -3,6 +3,7 @@ package com.nikosval.aepp;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,6 +44,7 @@ public class diagwnismakefalaio3 extends AppCompatActivity {
         choice3 = (Button) findViewById(R.id.choice3);
         Intent startIntent= getIntent();
         ii= startIntent.getIntExtra("pernatoeuros3",0);
+        updateScore(0);
         apotelesmata=new ArrayList<String>();
         apotelesmatalanthasmenes=new ArrayList<String>();
 
@@ -179,6 +181,9 @@ public class diagwnismakefalaio3 extends AppCompatActivity {
             AlertDialog.Builder alert = new AlertDialog.Builder(diagwnismakefalaio3.this);
 
             alert.setTitle("Το διαγώνισμα τελείωσε!");
+                        SharedPreferences.Editor editor = getSharedPreferences("osesapantisa", MODE_PRIVATE).edit();
+                        editor.putInt("osesapantisa",ii);
+                        editor.apply();
             alert.setCancelable(false);
 
             alert.setMessage("Το σκορ σου είναι : " + mscored3 + " πόντοι!");
@@ -225,7 +230,7 @@ public class diagwnismakefalaio3 extends AppCompatActivity {
     private void updateScore(int point){
 
 
-        mScoreView3.setText(""+ mscored3+"/"+mQuestionLibrary.getlength());
+        mScoreView3.setText(""+ mscored3+"/"+ii);
     }
 
 

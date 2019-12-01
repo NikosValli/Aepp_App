@@ -45,4 +45,21 @@ public class thewriatriadio extends AppCompatActivity {
             }
         });
 }
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewriatriadio.this, menuthewrias3kefalaio.class));
+
+
+
+
+
+
+
+
+
+    }
 }

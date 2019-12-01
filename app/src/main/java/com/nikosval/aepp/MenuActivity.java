@@ -102,6 +102,9 @@ public class MenuActivity extends AppCompatActivity {
         db.addshowingthor(username,0 );
         db.addshowingca(username,0 );
         db.addshowingthanos(username,0 );
+        db.addshowingyonrog(username,0 );
+        db.addshowingdeadpool(username,0 );
+
 
 
 
@@ -111,7 +114,11 @@ public class MenuActivity extends AppCompatActivity {
             db.addhighlevel3(username,0,0 );
             db.addhighlevel4(username,0,0 );
             db.addhighlevel5(username,0,0 );
-        db.addhighlevel6(username,0,0 );
+             db.addhighlevel6(username,0,0 );
+             db.addhighlevel7(username,0,0 );
+             db.addhighlevel8(username,0,0 );
+
+
 
         viewpager=findViewById(R.id.pager);
         adaptertab=new TabFragmentAdapter(getSupportFragmentManager());
@@ -161,6 +168,9 @@ public class MenuActivity extends AppCompatActivity {
         erwthseiskathigitwn=(ImageButton)findViewById(R.id.erwthseiskathigitwn);
         domesdedomenwn = (ImageButton) findViewById(R.id.domes);
         ImageButton kefalaio6=(ImageButton) findViewById(R.id.kefalaio6);
+        ImageButton kefalaio7=(ImageButton) findViewById(R.id.kef7);
+        ImageButton kefalaio8=(ImageButton) findViewById(R.id.kef8);
+
 
 
 
@@ -214,6 +224,20 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+        kefalaio7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this, menukefalaio7.class));
+            }
+        });
+
+        kefalaio8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this, menukefalaio8.class));
+            }
+        });
+
 
         badges.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -221,6 +245,10 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(new Intent(MenuActivity.this, BadgesActivity.class));
             }
         });
+
+
+
+
 
 
 
@@ -249,6 +277,7 @@ public class MenuActivity extends AppCompatActivity {
 
             }
         });
+
 
 
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.mytransition);
@@ -333,7 +362,15 @@ public class MenuActivity extends AppCompatActivity {
                         editor6.clear();
                         editor6.commit();
                         finish();
-                        startActivity(new Intent(MenuActivity.this, LoginActivity.class));
+
+                        Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
+                        intent.putExtra("finish", true); // if you are checking for this in your other Activities
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                                Intent.FLAG_ACTIVITY_CLEAR_TASK |
+                                Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        finish();
+
 
 
                     }

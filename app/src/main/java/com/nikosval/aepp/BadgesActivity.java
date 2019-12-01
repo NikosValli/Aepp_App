@@ -35,6 +35,10 @@ public class BadgesActivity extends AppCompatActivity {
         TextView level4descr;
         TextView level5descr;
         TextView level6descr;
+        TextView level7descr;
+        TextView level8descr;
+
+
 
 
 
@@ -52,12 +56,20 @@ public class BadgesActivity extends AppCompatActivity {
         level4descr=(TextView)findViewById(R.id.desc14);
         level5descr=(TextView)findViewById(R.id.desc15);
         level6descr=(TextView)findViewById(R.id.desc16);
+        level8descr=(TextView)findViewById(R.id.desc18);
+
 
 
 
         hulk=(ImageView)findViewById(R.id.Hulk);
         ImageView ca=(ImageView)findViewById(R.id.captainamerica);
         ImageView thanos=(ImageView)findViewById(R.id.thanos);
+        ImageView yonrogg=(ImageView)findViewById(R.id.yonrogg);
+        level7descr=(TextView)findViewById(R.id.desc17);
+        ImageView deadpool=(ImageView)findViewById(R.id.deadpool);
+
+
+
 
 
 
@@ -68,6 +80,9 @@ public class BadgesActivity extends AppCompatActivity {
                 setLocked(hulk);
         setLocked(ca);
         setLocked(thanos);
+        setLocked(yonrogg);
+        setLocked(deadpool);
+
 
         int spidermanshowedd=0;
         int ironmanshowedd=0;
@@ -75,6 +90,9 @@ public class BadgesActivity extends AppCompatActivity {
         int hulkshowedd=0;
         int cashowedd=0;
         int thanosshowedd=0;
+        int yonrogshowedd=0;
+        int deadpoolshowedd=0;
+
 
 
 
@@ -310,6 +328,83 @@ public class BadgesActivity extends AppCompatActivity {
                 setLocked(thanos);
             }
 
+
+        SharedPreferences mypref7 = getSharedPreferences("mypref7", MODE_PRIVATE); //add key
+        SharedPreferences.Editor prefseditor7 = mypref7.edit();
+        int sinolikohighest7=mypref7.getInt("HighScore7",0);
+        Cursor b7 = db.checkiflevelupdated7(usernameofuser);
+        b7.moveToFirst();
+        int value7 = b7.getInt(0);
+        Cursor qqqqqqq= db.checkifyonrogshowed(usernameoflogin);
+        qqqqqqq.moveToFirst();
+        int yonrogshowed = qqqqqqq.getInt(0);
+
+        if(yonrogshowed==0)
+            if (value7==1){
+                if (yonrogshowedd==0)
+
+                {
+                    db.addshowingyonrog(usernameoflogin,1);
+                    yonrogshowedd=1;
+
+
+                }
+
+                setUnlocked(yonrogg);
+
+
+
+                level7descr.setText("Ξεκλειδώθηκε επιτυχώς!");
+                level7descr.setTextColor(getResources().getColor(R.color.colorigotit, null));
+                yonrogg.startAnimation(myanim);
+
+
+
+            }
+            else{
+
+                setLocked(yonrogg);
+            }
+
+
+
+
+        SharedPreferences mypref8 = getSharedPreferences("mypref8", MODE_PRIVATE); //add key
+        SharedPreferences.Editor prefseditor8 = mypref8.edit();
+        int sinolikohighest8=mypref8.getInt("HighScore8",0);
+        Cursor b8 = db.checkiflevelupdated8(usernameofuser);
+        b8.moveToFirst();
+        int value8 = b8.getInt(0);
+        Cursor qqqqqqqq= db.checkifdeadpoolshowed(usernameoflogin);
+        qqqqqqqq.moveToFirst();
+        int deadpoolshowed = qqqqqqqq.getInt(0);
+
+        if(deadpoolshowed==0)
+            if (value8==1){
+                if (deadpoolshowedd==0)
+
+                {
+                    db.addshowingdeadpool(usernameoflogin,1);
+                    deadpoolshowedd=1;
+
+
+                }
+
+                setUnlocked(deadpool);
+
+
+
+                level8descr.setText("Ξεκλειδώθηκε επιτυχώς!");
+                level8descr.setTextColor(getResources().getColor(R.color.colorigotit, null));
+                deadpool.startAnimation(myanim);
+
+
+
+            }
+            else{
+
+                setLocked(deadpool);
+            }
 
 
 

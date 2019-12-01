@@ -14,6 +14,8 @@ public class menuthewrias6kefalaio extends AppCompatActivity {
         setContentView(R.layout.activity_menuthewrias6kefalaio);
         Button eksi1=findViewById(R.id.exi1);
         Button eksi2=findViewById(R.id.eksi2);
+        Button eksi3=findViewById(R.id.eksi3);
+
 
         eksi1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +28,13 @@ public class menuthewrias6kefalaio extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(menuthewrias6kefalaio.this, thewriaeksi2.class));
+            }
+        });
+
+        eksi3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(menuthewrias6kefalaio.this, thewriaeksi3.class));
             }
         });
 

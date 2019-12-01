@@ -28,10 +28,14 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_NAME9="ShowHulk";
     public static final String TABLE_NAME10="levels5";
     public static final String TABLE_NAME11="levels6";
+    public static final String TABLE_NAME16="levels7";
+    public static final String TABLE_NAME17="levels8";
+    public static final String TABLE_NAME18="Showyonrog";
     public static final String TABLE_NAME12="Showca";
     public static final String TABLE_NAME13="ShowThanos";
     public static final String TABLE_NAME14="Opinions";
     public static final String TABLE_NAME15="protaseis_erwthsewn";
+    public static final String TABLE_NAME19="Showdeadpool";
 
 
 
@@ -66,12 +70,20 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
     public static final String Col_61="username";
     public static final String Col_62="highestlevel6";
     public static final String Col_63="runonce6";
+    public static final String Col_71="username";
+    public static final String Col_72="highestlevel7";
+    public static final String Col_73="runonce7";
+    public static final String Col_81="username";
+    public static final String Col_82="highestlevel8";
+    public static final String Col_83="runonce8";
     public static final String Col_544="showed";
     public static final String Col_644="showed";
     public static final String Col_opinions_1="username";
     public static final String Col_opinions_2="rating";
     public static final String Col_opinions_3="opinions";
     public static final String Col_eidikothta="eidikothta";
+    public static final String Col_mistiki_apantisi="mistiki_apantisi";
+
     public static final String Col_erwthsh_1="erwthsh";
     public static final String Col_erwthsh_2="epilogh1";
     public static final String Col_erwthsh_3="epilogh2";
@@ -100,25 +112,30 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
 
     public DataBaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, 49);
+        super(context, DATABASE_NAME, null, 55);
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        sqLiteDatabase.execSQL("CREATE TABLE registeruser (ID INTEGER PRIMARY KEY AUTOINCREMENT,username TEXT,password TEXT,level INTEGER,eidikothta TEXT)");
+        sqLiteDatabase.execSQL("CREATE TABLE registeruser (ID INTEGER PRIMARY KEY AUTOINCREMENT,username TEXT,password TEXT,level INTEGER,eidikothta TEXT,mistiki_apantisi TEXT)");
         sqLiteDatabase.execSQL("CREATE TABLE levels (username TEXT,highestlevel1 INTEGER,runonce1 INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE levels2 (username TEXT,highestlevel2 INTEGER,runonce2 INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE levels3 (username TEXT,highestlevel3 INTEGER,runonce3 INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE levels4 (username TEXT,highestlevel4 INTEGER,runonce4 INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE levels5 (username TEXT,highestlevel5 INTEGER,runonce5 INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE levels6 (username TEXT,highestlevel6 INTEGER,runonce6 INTEGER)");
+        sqLiteDatabase.execSQL("CREATE TABLE levels7 (username TEXT,highestlevel7 INTEGER,runonce7 INTEGER)");
+        sqLiteDatabase.execSQL("CREATE TABLE levels8 (username TEXT,highestlevel8 INTEGER,runonce8 INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE Showspiderman (username TEXT,showed INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE ShowIronman (username TEXT,showed INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE ShowThor (username TEXT,showed INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE ShowHulk (username TEXT,showed INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE Showca (username TEXT,showed INTEGER)");
         sqLiteDatabase.execSQL("CREATE TABLE ShowThanos (username TEXT,showed INTEGER)");
+        sqLiteDatabase.execSQL("CREATE TABLE Showyonrog (username TEXT,showed INTEGER)");
+        sqLiteDatabase.execSQL("CREATE TABLE Showdeadpool (username TEXT,showed INTEGER)");
+
         sqLiteDatabase.execSQL("CREATE TABLE Opinions (username TEXT,rating FLOAT,opinions TEXT)");
         sqLiteDatabase.execSQL("CREATE TABLE protaseis_erwthsewn(username TEXT,erwthsh TEXT,epilogh1 TEXT,epilogh2 TEXT,epilogh3 TEXT,swsth_apanthsh TEXT)");
 
@@ -150,6 +167,14 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME13);
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME14);
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME15);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME16);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME17);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME18);
+
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME19);
+
+
+
 
 
 
@@ -164,7 +189,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public long adduser(String user,String password,String level,String eidikothta)
+    public long adduser(String user,String password,String level,String eidikothta,String mistiki_apantisi)
     {
 
         SQLiteDatabase db=this.getWritableDatabase();
@@ -173,6 +198,8 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         contentValues.put(Col_3,password);
         contentValues.put(Col_4,level);
         contentValues.put(Col_eidikothta,eidikothta);
+        contentValues.put(Col_mistiki_apantisi,mistiki_apantisi);
+
 
 
 
@@ -181,6 +208,15 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         long res=db.insert("registeruser",null,contentValues);
         db.close();
         return res;
+    }
+
+    public Cursor show_my_password(String username,String mistiki_apantisi){
+
+        SQLiteDatabase db=this.getReadableDatabase();
+        String query="SELECT password FROM "+TABLE_NAME+" WHERE username='" +username+"' AND mistiki_apantisi='"+mistiki_apantisi+"'";
+        Cursor cursor=db.rawQuery(query,null);
+
+        return cursor;
     }
 
 
@@ -430,6 +466,42 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         return res;
     }
 
+
+    public long addhighlevel7(String user,int highlevel,int runonce)
+    {
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(Col_71,user);
+        contentValues.put(Col_72,highlevel);
+        contentValues.put(Col_73,runonce);
+
+
+
+
+        long res=db.insert("levels7",null,contentValues);
+        db.close();
+        return res;
+    }
+
+
+    public long addhighlevel8(String user,int highlevel,int runonce)
+    {
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(Col_81,user);
+        contentValues.put(Col_82,highlevel);
+        contentValues.put(Col_83,runonce);
+
+
+
+
+        long res=db.insert("levels8",null,contentValues);
+        db.close();
+        return res;
+    }
+
     public long addshowingspiderman(String user,int showed)
     {
 
@@ -531,6 +603,43 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
 
         long res=db.insert("Showthanos",null,contentValues);
+        db.close();
+        return res;
+    }
+
+
+    public long addshowingyonrog(String user,int showed)
+    {
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(Col_11,user);
+        contentValues.put(Col_644,showed);
+
+
+
+
+
+        long res=db.insert("Showyonrog",null,contentValues);
+        db.close();
+        return res;
+    }
+
+
+
+    public long addshowingdeadpool(String user,int showed)
+    {
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(Col_11,user);
+        contentValues.put(Col_644,showed);
+
+
+
+
+
+        long res=db.insert("Showdeadpool",null,contentValues);
         db.close();
         return res;
     }
@@ -642,6 +751,28 @@ else
         return true;
     }
 
+
+    public boolean updatelevel7(String username,int highlevel){
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues cv=new ContentValues();
+        cv.put("highestlevel7",highlevel);
+        cv.put("runonce7",1);
+        db.update(TABLE_NAME16,cv,"username= '" +username+"'" ,null);
+        return true;
+    }
+
+
+    public boolean updatelevel8(String username,int highlevel){
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues cv=new ContentValues();
+        cv.put("highestlevel8",highlevel);
+        cv.put("runonce8",1);
+        db.update(TABLE_NAME17,cv,"username= '" +username+"'" ,null);
+        return true;
+    }
+
     public Cursor checkifuserexist(String username){
         SQLiteDatabase dbb=this.getReadableDatabase();
 
@@ -739,6 +870,31 @@ return c;
 
     }
 
+
+
+    public Cursor checkiflevelupdated7(String username){
+        SQLiteDatabase dbbb=this.getReadableDatabase();
+
+
+
+        Cursor d = dbbb.rawQuery("SELECT runonce7 FROM levels7 WHERE username= '" +username+"'", null);
+        return d;
+
+
+    }
+
+
+    public Cursor checkiflevelupdated8(String username){
+        SQLiteDatabase dbbb=this.getReadableDatabase();
+
+
+
+        Cursor d = dbbb.rawQuery("SELECT runonce8 FROM levels8 WHERE username= '" +username+"'", null);
+        return d;
+
+
+    }
+
     public Cursor checkifsupermanshowed(String username){
         SQLiteDatabase dbbb=this.getReadableDatabase();
 
@@ -801,6 +957,31 @@ return c;
 
 
         Cursor d = dbbb.rawQuery("SELECT showed FROM ShowThanos WHERE username= '" +username+"'", null);
+        return d;
+
+
+    }
+
+
+
+    public Cursor checkifyonrogshowed(String username){
+        SQLiteDatabase dbbb=this.getReadableDatabase();
+
+
+
+        Cursor d = dbbb.rawQuery("SELECT showed FROM Showyonrog WHERE username= '" +username+"'", null);
+        return d;
+
+
+    }
+
+
+    public Cursor checkifdeadpoolshowed(String username){
+        SQLiteDatabase dbbb=this.getReadableDatabase();
+
+
+
+        Cursor d = dbbb.rawQuery("SELECT showed FROM Showdeadpool WHERE username= '" +username+"'", null);
         return d;
 
 

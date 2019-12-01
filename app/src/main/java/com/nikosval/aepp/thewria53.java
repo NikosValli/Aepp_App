@@ -44,4 +44,22 @@ boolean isCheckedValue;
             }
         });
     }
+
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewria53.this, menuthewrias5kefalaio.class));
+
+
+
+
+
+
+
+
+
+    }
 }

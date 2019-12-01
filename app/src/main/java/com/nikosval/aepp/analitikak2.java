@@ -34,11 +34,5 @@ public class analitikak2 extends AppCompatActivity {
     }
 
 
-    public void onBackPressed() {
 
-
-        Intent intentback = new Intent(analitikak2.this, menugiaerwthseiskath.class);
-
-        startActivity(intentback);
-    }
 }

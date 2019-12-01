@@ -14,6 +14,7 @@ public class QuestionLibrary {
             "Ποιο απο τα παρακάτω κριτήρια ΔΕΝ εχει να κανει με το βαθμο δομησης της λύσης του προβλήματος? ",
             "ο Τετραγωνισμός του κύκλου αποτελεί πρόβλημα:",
             "Ποια απο τις παρακάτω λειτουργίες ΔΕΝ ειναι κύρια για τον υπολογιστή?",
+
     };
 
     private String manswers[][] = {
@@ -24,6 +25,8 @@ public class QuestionLibrary {
             {"δομημενα","αδόμητα","απόφασης"},
             {"επιλύσιμο","άλυτο","ανοικτό"},
             {"πολλαπλασιασμός","σύγκριση","πρόσθεση"},
+
+
 
 
     };
@@ -44,6 +47,11 @@ public class QuestionLibrary {
         return choice0;
     }
 
+    public int getanswerslength(int a){
+        int answerslength=manswers[a].length;
+        return answerslength;
+
+    }
 
     public String getchoice2(int a){
 

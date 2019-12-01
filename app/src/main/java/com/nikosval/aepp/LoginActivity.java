@@ -7,9 +7,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +35,10 @@ public class LoginActivity extends AppCompatActivity {
         mTextPassword=(EditText)findViewById(R.id.password_login);
         mButtonLogin=(Button)findViewById(R.id.button_login);
         mTextViewRegister=(TextView) findViewById(R.id.textview_register);
+        ImageButton exit=(ImageButton)findViewById(R.id.imaexit);
+        ImageButton infoo=(ImageButton)findViewById(R.id.infoo);
+        Button forgotyourpassword=(Button)findViewById(R.id.forgotyourpassword);
+
         SharedPreferences preferences =getSharedPreferences("mypref",Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.clear();
@@ -64,6 +70,29 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent registerintent=new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(registerintent);
+            }
+        });
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
+
+
+        infoo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, voithia.class));
+            }
+        });
+
+        forgotyourpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, findyourpassword.class));
             }
         });
 
@@ -112,7 +141,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     SharedPreferences prefs = getSharedPreferences("MyApp", MODE_PRIVATE);
                     prefs.edit().putString("username", user).apply();
-                    Toast.makeText(LoginActivity.this,"Eπιτυχημένη σύνδεση",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this,"Eπιτυχημένη σύνδεση !",Toast.LENGTH_SHORT).show();
 
 
                     Intent intent=new Intent(LoginActivity.this,MenuActivity.class);
@@ -126,17 +155,15 @@ public class LoginActivity extends AppCompatActivity {
                     prefs.edit().putString("username", user).apply();
 
                     Intent intent=new Intent(LoginActivity.this,Menukathigiti.class);
+                    Toast.makeText(LoginActivity.this,"Eπιτυχημένη σύνδεση !",Toast.LENGTH_SHORT).show();
+
                     startActivity(intent);
 
+                }
 
+                if (res==false && ress==false){
 
-
-
-
-
-
-
-
+                    Toast.makeText(LoginActivity.this,"Λανθασμένα στοιχεία !",Toast.LENGTH_SHORT).show();
                 }
 
 

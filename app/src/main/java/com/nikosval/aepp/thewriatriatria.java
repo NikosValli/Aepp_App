@@ -46,4 +46,21 @@ public class thewriatriatria extends AppCompatActivity {
             }
         });
 }
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewriatriatria.this, menuthewrias3kefalaio.class));
+
+
+
+
+
+
+
+
+
+    }
 }

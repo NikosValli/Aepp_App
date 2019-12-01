@@ -39,9 +39,26 @@ public class thewriadiotessera extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(thewriadiotessera.this, menuthewrias2oukefalaiou.class));
+                startActivity(new Intent(thewriadiotessera.this, thewriadiopente.class));
             }
         });
+
+
+
+
+
+
+    }
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewriadiotessera.this, menuthewrias2oukefalaiou.class));
+
+
+
 
 
 

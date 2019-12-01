@@ -22,7 +22,7 @@ public class thewriadioena extends AppCompatActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences.Editor editor21 = preferences.edit();
 
-        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox);
+        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox25);
         checkBox.setChecked(preferences.getBoolean("checked2_1",false));
 
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

@@ -70,6 +70,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:hint="υποβάλλετε την ερώτηση.."
+        android:textColor="@color/menubutons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView99" />
 
@@ -93,6 +94,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="7dp"
         android:hint="υποβάλλετε την πρώτη επιλογή.."
+        android:textColor="@color/menubutons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView100" />
 
@@ -117,6 +119,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="7dp"
         android:hint="υποβάλλετε την δεύτερη επιλογή.."
+        android:textColor="@color/menubutons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView101" />
 
@@ -140,6 +143,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:hint="υποβάλλετε την τρίτη επιλογή.."
+        android:textColor="@color/menubutons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView103" />
 
@@ -163,6 +167,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
         android:hint="υποβάλλετε την Σωστή απάντηση.."
+        android:textColor="@color/menubutons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView104" />
 

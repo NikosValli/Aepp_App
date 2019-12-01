@@ -41,9 +41,27 @@ boolean isCheckedValue14;
         button14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(thewria1_4.this, ReadyfortestActivity.class));
+                startActivity(new Intent(thewria1_4.this, thewria15.class));
             }
         });
+
+
+
+
+
+    }
+
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewria1_4.this, menuthewrias1oukefaliou.class));
+
+
+
+
 
 
 

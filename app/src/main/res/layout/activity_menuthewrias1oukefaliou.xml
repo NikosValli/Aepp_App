@@ -59,4 +59,15 @@
         android:text="1.4 Πρόβλημα και υπολογιστής"
         android:background="@color/colorPrimaryDark"
         android:textSize="19dp"/>
+
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+
+        android:layout_height="wrap_content"
+        android:text="1.5 Ανάλυση Προβλήματος"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="19dp"/>
 </LinearLayout>

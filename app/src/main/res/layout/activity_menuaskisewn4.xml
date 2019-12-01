@@ -78,7 +78,7 @@
         android:layout_width="379dp"
         android:layout_height="46dp"
 
-        android:max="15"
+        android:max="20"
         android:maxHeight="6dip"
         android:minHeight="6dip"
         android:paddingLeft="30dp"

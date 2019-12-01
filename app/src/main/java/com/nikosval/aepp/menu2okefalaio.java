@@ -30,7 +30,7 @@ Button methodologia;
         methodologia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(menu2okefalaio.this,methodologia2.class));
+                startActivity(new Intent(menu2okefalaio.this,methodologiadeuterokefalaio.class));
             }
         });
 

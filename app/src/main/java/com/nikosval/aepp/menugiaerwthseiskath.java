@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 
 public class menugiaerwthseiskath extends AppCompatActivity {
-Button erwthseiskathigiti;
+    Button erwthseiskathigiti;
     ArrayList erwthsispouthaperasoun;
     CheckBox checkedkathigiti;
     CheckBox checkedkathigiti2;
@@ -28,40 +28,42 @@ Button erwthseiskathigiti;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menugiaerwthseiskath);
-        erwthseiskathigiti=(Button)findViewById(R.id.erwtkathig);
-        erwthsispouthaperasoun=new ArrayList<>();
+        erwthseiskathigiti = (Button) findViewById(R.id.erwtkathig);
+        erwthsispouthaperasoun = new ArrayList<>();
 
 
-
-
-        SharedPreferences sharedPreferences=getSharedPreferences("oi erwthseis",MODE_PRIVATE);
-        Gson gson=new Gson();
-        String json=sharedPreferences.getString("oi erwthseiss",null);
-        Type type=new TypeToken<ArrayList<String>>() {}.getType();
-        erwthsispouthaperasoun=gson.fromJson(json,type);
-
-
-
+        SharedPreferences sharedPreferences = getSharedPreferences("oi erwthseis", MODE_PRIVATE);
+        Gson gson = new Gson();
+        String json = sharedPreferences.getString("oi erwthseiss", null);
+        Type type = new TypeToken<ArrayList<String>>() {
+        }.getType();
+        erwthsispouthaperasoun = gson.fromJson(json, type);
 
 
         erwthseiskathigiti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentk2 = new Intent(menugiaerwthseiskath.this, diagwnismakathigitwn.class);
-                intentk2.putExtra("erwthseispoupernanee",erwthsispouthaperasoun);
-                startActivity(intentk2);            }
+                intentk2.putExtra("erwthseispoupernanee", erwthsispouthaperasoun);
+                startActivity(intentk2);
+            }
         });
 
-
-
-
-
-            }
 
     }
 
 
+    public void onBackPressed() {
 
+
+        Intent intentback = new Intent(menugiaerwthseiskath.this, MenuActivity.class);
+
+        startActivity(intentback);
+
+    }
+
+
+}
 
 
 

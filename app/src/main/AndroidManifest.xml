@@ -4,14 +4,44 @@
 
     <application
         android:allowBackup="true"
-        android:hardwareAccelerated="false"
+
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".analitikakathigitwn"></activity>
+        <activity android:name=".analitikalanthasmenesk8"></activity>
+        <activity android:name=".analitikak8" />
+        <activity android:name=".menuaskisewn8" />
+        <activity android:name=".diagwnismak8" />
+        <activity android:name=".thewria86" />
+        <activity android:name=".thewria85" />
+        <activity android:name=".thewria84" />
+        <activity android:name=".thewria83" />
+        <activity android:name=".thewria82" />
+        <activity android:name=".thewria81" />
+        <activity android:name=".menuthewrias8kefalaio" />
+        <activity android:name=".menukefalaio8" />
+        <activity android:name=".analitikalanthasmenesk7" />
+        <activity android:name=".analitikak7" />
+        <activity android:name=".diagwnismak7" />
+        <activity android:name=".thewriaefta5" />
+        <activity android:name=".thewriaefta4" />
+        <activity android:name=".thewriaefta3" />
+        <activity android:name=".thewriaefta2" />
+        <activity android:name=".thewria71" />
+        <activity android:name=".menuthewrias7kefalaio" />
+        <activity android:name=".menukefalaio7" />
+        <activity android:name=".menuaskisewn7" />
+        <activity android:name=".thewriatriaeksi" />
+        <activity android:name=".thewriadiopente" />
+        <activity android:name=".thewria15" />
+        <activity android:name=".findyourpassword" />
+        <activity android:name=".voithia" />
+        <activity android:name=".methodologiadeuterokefalaio" />
+        <activity android:name=".analitikakathigitwn" />
         <activity
             android:name=".methodologiadontexist"
             android:excludeFromRecents="true"
@@ -137,6 +167,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
+
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
 </manifest>

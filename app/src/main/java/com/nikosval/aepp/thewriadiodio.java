@@ -22,7 +22,7 @@ public class thewriadiodio extends AppCompatActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences.Editor editor22 = preferences.edit();
 
-        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox);
+        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox25);
         checkBox.setChecked(preferences.getBoolean("checked2_2",false));
 
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -47,5 +47,22 @@ public class thewriadiodio extends AppCompatActivity {
                 startActivity(new Intent(thewriadiodio.this, thewriadiotria.class));
             }
         });
+    }
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewriadiodio.this, menuthewrias2oukefalaiou.class));
+
+
+
+
+
+
+
+
+
     }
 }

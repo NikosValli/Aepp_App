@@ -16,6 +16,8 @@ public class menuthewrias1oukefaliou extends AppCompatActivity {
         Button deuterokefalaio=(Button) findViewById(R.id.button5);
         Button tritokefalaio=(Button)findViewById(R.id.button6);
         Button tetartokefalaio=(Button)findViewById(R.id.button7);
+        Button pemptokefalaio=(Button)findViewById(R.id.button8);
+
 
 
         prwtokefalio.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +45,13 @@ public class menuthewrias1oukefaliou extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(menuthewrias1oukefaliou.this, thewria1_4.class));
+            }
+        });
+
+        pemptokefalaio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(menuthewrias1oukefaliou.this, thewria15.class));
             }
         });
     }

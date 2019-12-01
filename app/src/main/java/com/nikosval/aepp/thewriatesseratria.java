@@ -44,4 +44,22 @@ boolean isCheckedValue;
             }
         });
     }
+
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewriatesseratria.this, menuthwrias4okefalaio.class));
+
+
+
+
+
+
+
+
+
+    }
 }

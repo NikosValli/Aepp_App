@@ -34,6 +34,8 @@ public class menuaskisewn4 extends AppCompatActivity {
         SeekBar seekbar=findViewById(R.id.seekBar4);
         erwthseispouthaapantisei=(TextView)findViewById(R.id.erwthseispouthaapantisei4);
         boolean dialogShown = settings4.getBoolean("dialogShown", false);
+        SharedPreferences prefs = getSharedPreferences("osesapantisa4", MODE_PRIVATE);
+        int osesapantisa = prefs.getInt("osesapantisa4", 20);
 
         if (!dialogShown) {
 
@@ -62,7 +64,9 @@ public class menuaskisewn4 extends AppCompatActivity {
 
         Intent intent = getIntent();
         int score4 = intent.getIntExtra("scorediagwnisma4", 0);
-        double percentageoftest = ((double) score4 / 20) * 100;
+        double percentageoftest = ((double) score4 / osesapantisa) * 100;
+        percentageoftest=round(percentageoftest, 1);
+
         final SharedPreferences mypref4 = getSharedPreferences("mypref4", MODE_PRIVATE);
         int highscore4 = mypref4.getInt("HighScore4", 0);
         DataBaseHelper db;
@@ -71,11 +75,11 @@ public class menuaskisewn4 extends AppCompatActivity {
         if (percentageoftest > 50) {
 
 
-            currentscoresl.setText("To σκορ σου στις ερωτήσεις του τεστ είναι: " + score4 + "/20 (" + percentageoftest + "%)");
+            currentscoresl.setText("To σκορ σου στις ερωτήσεις του τεστ είναι: " + score4 + "/"+osesapantisa+" (" + percentageoftest + "%)");
             currentscoresl.setTextColor(getResources().getColor(R.color.colorigotit, null));
         } else {
 
-            currentscoresl.setText("To σκορ σου στις ερωτήσεις του τεστ ειναι : " + score4 + "/20  (" + percentageoftest + "%)");
+            currentscoresl.setText("To σκορ σου στις ερωτήσεις του τεστ ειναι : " + score4 + "/"+osesapantisa+"  (" + percentageoftest + "%)");
             currentscoresl.setTextColor(getResources().getColor(R.color.colorAccent, null));
 
 
@@ -198,6 +202,15 @@ public class menuaskisewn4 extends AppCompatActivity {
         }
 
 
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
     }
 
 

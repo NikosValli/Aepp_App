@@ -55,6 +55,9 @@ public class menuaskisewn1 extends AppCompatActivity {
 
         SharedPreferences settings = getSharedPreferences("myprefsbro", 0);
         boolean dialogShown = settings.getBoolean("dialogShown", false);
+        SharedPreferences prefs22 = getSharedPreferences("osesapantisa1", MODE_PRIVATE);
+        int osesapantisa = prefs22.getInt("osesapantisa1", 7); //0 is the default value.
+
 
 
         if (!dialogShown) {
@@ -87,26 +90,30 @@ public class menuaskisewn1 extends AppCompatActivity {
 
         Intent intent = getIntent();
         int score11 = intent.getIntExtra("score1", 0);
-        double percentageofsl = ((double) score11 / 13) * 100;
+        double percentageofsls = ((double)score11/13)*100;
+
+         percentageofsls=round(percentageofsls, 1);
         final SharedPreferences mypref = getSharedPreferences("mypref",MODE_PRIVATE);
          int highscore = mypref.getInt("HighScore", 0);
 
         Intent intent1 = getIntent();
         int scoreofmc = intent.getIntExtra("scoremc", 0);
-        double percentageofmc = ((double) scoreofmc / 7) * 100;
+        double percentageofmc = ((double) scoreofmc / osesapantisa) * 100;
+        percentageofmc=round(percentageofmc, 1);
+
         final SharedPreferences myprefmc = getPreferences(MODE_PRIVATE);
         int  highscoremc = mypref.getInt("HighScore1", 0);
         DataBaseHelper db;
         db = new DataBaseHelper(this);
 
-        if (percentageofsl > 50) {
+        if (percentageofsls > 50) {
 
 
-            currentscoresl.setText("To σκορ σου στις ερωτήσεις Σωστου λαθους ειναι : " + score11 + "/13 (" + percentageofsl + "%)");
+            currentscoresl.setText("To σκορ σου στις ερωτήσεις Σωστου λαθους ειναι : " + score11 + "/13 (" + percentageofsls + "%)");
             currentscoresl.setTextColor(getResources().getColor(R.color.colorigotit, null));
         } else {
 
-            currentscoresl.setText("To σκορ σου στις ερωτήσεις Σωστου λαθους ειναι : " + score11 + "/13  (" + percentageofsl + "%)");
+            currentscoresl.setText("To σκορ σου στις ερωτήσεις Σωστου λαθους ειναι : " + score11 + "/13  (" + percentageofsls + "%)");
             currentscoresl.setTextColor(getResources().getColor(R.color.colorAccent, null));
 
 
@@ -116,6 +123,8 @@ public class menuaskisewn1 extends AppCompatActivity {
         if (highscore >= score11) {
 
             double percentageofslhigest = ((double) highscore / 13) * 100;
+             percentageofslhigest=round(percentageofslhigest, 1);
+
 
 
 
@@ -127,6 +136,8 @@ public class menuaskisewn1 extends AppCompatActivity {
         } else {
 
             double percentageofslhigest = ((double) highscore / 13) * 100;
+            percentageofslhigest=round(percentageofslhigest, 1);
+
             SharedPreferences.Editor editor = mypref.edit();
             editor.putInt("HighScore", score11);
             editor.commit();
@@ -149,11 +160,11 @@ public class menuaskisewn1 extends AppCompatActivity {
         if (percentageofmc > 50) {
 
 
-            currentscoresmc.setText("To σκορ σου στις ερωτήσεις Πολλαπλής επιλογής είναι : " + scoreofmc + "/7 (" + percentageofmc + "%)");
+            currentscoresmc.setText("To σκορ σου στις ερωτήσεις Πολλαπλής επιλογής είναι : " + scoreofmc +"/ "+osesapantisa+" (" + percentageofmc + "%)");
             currentscoresmc.setTextColor(getResources().getColor(R.color.colorigotit, null));
         } else {
 
-            currentscoresmc.setText("To σκορ σου στις ερωτήσεις πολλαπλής επιλογής είναι : " + scoreofmc + "/7  (" + percentageofmc + "%)");
+            currentscoresmc.setText("To σκορ σου στις ερωτήσεις πολλαπλής επιλογής είναι : " + scoreofmc + "/"+osesapantisa+"  (" + percentageofmc + "%)");
             currentscoresmc.setTextColor(getResources().getColor(R.color.colorAccent, null));
 
 
@@ -162,6 +173,9 @@ public class menuaskisewn1 extends AppCompatActivity {
         if (highscoremc >= scoreofmc) {
 
             double percentageofmchigest = ((double) highscoremc / 7) * 100;
+            percentageofmchigest=round(percentageofmchigest, 1);
+
+
 
 
             highestscoremc.setText("Το μεγαλύτερο σκορ στις ερωτήσεις πολλαπλής επιλογής είναι: " + highscoremc + "/7  (" + percentageofmchigest + "%)");
@@ -169,6 +183,8 @@ public class menuaskisewn1 extends AppCompatActivity {
 
         } else {
             double percentageofmchigest = ((double) highscoremc / 7) * 100;
+            percentageofmchigest=round(percentageofmchigest, 1);
+
             SharedPreferences.Editor editor = mypref.edit();
             editor.putInt("HighScore1", scoreofmc);
             editor.commit();
@@ -300,6 +316,14 @@ public class menuaskisewn1 extends AppCompatActivity {
 
     }
 
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
+    }
 
 
     public void onBackPressed() {

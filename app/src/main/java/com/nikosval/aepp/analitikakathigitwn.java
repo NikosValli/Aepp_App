@@ -1,5 +1,6 @@
 package com.nikosval.aepp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -27,6 +28,15 @@ public class analitikakathigitwn extends AppCompatActivity {
         apotelesmatalist.setAdapter(adapter);
 
 
+    }
+
+
+    public void onBackPressed() {
+
+
+        Intent intentback = new Intent(analitikakathigitwn.this, menugiaerwthseiskath.class);
+
+        startActivity(intentback);
     }
 }
 

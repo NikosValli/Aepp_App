@@ -33,6 +33,8 @@ public class menuaskisewn6 extends AppCompatActivity {
         erwthseispouthaapantisei=(TextView)findViewById(R.id.erwthseispouthaapantisei6);
         SharedPreferences settings6 = getSharedPreferences("myprefsbro", 0);
         boolean dialogShown = settings6.getBoolean("dialogShown", false);
+        SharedPreferences prefs = getSharedPreferences("osesapantisa6", MODE_PRIVATE);
+        int osesapantisa = prefs.getInt("osesapantisa6", 20); //0 is the default value.
 
         if (!dialogShown) {
 
@@ -61,7 +63,9 @@ public class menuaskisewn6 extends AppCompatActivity {
 
         Intent intent = getIntent();
         int score6 = intent.getIntExtra("scorediagwnisma6", 0);
-        double percentageoftest = ((double) score6 / 10) * 100;
+        double percentageoftest = ((double) score6 / osesapantisa) * 100;
+        percentageoftest=round(percentageoftest, 1);
+
         final SharedPreferences mypref6 = getSharedPreferences("mypref6", MODE_PRIVATE);
         int highscore6 = mypref6.getInt("HighScore6", 0);
         DataBaseHelper db;
@@ -70,11 +74,11 @@ public class menuaskisewn6 extends AppCompatActivity {
         if (percentageoftest > 50) {
 
 
-            currentscore.setText("To σκορ σου στις ερωτήσεις του τεστ είναι: " + score6 + "/10 (" + percentageoftest + "%)");
+            currentscore.setText("To σκορ σου στις ερωτήσεις του τεστ είναι: " + score6 + "/"+osesapantisa+" (" + percentageoftest + "%)");
             currentscore.setTextColor(getResources().getColor(R.color.colorigotit, null));
         } else {
 
-            currentscore.setText("To σκορ σου στις ερωτήσεις του τεστ ειναι : " + score6 + "/10  (" + percentageoftest + "%)");
+            currentscore.setText("To σκορ σου στις ερωτήσεις του τεστ ειναι : " + score6 + "/"+osesapantisa+"  (" + percentageoftest + "%)");
             currentscore.setTextColor(getResources().getColor(R.color.colorAccent, null));
 
         }
@@ -83,6 +87,8 @@ public class menuaskisewn6 extends AppCompatActivity {
         if (highscore6 >= score6) {
 
             double percentageofhighest = ((double) highscore6 / 10) * 100; //aitia gia highscore emfanisi
+            percentageofhighest=round(percentageofhighest, 1);
+
 
 
             highestscore.setText("Το μεγαλύτερο σκορ στο τεστ είναι: " + highscore6 + "/10  (" + percentageofhighest + "%)");
@@ -91,6 +97,8 @@ public class menuaskisewn6 extends AppCompatActivity {
         } else {
 
             double percentageofslhigest = ((double) highscore6 / 10) * 100;
+            percentageofslhigest=round(percentageofslhigest, 1);
+
 
             SharedPreferences.Editor editor = mypref6.edit();
             editor.putInt("HighScore6", score6);
@@ -106,6 +114,8 @@ public class menuaskisewn6 extends AppCompatActivity {
         if (highscore6 >= score6) {
 
             double percentageofhighest = ((double) highscore6 / 10) * 100; //aitia gia highscore emfanisi
+            percentageofhighest=round(percentageofhighest, 1);
+
 
 
             highestscore.setText("Το μεγαλύτερο σκορ στο τεστ είναι: " + highscore6 + "/10  (" + percentageofhighest + "%)");
@@ -114,6 +124,7 @@ public class menuaskisewn6 extends AppCompatActivity {
         } else {
 
             double percentageofslhigest = ((double) highscore6 / 10) * 100;
+            percentageofslhigest=round(percentageofslhigest, 1);
 
             SharedPreferences.Editor editor = mypref6.edit();
             editor.putInt("HighScore6", score6);
@@ -200,6 +211,16 @@ public class menuaskisewn6 extends AppCompatActivity {
             }
         }
 
+    }
+
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
     }
 
     public void onBackPressed() {

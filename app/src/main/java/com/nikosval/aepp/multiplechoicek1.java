@@ -3,6 +3,7 @@ package com.nikosval.aepp;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,6 +46,8 @@ public class multiplechoicek1 extends AppCompatActivity {
         choice3=(Button)findViewById(R.id.choice3);
         Intent startIntent= getIntent();
         ii= startIntent.getIntExtra("pernatoeuros1",0);
+        updateScore(0);
+
         apotelesmata=new ArrayList<String>();
         apotelesmatalanthasmenes=new ArrayList<String>();
 
@@ -126,7 +129,7 @@ public class multiplechoicek1 extends AppCompatActivity {
                 apotelesmata.add("Aπάντησες: "+choice3.getText().toString());
                 if(!(epilogh.equals(manswer))){
                     apotelesmatalanthasmenes.add("Η ερώτηση ήταν: "+mQuestionView.getText().toString());
-                    apotelesmatalanthasmenes.add("Απάντησες λανθασμένα: "+choice2.getText().toString());
+                    apotelesmatalanthasmenes.add("Απάντησες λανθασμένα: "+choice3.getText().toString());
                     apotelesmatalanthasmenes.add("Η σωστή απάντηση είναι: "+manswer.toString());
                     apotelesmatalanthasmenes.add(" ");
 
@@ -184,6 +187,9 @@ else{
 
     alert.setTitle("Το διαγώνισμα τελείωσε!");
     alert.setCancelable(false);
+    SharedPreferences.Editor editor = getSharedPreferences("osesapantisa1", MODE_PRIVATE).edit();
+    editor.putInt("osesapantisa1",ii);
+    editor.apply();
 
     alert.setMessage("Το σκορ σου είναι : " + mscore + " πόντοι!");
     alert.setPositiveButton("Εμφάνισε όλες τις απαντήσεις", new DialogInterface.OnClickListener() {
@@ -200,7 +206,6 @@ else{
         }
 
     });
-    alert.show();
 
 
 
@@ -241,7 +246,7 @@ else{
     private void updateScore(int point){
 
 
-        mScoreView.setText(""+ mscore+"/"+mQuestionLibrary.getlength());
+        mScoreView.setText(""+ mscore+"/"+ii);
     }
 
 

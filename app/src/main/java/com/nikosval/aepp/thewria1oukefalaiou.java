@@ -7,12 +7,10 @@ import android.preference.PreferenceManager;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 
 import android.widget.CompoundButton;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RadioButton;
 
@@ -39,7 +37,7 @@ public class thewria1oukefalaiou extends AppCompatActivity {
 
 
 
-        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox);
+        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox25);
         checkBox.setChecked(preferences.getBoolean("checked",false));
 
 

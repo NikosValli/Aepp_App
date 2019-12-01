@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="198dp"
         android:layout_height="65dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         app:srcCompat="@drawable/logooo" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_marginTop="5dp"
         android:background="@color/design_default_color_primary_dark"
         android:drawableLeft="@drawable/resize_username"
-        android:hint="Username" />
+        android:hint="Όνομα χρήστη" />
 
     <EditText
         android:id="@+id/password_login"
@@ -44,7 +44,7 @@
 
 
         android:drawableLeft="@drawable/rsz_1ps"
-        android:hint="Password" />
+        android:hint="Κωδικός" />
 
     <EditText
         android:id="@+id/cnf_password_login"
@@ -55,7 +55,26 @@
 
 
         android:drawableLeft="@drawable/rsz_1ps"
-        android:hint="Confirm Password" />
+        android:hint="Επιβεβαίωση κωδικού" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ποιο είναι το αγαπημένο σας φαγητό?"
+        android:textColor="@color/menubutons"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/mistikierwthsh"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/design_default_color_primary_dark"
+
+        android:hint="Μυστική Απάντηση" />
 
     <Button
         android:id="@+id/button_register"

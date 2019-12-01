@@ -15,7 +15,7 @@
         android:text="Kεφάλαια θεωρίας"
         android:layout_marginBottom="40dp"
         android:textColor="@color/menubutons"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:layout_marginTop="20dp"
         android:gravity="center"/>
 
@@ -23,7 +23,7 @@
         android:id="@+id/prwtokefalio3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
 
         android:background="@color/colorPrimaryDark"
         android:padding="5dp"
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         android:background="@color/colorPrimaryDark"
         android:text="3.2 Πίνακες"
         android:textSize="19dp" />
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         android:background="@color/colorPrimaryDark"
         android:text="3.3 Στοίβα-Ουρά"
         android:textSize="19dp" />
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         android:background="@color/colorPrimaryDark"
         android:text="3.4 Αναζήτηση"
         android:textSize="19dp" />
@@ -64,8 +64,17 @@
         android:id="@+id/pemptokefalaio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         android:background="@color/colorPrimaryDark"
         android:text="3.5 Ταξινόμηση"
         android:textSize="19dp" /> />
+
+    <Button
+        android:id="@+id/ektokefalaio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="3.6 Λίστες-Δένδρα-Γράφοι"
+        android:textSize="19dp" />
 </LinearLayout>

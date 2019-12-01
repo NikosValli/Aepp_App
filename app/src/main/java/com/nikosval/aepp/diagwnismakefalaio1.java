@@ -22,7 +22,6 @@ public class diagwnismakefalaio1<count> extends AppCompatActivity {
     Button mFalseButton;
     TextView mScoreTextView;
     TextView mQuestionTextView;
-    private QuestionLibrary mQuestionLibrary=new QuestionLibrary();
     ProgressBar mProgressBar;
     int mIndex;
     int mScore;
@@ -119,14 +118,12 @@ public int count=0;
 
 
 
-        // This takes the modulus. Not a division.
         mIndex = (mIndex + 1) % (mQuestionBank.length);
         count++;
 
 
 
 
-        // Present an alert dialog if we reach the end.
         if (mIndex == 0) {
 
             AlertDialog.Builder alert = new AlertDialog.Builder(diagwnismakefalaio1.this);
@@ -196,8 +193,7 @@ public int count=0;
         boolean correctAnswer = mQuestionBank[mIndex].isAnswer();
         apotelesmata.add("H σωστή απάντηση είναι: "+correctAnswer);
 
-        // Can cancel the Toast message if there is one on screen and a new answer
-        // has been submitted.
+
         if (mToastMessage != null) {
             mToastMessage.cancel();
         }

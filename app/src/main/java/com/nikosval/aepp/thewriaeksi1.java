@@ -43,4 +43,21 @@ public class thewriaeksi1 extends AppCompatActivity {
             }
         });
     }
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewriaeksi1.this, menuthewrias6kefalaio.class));
+
+
+
+
+
+
+
+
+
+    }
 }

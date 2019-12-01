@@ -19,6 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText mTextUsername;
     EditText mTextPassword;
     EditText mcnfPassword;
+    EditText mistikiapantisi;
     Button mButtonRegister;
     TextView mTextViewLogin;
     CheckBox kathigitis;
@@ -33,6 +34,7 @@ public class RegisterActivity extends AppCompatActivity {
         mTextPassword=(EditText)findViewById(R.id.password_login);
         mcnfPassword=(EditText)findViewById(R.id.cnf_password_login);
         kathigitis=(CheckBox)findViewById(R.id.kathigitis);
+        mistikiapantisi=(EditText)findViewById(R.id.mistikierwthsh);
 
         mButtonRegister=(Button)findViewById(R.id.button_register);
         mTextViewLogin=(TextView) findViewById(R.id.textview_register);
@@ -48,58 +50,60 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String user=mTextUsername.getText().toString().trim();
-                String pwd=mTextPassword.getText().toString().trim();
-                String cnf_pwd=mcnfPassword.getText().toString().trim();
+                String user = mTextUsername.getText().toString();
+                String pwd = mTextPassword.getText().toString();
+                String cnf_pwd = mcnfPassword.getText().toString().trim();
+                String mistiki_apantisi = mistikiapantisi.getText().toString().trim();
+
+                if (pwd.matches("") || user.matches("")) {
+
+                    Toast.makeText(RegisterActivity.this, "Έχετε αφήσει κάποιο πεδίο κενό !", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (pwd.equals(cnf_pwd)) {
+                        Cursor a = db.checkifuserexist(user);
+                        if (a.getCount() > 0) {
+
+                            Toast.makeText(RegisterActivity.this, "Yπάρχει άλλος χρήστης με αυτό το όνομα!", Toast.LENGTH_SHORT).show();
+
+                        } else {
+                            if (kathigitis.isChecked()) {
 
 
-                if(pwd.equals(cnf_pwd)) {
-                    Cursor a = db.checkifuserexist(user);
-                    if (a.getCount() > 0) {
-
-                        Toast.makeText(RegisterActivity.this, "Yπάρχει άλλος χρήστης με αυτό το όνομα!", Toast.LENGTH_SHORT).show();
-
-                    } else {
-                        if (kathigitis.isChecked()){
+                                long val = db.adduser(user, pwd, "1", "kathigitis", mistiki_apantisi);
+                                if (val > 0) {
+                                    Toast.makeText(RegisterActivity.this, "Επιτυχημένη εγγραφή καθηγητή!", Toast.LENGTH_SHORT).show();
+                                    Intent movetologin = new Intent(RegisterActivity.this, LoginActivity.class);
+                                    startActivity(movetologin);
+                                }
 
 
-                        long val = db.adduser(user, pwd, "1","kathigitis");
-                        if (val > 0) {
-                            Toast.makeText(RegisterActivity.this, "Επιτυχημένη εγγραφή καθηγητή!", Toast.LENGTH_SHORT).show();
-                            Intent movetologin = new Intent(RegisterActivity.this, LoginActivity.class);
-                            startActivity(movetologin);
-                        }
+                            } else if (kathigitis.isChecked() == false) {
+
+                                long val = db.adduser(user, pwd, "1", "mathitis", mistiki_apantisi);
+                                if (val > 0) {
+                                    Toast.makeText(RegisterActivity.this, "Επιτυχημένη εγγραφή μαθητή!", Toast.LENGTH_SHORT).show();
+                                    Intent movetologin = new Intent(RegisterActivity.this, LoginActivity.class);
+                                    startActivity(movetologin);
+                                }
+
+                            } else {
+
+                                Toast.makeText(RegisterActivity.this, "Πρόβλημα εγγραφής", Toast.LENGTH_SHORT).show();
 
 
-                        } else if(kathigitis.isChecked()==false){
-
-                            long val = db.adduser(user, pwd, "1","mathitis");
-                            if (val > 0) {
-                                Toast.makeText(RegisterActivity.this, "Επιτυχημένη εγγραφή μαθητή!", Toast.LENGTH_SHORT).show();
-                                Intent movetologin = new Intent(RegisterActivity.this, LoginActivity.class);
-                                startActivity(movetologin);
                             }
 
-                        }
-
-
-                        else {
-
-                            Toast.makeText(RegisterActivity.this, "Πρόβλημα εγγραφής", Toast.LENGTH_SHORT).show();
-
 
                         }
+                    } else {
 
-
+                        Toast.makeText(RegisterActivity.this, "Oι κωδικοί δεν ταιρίαζουν ", Toast.LENGTH_SHORT).show();
                     }
+
+
                 }
-                else{
-
-                    Toast.makeText(RegisterActivity.this,"Oι κωδικοί δεν ταιρίαζουν ",Toast.LENGTH_SHORT).show();
-                }
-
-
             }
         });
     }
+
 }

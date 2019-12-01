@@ -39,8 +39,24 @@ public class thewriatriapente extends AppCompatActivity {
         triapent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(thewriatriapente.this, menuthewrias3kefalaio.class));
+                startActivity(new Intent(thewriatriapente.this, thewriatriaeksi.class));
             }
         });
+    }
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewriatriapente.this, menuthewrias3kefalaio.class));
+
+
+
+
+
+
+
+
+
     }
 }

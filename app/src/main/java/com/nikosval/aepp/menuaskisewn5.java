@@ -35,6 +35,8 @@ public class menuaskisewn5 extends AppCompatActivity {
         SeekBar seekbar=findViewById(R.id.seekBar5);
         erwthseispouthaapantisei=(TextView)findViewById(R.id.erwthseispouthaapantisei5);
         boolean dialogShown = settings5.getBoolean("dialogShown", false);
+        SharedPreferences prefs = getSharedPreferences("osesapantisa5", MODE_PRIVATE);
+        int osesapantisa = prefs.getInt("osesapantisa5", 20); //0 is the default value.
 
         if (!dialogShown) {
 
@@ -63,7 +65,9 @@ public class menuaskisewn5 extends AppCompatActivity {
 
         Intent intent = getIntent();
         int score5 = intent.getIntExtra("scorediagwnisma5", 0);
-        double percentageoftest = ((double) score5 / 15) * 100;
+        double percentageoftest = ((double) score5 / osesapantisa) * 100;
+        percentageoftest=round(percentageoftest, 1);
+
         final SharedPreferences mypref5 = getSharedPreferences("mypref5", MODE_PRIVATE);
         int highscore5 = mypref5.getInt("HighScore5", 0);
         DataBaseHelper db;
@@ -72,11 +76,11 @@ public class menuaskisewn5 extends AppCompatActivity {
         if (percentageoftest > 50) {
 
 
-            currentscore.setText("To σκορ σου στις ερωτήσεις του τεστ είναι: " + score5 + "/15 (" + percentageoftest + "%)");
+            currentscore.setText("To σκορ σου στις ερωτήσεις του τεστ είναι: " + score5 + "/"+osesapantisa+" (" + percentageoftest + "%)");
             currentscore.setTextColor(getResources().getColor(R.color.colorigotit, null));
         } else {
 
-            currentscore.setText("To σκορ σου στις ερωτήσεις του τεστ ειναι : " + score5 + "/15  (" + percentageoftest + "%)");
+            currentscore.setText("To σκορ σου στις ερωτήσεις του τεστ ειναι : " + score5 + "/"+osesapantisa+"  (" + percentageoftest + "%)");
             currentscore.setTextColor(getResources().getColor(R.color.colorAccent, null));
 
         }
@@ -85,6 +89,7 @@ public class menuaskisewn5 extends AppCompatActivity {
         if (highscore5 >= score5) {
 
             double percentageofhighest = ((double) highscore5 / 15) * 100; //aitia gia highscore emfanisi
+            percentageofhighest=round(percentageofhighest, 1);
 
 
             highestscore.setText("Το μεγαλύτερο σκορ στο τεστ είναι: " + highscore5 + "/15  (" + percentageofhighest + "%)");
@@ -93,6 +98,8 @@ public class menuaskisewn5 extends AppCompatActivity {
         } else {
 
             double percentageofslhigest = ((double) highscore5 / 15) * 100;
+            percentageofslhigest=round(percentageofslhigest, 1);
+
 
             SharedPreferences.Editor editor = mypref5.edit();
             editor.putInt("HighScore5", score5);
@@ -108,6 +115,7 @@ public class menuaskisewn5 extends AppCompatActivity {
         if (highscore5 >= score5) {
 
             double percentageofhighest = ((double) highscore5 / 15) * 100; //aitia gia highscore emfanisi
+            percentageofhighest=round(percentageofhighest, 1);
 
 
             highestscore.setText("Το μεγαλύτερο σκορ στο τεστ είναι: " + highscore5 + "/15  (" + percentageofhighest + "%)");
@@ -116,6 +124,7 @@ public class menuaskisewn5 extends AppCompatActivity {
         } else {
 
             double percentageofslhigest = ((double) highscore5 / 15) * 100;
+            percentageofslhigest=round(percentageofslhigest, 1);
 
             SharedPreferences.Editor editor = mypref5.edit();
             editor.putInt("HighScore5", score5);
@@ -157,7 +166,7 @@ public class menuaskisewn5 extends AppCompatActivity {
         gotothetest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), diagwnismakefalaio2.class);
+                Intent startIntent = new Intent(getApplicationContext(), diagwnismak5.class);
                 startIntent.putExtra("pernatoeuros5", seekbarvalue);
                 startActivity(startIntent);            }
         });
@@ -205,6 +214,16 @@ public class menuaskisewn5 extends AppCompatActivity {
             }
         }
 
+    }
+
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
     }
 
     public void onBackPressed() {

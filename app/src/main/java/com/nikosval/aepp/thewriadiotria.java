@@ -20,7 +20,7 @@ boolean isCheckedValue;
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences.Editor editor23 = preferences.edit();
 
-        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox);
+        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox25);
         checkBox.setChecked(preferences.getBoolean("checked2_3",false));
 
 
@@ -41,6 +41,23 @@ boolean isCheckedValue;
                 startActivity(new Intent(thewriadiotria.this, thewriadiotessera.class));
             }
         });
+    }
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewriadiotria.this, menuthewrias2oukefalaiou.class));
+
+
+
+
+
+
+
+
+
     }
 }
 

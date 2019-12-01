@@ -48,4 +48,21 @@ boolean ischecked13;
 
 
     }
+
+    public void onBackPressed() {
+
+
+
+
+        startActivity(new Intent(thewria1_3.this, menuthewrias1oukefaliou.class));
+
+
+
+
+
+
+
+
+
+    }
 }

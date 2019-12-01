@@ -3,6 +3,7 @@ package com.nikosval.aepp;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -42,6 +43,8 @@ public class diagwnismak6 extends AppCompatActivity {
         apotelesmata=new ArrayList<String>();
         Intent startIntent= getIntent();
         ii= startIntent.getIntExtra("pernatoeuros6",0);
+        updateScore(0);
+
         apotelesmatalanthasmenes=new ArrayList<String>();
 
         mQuestionLibrary.suffle();
@@ -123,7 +126,7 @@ public class diagwnismak6 extends AppCompatActivity {
                 apotelesmata.add("Aπάντησες: "+choice3.getText().toString());
                 if(!(epilogh.equals(manswer))){
                     apotelesmatalanthasmenes.add("Η ερώτηση ήταν: "+mQuestionView6.getText().toString());
-                    apotelesmatalanthasmenes.add("Απάντησες λανθασμένα: "+choice2.getText().toString());
+                    apotelesmatalanthasmenes.add("Απάντησες λανθασμένα: "+choice3.getText().toString());
                     apotelesmatalanthasmenes.add("Η σωστή απάντηση είναι: "+manswer.toString());
 
                     apotelesmatalanthasmenes.add(" ");
@@ -178,6 +181,9 @@ public class diagwnismak6 extends AppCompatActivity {
 
             alert.setTitle("Το διαγώνισμα τελείωσε!");
             alert.setCancelable(false);
+            SharedPreferences.Editor editor = getSharedPreferences("osesapantisa6", MODE_PRIVATE).edit();
+            editor.putInt("osesapantisa6",ii);
+            editor.apply();
 
             alert.setMessage("Το σκορ σου είναι : " + mscored6 + " πόντοι!");
             alert.setPositiveButton("Εμφάνισε όλες τις απαντήσεις", new DialogInterface.OnClickListener() {
@@ -220,7 +226,7 @@ public class diagwnismak6 extends AppCompatActivity {
     private void updateScore(int point) {
 
 
-        mScoreView6.setText("" + mscored6 + "/" + mQuestionLibrary.getlength());
+        mScoreView6.setText("" + mscored6 + "/"+ii);
     }
 
 }

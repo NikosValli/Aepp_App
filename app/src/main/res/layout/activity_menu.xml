@@ -16,7 +16,6 @@
         tools:context=".MenuActivity">
 
 
-
         <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/toolbarofuser"
             android:layout_width="match_parent"
@@ -30,18 +29,10 @@
         </android.support.v7.widget.Toolbar>
 
 
-
-
         <android.support.v4.view.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-
-
-
-
-
+            android:layout_height="match_parent" />
 
 
         <TextView
@@ -75,14 +66,14 @@
             android:layout_height="72dp"
 
 
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="8dp"
             android:color="@color/colorPrimary"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view"
             app:srcCompat="@drawable/logooo" />
 
 
@@ -120,17 +111,17 @@
             android:layout_width="68dp"
             android:layout_height="59dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="34dp"
+            android:layout_marginTop="18dp"
             android:background="?android:selectableItemBackground"
             android:scaleType="fitCenter"
             android:src="@drawable/studyy"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView71" />
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
 
 
         <ImageButton
             android:id="@+id/imageButton4"
-            android:layout_width="123dp"
+            android:layout_width="121dp"
             android:layout_height="68dp"
 
             android:layout_marginStart="230dp"
@@ -147,17 +138,18 @@
             android:id="@+id/textView31"
             android:layout_width="108dp"
             android:layout_height="35dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="24dp"
-            android:text="Αποθηκευμένα κεφάλαια"
             android:gravity="center"
+            android:text="Αποθηκευμένα κεφάλαια"
             android:textColor="@color/menuColor"
             android:textSize="14dp"
             android:textStyle="italic"
             app:layout_constraintBottom_toTopOf="@+id/search_ennoies"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
 
         <ListView
@@ -176,8 +168,7 @@
             android:layout_width="57dp"
             android:layout_height="25dp"
 
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="12dp"
             android:text="Έπαθλα"
             android:textAlignment="center"
             android:textColor="@color/menuColor"
@@ -190,7 +181,7 @@
             android:id="@+id/badges"
             android:layout_width="68dp"
             android:layout_height="58dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="28dp"
             android:background="?android:selectableItemBackground"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
@@ -210,6 +201,8 @@
             app:itemIconTint="@color/colorAccent"
             app:itemTextColor="@color/colorAccent"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_navigation_bar">
 
@@ -291,7 +284,7 @@
             android:layout_height="38dp"
             android:layout_marginEnd="16dp"
             android:gravity="center"
-            android:text="Tμηματικός Προγραμματισμός"
+            android:text="Τμηματικός Προγραμματισμός"
             android:textColor="@color/menuColor"
             android:textSize="13dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -351,13 +344,13 @@
         <View
             android:id="@+id/view2"
             android:layout_width="wrap_content"
-            android:layout_height="2dp"
+            android:layout_height="6dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="13dp"
 
+            android:layout_marginTop="45dp"
             android:background="@color/colorPrimaryDark"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton2"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView124" />
 
         <ImageButton
             android:id="@+id/proteinete"
@@ -384,32 +377,32 @@
             app:layout_constraintTop_toBottomOf="@+id/proteinete" />
 
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-                <FrameLayout
-                    android:id="@android:id/tabcontent"
+                <LinearLayout
+                    android:id="@+id/tab3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:id="@+id/tab3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
 
         <ImageButton
             android:id="@+id/erwthseiskathigitwn"
             android:layout_width="68dp"
             android:layout_height="58dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="19dp"
             android:background="?android:selectableItemBackground"
             android:scaleType="fitCenter"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
@@ -420,15 +413,63 @@
             android:id="@+id/textView110"
             android:layout_width="85dp"
             android:layout_height="39dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginStart="5dp"
 
+            android:gravity="center"
             android:text="Eρωτήσεις καθηγητών"
             android:textColor="@color/menuColor"
             android:textStyle="italic"
             app:layout_constraintStart_toEndOf="@+id/textView31"
             app:layout_constraintTop_toBottomOf="@+id/erwthseiskathigitwn" />
+
+        <ImageButton
+            android:id="@+id/kef7"
+            android:layout_width="68dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="32dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView71"
+            app:srcCompat="@drawable/kef7" />
+
+        <TextView
+            android:id="@+id/textView124"
+            android:layout_width="194dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Σύγχρονα Προγραμματιστικά Περιβάλλοντα"
+            android:textColor="@color/menuColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kef7" />
+
+        <ImageButton
+            android:id="@+id/kef8"
+            android:layout_width="125dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="30dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/debug" />
+
+        <TextView
+            android:id="@+id/textView136"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="43dp"
+
+            android:text="Εκσφαλμάτωση"
+            android:textColor="@color/menuColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kef8" />
+
 
     </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>

@@ -6,4 +6,6 @@
     <color name="colorigotit">#27ae60</color>
     <color name="menuColor">#B41818</color>
     <color name="menubutons">#FFFFFF</color>
+    <color name="androidhint">#83ECECEC</color>
+
 </resources>

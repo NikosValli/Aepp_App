@@ -59,4 +59,14 @@
         android:background="@color/colorPrimaryDark"
         android:text="2.4 ΔΟΜΕΣ ΕΠΑΝΑΛΗΨΗΣ"
         android:textSize="19dp" />
+
+    <Button
+        android:id="@+id/diopente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="2.5 ΔΙΑΙΡΕΙ ΚΑΙ ΒΑΣΙΛΕΥΕ"
+        android:textSize="19dp" />
 </LinearLayout>
